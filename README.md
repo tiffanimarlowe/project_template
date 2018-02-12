@@ -2,7 +2,7 @@
 (remember all text between brackets to be removed in proposal and final, like template above)
 
 > * Group Name: (be creative!)
-> * Group participants names: (alphabetically sorted by last name)
+> * Group participants names: (Marc Mailloux alphabetically sorted by last name)
 > * Project Title: (can be changed later)
 
 (Abstract here - basically your pitch with some modification - but short overview)
