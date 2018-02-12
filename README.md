@@ -1,9 +1,14 @@
-# IDS6145(SimTech 2018) - Research Plan (Template)
-(remember all text between brackets to be removed in proposal and final, like template above)
+# IDS6145(SimTech 2018) - Research Plan
 
-> * Group Name: (be creative!)
-> * Group participants names: (Marc Mailloux alphabetically sorted by last name)
-> * Project Title: (can be changed later)
+> * Group Name: TBD.
+> * Group participants names: Markus Loennig, Marc Mailloux, Tiffani Marlowe
+> * Project Title: Simulating an Elementary Fire Drill
+
+### Pitch
+
+Our topic is to evaluate the effectiveness of a fire evacuation drill of a public building. Our goal is to model a fire drill using anylogic in order to determine the proper evacuation route in a given elementary school based on population, fire location, and time. In addition, we want to simulate how long it will take for emergency personnel to find a missing child during a fire. This is important because it is a real-life application that can potentially help improve an elementary fire drill and save lives.
+
+
 
 (Abstract here - basically your pitch with some modification - but short overview)
 (TEASER IMAGE HERE - should wow me to read your work)
