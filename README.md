@@ -63,9 +63,13 @@ I dont know that we will have any contributions..-marc
 
 
 ## The Model
+
 ![Structural Diagram](ObjDiagram1.jpg)
+
 (Provide structural and behavior diagrams of the system you wish to study.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?) (Use the model to tell us what is going on.)
+
 ![Behavior Diagram](BehDiagram1.jpg)
+
 (explicitly list your requirements of what the model will have and simulate for the proposal)
 
 ## Fundamental Questions
