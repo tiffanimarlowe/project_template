@@ -24,6 +24,8 @@ Current consumer behaviors indicates the active buying patterns are becoming mor
 ![SAMPLE IMAGE 1](images/DHL.jpg)
 
 ![SAMPLE IMAGE 3](images/Primeair.jpg)
+
+
 (TEASER IMAGE HERE - should wow me to read your work)
 
 
