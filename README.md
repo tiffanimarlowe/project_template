@@ -1,8 +1,8 @@
 # IDS6145(SimTech 2018) - Research Plan
 
-> * Group Name: TBD.
+> * Group Name: Ama-Drone
 > * Group participants names: Markus Loennig, Marc Mailloux, Tiffani Marlowe
-> * Project Title: Simulating an Elementary Fire Drill
+> * Project Title: Viability of Drone Delivery in Orlando Fl
 
 ### Pitch
 
