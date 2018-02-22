@@ -27,7 +27,7 @@ Current consumer behaviors indicates the active buying patterns are becoming mor
 * (this Readme should "evolve" over time as you add and edit it)
 * (once you are happy with it - copy it into the proposal directory, and remove the obvious sections that should be removed - Future work, etc)
 
-
+marc
 ## General Introduction
 
 (States your motivation clearly: why is it important / interesting to solve this problem?)
