@@ -10,6 +10,8 @@
 
 The topic is dealing with the issue of delivering consumer goods in our target city Orlando.
 
+![SAMPLE IMAGE 2](images/Huge.jpg)
+
 2.What do you want to do?
 
 We want to model a part of the city of Orlando and simulate the differences between ground based (trucks) and air based (drones) delivery methods. Our main effort is the air based delivery method in regards to speed of delivery, efficiency and overall effort of the system (quantity of drones, quantity and location of hubs).
@@ -19,7 +21,9 @@ We want to model a part of the city of Orlando and simulate the differences betw
 Current consumer behaviors indicates the active buying patterns are becoming more decentralized (ordering online) and we want to see if we can integrate this new concept of delivery into the exisiting infracture.
 
 
+![SAMPLE IMAGE 1](images/DHL.jpg)
 
+![SAMPLE IMAGE 3](images/Primeair.jpg)
 (TEASER IMAGE HERE - should wow me to read your work)
 
 
@@ -93,8 +97,3 @@ The research methods we plan to use are Agent-Based modeling paired with the sim
 ## References
 (Add the bibliographic references you intend to use)  (Code / Projects / blogs / websites / papers...)
 =======
-# IDS6145(SimTech 2018) - Research Plan
-
-> * Group Name: Ama-Drone
-> * Group participants names: Markus Loennig, Marc Mailloux, Tiffani Marlowe
-> * Project Title: Viability of Drone Delivery in Orlando Fl
