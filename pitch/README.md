@@ -6,16 +6,14 @@
 > * Project Title: Viability of Drone Delivery in Orlando Fl  
 (4 sentences: what is the topic (1), what do you want to do (2), why is important (1))
 
-1.What is the topic? 
+1.What is the topic?
 
-The topic covers drone delivery systems in our target city Orlando.
+The topic is dealing with the issue of delivering consumer goods in our target city Orlando.
 
 2.What do you want to do?
 
-We want to measure the feasability of using drones in Orlando to deliver packages and compared them ground based methods. In testing the feasability we want to anaylize the overall effort(estimates of costs), provide ideal locations for the air bases, and test certain air modes like drones or fixed wings or vtol.  
-
-
+We want to model a part of the city of Orlando and simulate the differences between ground based (trucks) and air based (drones) delivery methods. Our main effort is the air based delivery method in regards to speed of delivery, efficiency and overall effort of the system (quantity of drones, quantity and location of hubs).
 
 3.Why is important?
 
-Current consumer behaviors indicates the active buy patterns are becoming more decentralized(ordering online) behaviors and we want to see if we can integrate the new needs to the exisiting infracture. 
+Current consumer behaviors indicates the active buying patterns are becoming more decentralized (ordering online) and we want to see if we can integrate this new concept of delivery into the exisiting infracture.
