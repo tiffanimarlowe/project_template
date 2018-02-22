@@ -32,6 +32,11 @@ Current consumer behaviors indicates the active buying patterns are becoming mor
 
 (States your motivation clearly: why is it important / interesting to solve this problem?)
 (Add real-world examples, if any)
+
+
+Drone technolgy has become more advanced over the past few years from better batteries to more efficient brushless motors. Thus the capabilities are of drones are expanding like in the delivery indusrty. 
+
+
 (Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
 
 (You should begin by introducing your topic. In this section, you should define the core terminology specific to the field, introduce the problem statement, and make clear the benefits (motivate!) of resolving that problem statement. The main difference between the ABSTRACT and Introduction sections is that the abstract summarizes the entire project, including results, whereas the introduc-tion only provides the motivation of the problem and an overview of the proposed solution.)
