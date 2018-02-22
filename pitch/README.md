@@ -10,7 +10,7 @@
 The topic covers drone delivery systems in our target city Orlando.
 
 2.What do you want to do?
-We want to measure the feasability of using drones in Orlando to deliver packages and compared them ground based methods. In testing the feasability we want to anaylize the overall effort(estimates of costs), provide ideal locations for the air bases. 
+We want to measure the feasability of using drones in Orlando to deliver packages and compared them ground based methods. In testing the feasability we want to anaylize the overall effort(estimates of costs), provide ideal locations for the air bases, and test certain air modes like drones or fixed wings or vtol.  
 
 give ooprortunity to 
 
