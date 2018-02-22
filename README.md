@@ -76,11 +76,16 @@ I dont know that we will have any contributions..-marc
 (At the end of the project you want to find the answer to these questions) (Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
 
 1. Are drones more efficient than standard ground based delivery methods?
+
   1.1 How many drones does it take to out perfrom one delivery truck with 50 packages?
+  
   1.2 How long does it take to deliver 50 packages via ground based system?
+  
   1.3 How long does it take to deliver 50 packages via air based system?
+  
  2. How does increased battery, max speed, and carrying capacity effect the number of drones needed?
- 3. Is it worth using drones for package delivery?
+ 3. Can the drones reduce average delivery time by 30%? 
+ 4. 
 
 ## Expected Results
 (What are the answers to the above questions that you expect to find before starting your research?) (This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) (sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
