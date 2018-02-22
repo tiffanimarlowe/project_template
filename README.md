@@ -22,12 +22,6 @@ We want to model a part of the city of Orlando and simulate the differences betw
 
 Current consumer behaviors indicates the active buying patterns are becoming more decentralized (ordering online) and we want to see if we can integrate this new concept of delivery into the exisiting infracture.
 
-
-![SAMPLE IMAGE 3](images/primeair.jpg)
-
-
-
-
 (TEASER IMAGE HERE - should wow me to read your work)
 
 
