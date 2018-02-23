@@ -14,7 +14,7 @@ Technology and online shopping continues to advance at an instantaneous rate. Co
 
 2.What do you want to do?
 
-We want to model a part of the city of Orlando and simulate the differences between ground based (trucks) and air based (drones) delivery methods. Our main effort is the air based delivery method in regards to speed of delivery, efficiency and overall effort of the system (quantity of drones, quantity and location of hubs).
+By modeling and simulating a specific portion of the city of Orlando we hope to compare ground based (trucks) delivery methods against air based (drones) delivery methods. Our main effort is to determine the differences among the two delivery methods in regard to speed of delivery, efficiency and overall performance of the system. By doing so, we could further determine the quantity and locations it would take to provide an efficient air based delivery system for the city of Orlando.
 
 ![SAMPLE IMAGE 1](images/DHL.jpg)
 
