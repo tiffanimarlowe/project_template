@@ -8,7 +8,7 @@
 
 1.What is the topic?
 
-The topic is dealing with the issue of delivering consumer goods in our target city Orlando.
+Technology and online shopping continues to advance at an instantaneous rate. Consumers are now capable of ordering most anything via the web and therefore, have become reliant on quick and dependable home delivery services. With the online shopping market increasing at a steadfast rate, businesses are now investigating and improving new forms of delivery and their overall efficiency. One of the most recent forms of delivery are via aviation, in particular, by the use of drones.  Through the operation of drone delivery, there could be potential for reduced delivery costs, improved customer service and more importantly, accelerated delivery times. Which leads us to believe drones will be a more efficient form of consumer goods home delivery in the targeted city of Orlando.
 
 ![SAMPLE IMAGE 2](images/Huge.jpg)
 
