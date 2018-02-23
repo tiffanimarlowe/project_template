@@ -36,10 +36,22 @@ The problem we want to have a deeper look at will be part of our lives in the no
 
 (Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
 Historical context: 
-Before the digital age of time (Internet) oders where placed by phnoe (landline) and/or by a written order (letter). The mailman delivered your package. The needs of consumers could usually be satisfied by local and specialty stores. Uncommon goods were ordered out of catalogues, all delivered from some distribution center somewhere in the country. Delivery time was usually high (compared to today) but it was considered normal.
-With the coming of the digital age of time, consumers dont have to go to stores or use catalogues, they can literally every good in the world at their will. And they want it rather sooner than later. The company Amazon has managed to changed the worlddwide behavior. Everything is connected, every good available. Delivery times were and are still shortened to an extend that certain goods can be delivered "Next Day" or eben within "1 Hour". This is possible by smart distribution of locations of Distribution centers and the implementation of highly intelligent delivery processes. Without a sound and sophisticated delivery infrastructure, this world wide success would not be possible.   
-Amazon and others are looking into the next step: overcoming the delivery infrastucture and service (like American Postal Service or UPS/DHL) with their own, efficient and fast system. The logical solution lays within air transport. Its direct, not depending on street infrastructure and unmanned, potentially saving and cutting costs on the number of employees.
 
+
+  Before the digital age of time (Internet) oders where placed by phnoe (landline) and/or by a written order (letter). The mailman delivered your package. The needs of consumers could usually be satisfied by local and specialty stores. Uncommon goods were ordered out of catalogues, all delivered from some distribution center somewhere in the country. Delivery time was usually high (compared to today) but it was considered normal.
+  
+  
+  With the coming of the digital age of time, consumers dont have to go to stores or use catalogues, they can literally every good in the world at their will. And they want it rather sooner than later. The company Amazon has managed to changed the worlddwide behavior. Everything is connected, every good available. Delivery times were and are still shortened to an extend that certain goods can be delivered "Next Day" or eben within "1 Hour". This is possible by smart distribution of locations of Distribution centers and the implementation of highly intelligent delivery processes. Without a sound and sophisticated delivery infrastructure, this world wide success would not be possible. 
+  
+  
+  Amazon and others are looking into the next step: overcoming the delivery infrastucture and service (like American Postal Service or UPS/DHL) with their own, efficient and fast system. The logical solution lays within air transport. Its direct, not depending on street infrastructure and unmanned, potentially saving and cutting costs on the number of employees.
+
+
+  Drone technolgy has become more advanced over the past few years from better batteries to more efficient brushless motors. Thus the capabilities are of drones are expanding like in the delivery industry. Additionally consumer trends are becoming more decentralized with the need for faster and more efficient delivery methods. For example Amazon has a service called Amazon Prime Air which allows the users to order items and have them deliverd in under an hour. A service like this will open up the markets for drone delivery resulting in less overhead for both the customer and drone delivery company. Lastly Uber is a company that is experimenting with using drones as a taxi service, which is very similar to a package delivery system. This shows that drone delivery systems are scalable for different scenarios. 
+  
+
+Standard ground based delivery systems will eventually be out dated for certain areas and through this simulation we hope to evaluate  the pros and cons and the overall effort needed to (partly) replace current ground based methods of delivery.
+It is apparent that drone technology is something we can expect to see in the future. Delivery/logistics companies are currently testing drone capabilites to determine the effectivness of drone delivery.
 
 
 (You should begin by introducing your topic. In this section, you should define the core terminology specific to the field, introduce the problem statement, and make clear the benefits (motivate!) of resolving that problem statement. The main difference between the ABSTRACT and Introduction sections is that the abstract summarizes the entire project, including results, whereas the introduc-tion only provides the motivation of the problem and an overview of the proposed solution.)
@@ -48,17 +60,31 @@ Amazon and others are looking into the next step: overcoming the delivery infras
 
 (Problem Statement. One paragraph to describe the prob-lem that you are tackling.)
 
-  It is apparent that drone technology is something we can expect to see in the future. Delivery/logistics companies are currently testing drone capabilites to determine the effectivness of drone delivery. 
+We will answer following questions with our project:
+
++ How long does it take (on average) to deliver a package to a certain location by ground and by air?
+
++ How will that change with increasing number of orders and diversified locations?
+
++ At what point will the ground based solution be better than the air based solution (and vice versa)?
+
++ Taking technical development into account, which (overall) measurable effects will have changes in delivery speed, battery efficiency and increased payload for air based solutions (e.g. increase of possible flight time of 10% / 20%, shortended recharging time, etc.) ?
+
++ How can "Hubs" like package pick-up stations with an slightly increased delivery time influence the service, e.g. by allowing ground based delivery to become more efficient for this scenario.
+
 
 (Motivation. Why is this problem interesting and relevant to the research community?)
 
-
-  Drone technolgy has become more advanced over the past few years from better batteries to more efficient brushless motors. Thus the capabilities are of drones are expanding like in the delivery industry. Additionally consumer trends are becoming more decentralized with the need for faster and more efficient delivery methods. For example Amazon has a service called Amazon Prime Air which allows the users to order items and have them deliverd in under an hour. A service like this will open up the markets for drone delivery resulting in less overhead for both the customer and drone delivery company. Lastly Uber is a company that is experimenting with using drones as a taxi service, which is very similar to a package delivery system. This shows that drone delivery systems are scalable for different scenarios. Standard ground based delivery systems will eventually be out dated and through this simulation we hope to prove this.
-
+The porposed questions and areas of research will help us to see how Amazon and other companies will forge the future of delivery. It can contribute to making predictions for efficiency and help to construct the overall layout of such a system. 
 
 (Proposed Solution. How do we propose to tackle this problem (that has been identified in the previous para-graphs, is interesting to the community, and has yet to be tackled by other researchers)?)
 
-  The proposed solution is to simulate the truck and drone delivery methods to home locations or delivery hubs. We intend to use Agent Based Simulation techniques blah blah blah
+We will tackle this problem by modeling a part of the City of Orlando and simulate 
++ the truck and 
++ the drone delivery methods 
++ to home locations and/or 
++ to delivery hubs. 
+Our intention is to use Agent Based Simulation techniques.
 
 (Contributions. An enumeration of the contributions of the senior design project)
 
