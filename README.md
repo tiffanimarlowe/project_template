@@ -20,7 +20,7 @@ We want to model a part of the city of Orlando and simulate the differences betw
 
 3.Why is important?
 
-Current consumer behaviors indicates the active buying patterns are becoming more decentralized (ordering online) and we want to see if we can integrate this new concept of delivery into the exisiting infracture.
+Current consumer behaviors indicates the active buying patterns are becoming more decentralized (ordering online) and we want to see if the concept of delivery is valid and how we can integrate this into the exisiting infracture.
 
 (TEASER IMAGE HERE - should wow me to read your work)
 
@@ -32,7 +32,15 @@ Current consumer behaviors indicates the active buying patterns are becoming mor
 (States your motivation clearly: why is it important / interesting to solve this problem?)
 (Add real-world examples, if any)
 
+The problem we want to have a deeper look at will be part of our lives in the not-so-far future. Depending on technical development and adaptation of regulations (airspace, legal, insurance claim in case drone fall on your head/property) there are certain companies  (Amazon, DHL, etx.) already looking into fast delivery of goods via an unmanned aerial system (aka drone). In our opinion, this will become the next level of consumer delivery.
+
 (Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
+Historical context: 
+Before the digital age of time (Internet) oders where placed by phnoe (landline) and/or by a written order (letter). The mailman delivered your package. The needs of consumers could usually be satisfied by local and specialty stores. Uncommon goods were ordered out of catalogues, all delivered from some distribution center somewhere in the country. Delivery time was usually high (compared to today) but it was considered normal.
+With the coming of the digital age of time, consumers dont have to go to stores or use catalogues, they can literally every good in the world at their will. And they want it rather sooner than later. The company Amazon has managed to changed the worlddwide behavior. Everything is connected, every good available. Delivery times were and are still shortened to an extend that certain goods can be delivered "Next Day" or eben within "1 Hour". This is possible by smart distribution of locations of Distribution centers and the implementation of highly intelligent delivery processes. Without a sound and sophisticated delivery infrastructure, this world wide success would not be possible.   
+Amazon and others are looking into the next step: overcoming the delivery infrastucture and service (like American Postal Service or UPS/DHL) with their own, efficient and fast system. The logical solution lays within air transport. Its direct, not depending on street infrastructure and unmanned, potentially saving and cutting costs on the number of employees.
+
+
 
 (You should begin by introducing your topic. In this section, you should define the core terminology specific to the field, introduce the problem statement, and make clear the benefits (motivate!) of resolving that problem statement. The main difference between the ABSTRACT and Introduction sections is that the abstract summarizes the entire project, including results, whereas the introduc-tion only provides the motivation of the problem and an overview of the proposed solution.)
 
