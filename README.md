@@ -8,13 +8,13 @@
 
 1.What is the topic?
 
-Technology and online shopping continues to advance at an instantaneous rate. Consumers are now capable of ordering most anything via the web and therefore, have become reliant on quick and dependable home delivery services. With the online shopping market increasing at a steadfast rate, businesses are now investigating and improving new forms of delivery and their overall efficiency. One of the most recent forms of delivery are via aviation, in particular, by the use of drones.  Through the operation of drone delivery, there could be potential for reduced delivery costs, improved customer service and more importantly, accelerated delivery times. Which leads us to believe drones will be a more efficient form of consumer goods home delivery in the targeted city of Orlando.
+The topic is dealing with the issue of delivering consumer goods in our target city Orlando
 
 ![SAMPLE IMAGE 2](images/Huge.jpg)
 
 2.What do you want to do?
 
-By modeling and simulating a specific portion of the city of Orlando we hope to compare ground based (trucks) delivery methods against air based (drones) delivery methods. Our main effort is to determine the differences among the two delivery methods in regard to speed of delivery, efficiency and overall performance of the system. By doing so, we could further determine the quantity and locations it would take to provide an efficient air based delivery system for the city of Orlando.
+We want to model a part of the city of Orlando and simulate the differences between ground based (trucks) and air based (drones) delivery methods. Our main effort is the air based delivery method in regards to speed of delivery, efficiency and overall effort of the system (quantity of drones, quantity and location of hubs).
 
 ![SAMPLE IMAGE 1](images/DHL.jpg)
 
@@ -22,17 +22,17 @@ By modeling and simulating a specific portion of the city of Orlando we hope to 
 
 Current consumer behaviors indicates the active buying patterns are becoming more decentralized (ordering online) and we want to see if the concept of delivery is valid and how we can integrate this into the exisiting infracture.
 
-(TEASER IMAGE HERE - should wow me to read your work)
-
-* (this Readme should "evolve" over time as you add and edit it)
-* (once you are happy with it - copy it into the proposal directory, and remove the obvious sections that should be removed - Future work, etc)
+![Drone](images/dronesreport.PNG)
+Source: Menon, Prashob. Ivey Business Review. December 11, 2013.
 
 ## General Introduction
 
-(States your motivation clearly: why is it important / interesting to solve this problem?)
-(Add real-world examples, if any)
+Technology and online shopping continues to advance at an instantaneous rate. Consumers are now capable of ordering most anything via the web and therefore, have become reliant on quick and dependable home delivery services. With the online shopping market increasing at a steadfast rate, businesses are now investigating and improving new forms of delivery and their overall efficiency. One of the most recent forms of delivery are via aviation, in particular, by the use of drones.
 
-The problem we want to have a deeper look at will be part of our lives in the not-so-far future. Depending on technical development and adaptation of regulations (airspace, legal, insurance claim in case drone fall on your head/property) there are certain companies  (Amazon, DHL, etx.) already looking into fast delivery of goods via an unmanned aerial system (aka drone). In our opinion, this will become the next level of consumer delivery.
+A drone refers to unmanned aerial vehicle (UAV) that is controlled remotely by an operator on the ground. Traditionally, drones have been utilized within the military for dangerous operations. However, they are beginning to apply to civil applications such as firefighting and even now, package delivery.  Through the operation of drone delivery, there could be potential for reduced delivery costs, improved customer service and more importantly, accelerated delivery times. Which leads us to believe drones will be a more efficient form of consumer goods package delivery in the targeted city of Orlando.
+
+The problem we wish to investigate will no doubt be part of the worlds day-to-day living in the foreseeable future. The ability to keep up with developing technology and the adaption of regulations (airspace, legal, insurance, etc.) are already in the works. Many large online retailers such as Amazon and DHL are currently experimenting with unmanned aerial systems (Drones) in order to provide fast delivery of consumer goods. Based on current technology and consumer needs, we feel this form of delivery will quickly become the next level of packaged delivery.
+
 
 (Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
 Historical context: 
