@@ -10,8 +10,6 @@
 
 The topic is dealing with the issue of delivering consumer goods in our target city Orlando
 
-![SAMPLE IMAGE 2](images/Huge.jpg)
-
 2.What do you want to do?
 
 We want to model a part of the city of Orlando and simulate the differences between ground based (trucks) and air based (drones) delivery methods. Our main effort is the air based delivery method in regards to speed of delivery, efficiency and overall effort of the system (quantity of drones, quantity and location of hubs).
@@ -24,6 +22,8 @@ Current consumer behaviors indicates the active buying patterns are becoming mor
 
 
 ## General Introduction
+
+![SAMPLE IMAGE 2](images/Huge.jpg)
 
 Technology and online shopping continues to advance at an instantaneous rate. Consumers are now capable of ordering most anything via the web and therefore, have become reliant on quick and dependable home delivery services. With the online shopping market increasing at a steadfast rate, businesses are now investigating and improving new forms of delivery and their overall efficiency. One of the most recent forms of delivery are via aviation, in particular, by the use of drones.
 
@@ -95,9 +95,7 @@ By focusing on these specific variables within the simulation, we aim to answer 
 
 
 ## Expected Results
-(What are the answers to the above questions that you expect to find before starting your research?) (This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) (sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
-
-We are expecting to see that air based methods will be more efficient compared to ground based delivery.
+After creating and analyzing the delivery system simulation, we expect to find air based delivery methods will be more efficient compared to ground based delivery methods. In particular, we believe that drone delivery will be significantly faster and more efficient compared to ground based delivery; perhaps even 30% more efficient. With that being said, we are not sure at what point and what conditions it will take for ground based delivery systems to exceed drone delivery abilities.  Lastly, we expect that battery life and the weight of the packages will have an overall effect on the air delivery systems capabilities.
 
 ## Research Methods
 
