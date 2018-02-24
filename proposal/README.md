@@ -1,4 +1,4 @@
-# IDS6145(SimTech 2018) - Research Plan
+# IDS6145(SimTech 2018) - Proposal
 
 > * Group Name: Ama-Drone
 > * Group participants names: Markus Loennig, Marc Mailloux, Tiffani Marlowe
