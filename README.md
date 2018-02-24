@@ -35,62 +35,35 @@ The problem we wish to investigate will no doubt be part of the worlds day-to-da
 
 Before the digital era (Internet) consumer needs were usually satisfied by local department and specialty stores. Uncommon goods were ordered from catalogues either via phone (landline) and/or via a written order (letter). Once the packaged has been processed by the retailer, a distribution center somewhere in the country would further process the order and a mailman would later deliver the package to its destination. Consumers could expect to receive their order within two weeks which was considered normal at the time.
 
-With the coming of the digital era, consumers no longer have to physically go into stores or use catalogues to purchase goods. Instead, they are capable of ordering most anything via online shopping. With these evolving abilities, consumer behaviors and expectations have also changed. They now demand their orders sooner rather than later. This impatience and expectation has only worsened over time. Larger retailers are now forced to manage this demand by providing quicker and more efficient delivery methods.
+With the coming of the digital era, consumers no longer have to physically go into stores or use catalogues to purchase goods. Instead, they are capable of ordering most anything via online shopping. With these evolving abilities, consumer behaviors and expectations have also changed. They now demand their orders sooner rather than later. This impatience and expectation has only worsened over time. Larger retailers are now forced to manage this decentralized demand by providing quicker and more efficient delivery methods.
 
 One of that largest online retailers, Amazon, has managed to change the worldwide behavior and meet consumer expectations by ensuring everything is connected. Therefore, everything is accessible by the click of a button. Amazon, has continued to decrease delivery times from weeks to now days. They have even gone further enough to shorten the delivery time of certain goods to "Next Day" and most recently to "1 Hour" delivery. They have made this possible by building smart distribution centers in various locations and implementing a highly intelligent delivery process. Without a sound and sophisticated delivery infrastructure, this worldwide success would not be possible.
-##############################################################
-  
-  
-  Amazon and others are looking into the next step: overcoming the delivery infrastucture and service (like American Postal Service or UPS/DHL) with their own, efficient and fast system. The logical solution lays within air transport. Its direct, not depending on street infrastructure and unmanned, potentially saving and cutting costs on the number of employees.
 
+Amazon and others major retailers are investigating the next step: overcoming the delivery infrastructure and service (like American Postal Service or UPS/DHL) with their own, more efficient and fast system. The newest logical solution lays within air transportation. Its direct and is not dependent upon on street infrastructure or the control of a human. Therefore, the number of employees and the time between package processing and delivery will be decreased. Potentially allowing for greater savings for both the retailer and the consumer.
 
-  Drone technolgy has become more advanced over the past few years from better batteries to more efficient brushless motors. Thus the capabilities are of drones are expanding like in the delivery industry. Additionally consumer trends are becoming more decentralized with the need for faster and more efficient delivery methods. For example Amazon has a service called Amazon Prime Air which allows the users to order items and have them deliverd in under an hour. A service like this will open up the markets for drone delivery resulting in less overhead for both the customer and drone delivery company. Lastly Uber is a company that is experimenting with using drones as a taxi service, which is very similar to a package delivery system. This shows that drone delivery systems are scalable for different scenarios. 
-  
+Drone technology has become more advanced over the past few years from better batteries to more efficient brushless motors. Thus, the capabilities of drones are influencing and expanding the delivery industry. Proving that drone delivery systems are scalable for different scenarios. For example, Amazon has recently launched a service called Amazon Prime Air which allows consumers to order items and have them delivered in under an hour. In addition, Uber is experimenting with drones in terms of a taxi service, which is very similar to a package delivery system. Services similar to these will introduce the market to drone delivery and will likely contribute to the out datedness of standard ground based delivery systems.
 
-Standard ground based delivery systems will eventually be out dated for certain areas and through this simulation we hope to evaluate  the pros and cons and the overall effort needed to (partly) replace current ground based methods of delivery.
-It is apparent that drone technology is something we can expect to see in the future. Delivery/logistics companies are currently testing drone capabilites to determine the effectivness of drone delivery.
+#### Problem Statement
+Delivery and logistics companies are currently testing drone capabilities to determine the efficiency and effectiveness of drone package delivery. Therefore, it is apparent that drone technology is something we can expect to see in the future. We propose that the city of Orlando Florida could benefit from a delivery system such as this and could provide relevant insight into this area of rising research. Between the combination of a large population, congested roadways, and a fast-past style of living, the city of Orlando is a perfect area to simulate the impact of drone delivery. Therefore, we hypothesize:
 
+1)	Drone delivery will be more cost efficient in Orlando compared to ground based delivery.
 
-(You should begin by introducing your topic. In this section, you should define the core terminology specific to the field, introduce the problem statement, and make clear the benefits (motivate!) of resolving that problem statement. The main difference between the ABSTRACT and Introduction sections is that the abstract summarizes the entire project, including results, whereas the introduc-tion only provides the motivation of the problem and an overview of the proposed solution.)
+2)	Drone delivery will improve delivery time at a leading rate during the times of the day with increased congestion and traffic compared to ground based delivery systems.
 
-(I tell sutdents to answer the questions, one paragaph each to start if you are lost)
+In order to address these problems, we will develop and execute an Agent Based Simulation using Anylogic that represents specific areas of the city of Orlando. Throughout this simulation we hope to evaluate the overall effort needed to partly replace current ground based methods of delivery and meet consumer expectations.
+In addition, by applying Agent Based Simulation techniques to model and simulate a specific portion of the city of Orlando we hope to compare the pros and cons of ground based (trucks) delivery methods against air based (drones) delivery methods. Our main effort is to determine the differences among the two delivery methods in regard to speed of delivery, efficiency, and overall performance of the systems. By doing so, we could further determine the quantity of drones and locations it would take to provide an efficient air based delivery system for the city of Orlando.
 
-(Problem Statement. One paragraph to describe the prob-lem that you are tackling.)
+For the purpose of this experiment, we will focus our attention on simulating the specific input and output variables listed below: 
++ ground transportation (truck) 
++ drone delivery methods 
++ location of drop off destinations (homes) 
++ speed of delivery
++ various number of delivery hubs
 
-We will answer following questions with our project:
-
-+ How long does it take (on average) to deliver a package to a certain location by ground and by air?
-
-+ How will that change with increasing number of orders and diversified locations?
-
-+ At what point will the ground based solution be better than the air based solution (and vice versa)?
-
-+ Taking technical development into account, which (overall) measurable effects will have changes in delivery speed, battery efficiency and increased payload for air based solutions (e.g. increase of possible flight time of 10% / 20%, shortended recharging time, etc.) ?
-
-+ How can "Hubs" like package pick-up stations with an slightly increased delivery time influence the service, e.g. by allowing ground based delivery to become more efficient for this scenario.
-
-
-(Motivation. Why is this problem interesting and relevant to the research community?)
-
-The porposed questions and areas of research will help us to see how Amazon and other companies will forge the future of delivery. It can contribute to making predictions for efficiency and help to construct the overall layout of such a system. 
-
-(Proposed Solution. How do we propose to tackle this problem (that has been identified in the previous para-graphs, is interesting to the community, and has yet to be tackled by other researchers)?)
-
-We will tackle this problem by modeling a part of the City of Orlando and simulate 
-+ the truck and 
-+ the drone delivery methods 
-+ to home locations and/or 
-+ to delivery hubs. 
-Our intention is to use Agent Based Simulation techniques.
-
-(Contributions. An enumeration of the contributions of the senior design project)
-
-I dont know that we will have any contributions..-marc
-
-(This project makes the following contributions:)(you must have this!!)
-•	(Contribution 1)
-•	(Contribution 2)
-
+#### Contributions 
+•	We have modeled and developed a simulation that further identifies a novel problem.
+•	We have provided a comparison of both air based delivery systems and ground based delivery systems to advance current understanding of more efficient delivery systems.  
+•	We have drawn on previous research to provide an empirical analysis to the research community and larger online retailers such as Amazon. Which additionally provides insight into the true potential of the future delivery system and a greater understanding on consumer needs and expectations. 
 
 
 ## The Model
@@ -104,19 +77,23 @@ I dont know that we will have any contributions..-marc
 (explicitly list your requirements of what the model will have and simulate for the proposal)
 
 ## Fundamental Questions
-(At the end of the project you want to find the answer to these questions) (Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
+By focusing on these specific variables within the simulation, we aim to answer the following questions below: 
 
-1. Are drones more efficient than standard ground based delivery methods?
+1) Is drone delivery more efficient than standard ground based delivery methods? If so,
++ How long does it take (on average) to deliver a package to a certain location by ground and by air?
++ How will efficiency change with increasing number of orders and diversified locations?
++ At what point will the ground based solution be better than the air based solution and vice versa?
++ How long does it take to deliver 50 packages via ground based system?
++ How long does it take to deliver 50 packages via air based system?
 
-  1.1 How many drones does it take to out perfrom one delivery truck with 50 packages?
+2) How does increased battery, max speed, and carrying capacity effect the number of drones needed?
++ How can "Hubs”-like package pick-up stations with a slightly increased delivery time influence the delivery service industry?
+
+3) Can the drones reduce average delivery time by 30%? If so, 
++ Taking technical development into account, which overall measurable effects will have changes in delivery speed, battery efficiency and increased payload for air based solutions (e.g. increased possible flight time of 10% / 20%, shortened recharging time, etc.)?
   
-  1.2 How long does it take to deliver 50 packages via ground based system?
-  
-  1.3 How long does it take to deliver 50 packages via air based system?
-  
- 2. How does increased battery, max speed, and carrying capacity effect the number of drones needed?
- 3. Can the drones reduce average delivery time by 30%? 
- 4. 
+
+
 
 ## Expected Results
 (What are the answers to the above questions that you expect to find before starting your research?) (This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) (sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
