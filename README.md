@@ -22,8 +22,6 @@ We want to model a part of the city of Orlando and simulate the differences betw
 
 Current consumer behaviors indicates the active buying patterns are becoming more decentralized (ordering online) and we want to see if the concept of delivery is valid and how we can integrate this into the exisiting infracture.
 
-![Drone](images/dronesreport.PNG)
-Source: Menon, Prashob. Ivey Business Review. December 11, 2013.
 
 ## General Introduction
 
@@ -33,15 +31,14 @@ A drone refers to unmanned aerial vehicle (UAV) that is controlled remotely by a
 
 The problem we wish to investigate will no doubt be part of the worlds day-to-day living in the foreseeable future. The ability to keep up with developing technology and the adaption of regulations (airspace, legal, insurance, etc.) are already in the works. Many large online retailers such as Amazon and DHL are currently experimenting with unmanned aerial systems (Drones) in order to provide fast delivery of consumer goods. Based on current technology and consumer needs, we feel this form of delivery will quickly become the next level of packaged delivery.
 
+#### Historical Background:
 
-(Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
-Historical context: 
+Before the digital era (Internet) consumer needs were usually satisfied by local department and specialty stores. Uncommon goods were ordered from catalogues either via phone (landline) and/or via a written order (letter). Once the packaged has been processed by the retailer, a distribution center somewhere in the country would further process the order and a mailman would later deliver the package to its destination. Consumers could expect to receive their order within two weeks which was considered normal at the time.
 
+With the coming of the digital era, consumers no longer have to physically go into stores or use catalogues to purchase goods. Instead, they are capable of ordering most anything via online shopping. With these evolving abilities, consumer behaviors and expectations have also changed. They now demand their orders sooner rather than later. This impatience and expectation has only worsened over time. Larger retailers are now forced to manage this demand by providing quicker and more efficient delivery methods.
 
-  Before the digital age of time (Internet) oders where placed by phnoe (landline) and/or by a written order (letter). The mailman delivered your package. The needs of consumers could usually be satisfied by local and specialty stores. Uncommon goods were ordered out of catalogues, all delivered from some distribution center somewhere in the country. Delivery time was usually high (compared to today) but it was considered normal.
-  
-  
-  With the coming of the digital age of time, consumers dont have to go to stores or use catalogues, they can literally every good in the world at their will. And they want it rather sooner than later. The company Amazon has managed to changed the worlddwide behavior. Everything is connected, every good available. Delivery times were and are still shortened to an extend that certain goods can be delivered "Next Day" or eben within "1 Hour". This is possible by smart distribution of locations of Distribution centers and the implementation of highly intelligent delivery processes. Without a sound and sophisticated delivery infrastructure, this world wide success would not be possible. 
+One of that largest online retailers, Amazon, has managed to change the worldwide behavior and meet consumer expectations by ensuring everything is connected. Therefore, everything is accessible by the click of a button. Amazon, has continued to decrease delivery times from weeks to now days. They have even gone further enough to shorten the delivery time of certain goods to "Next Day" and most recently to "1 Hour" delivery. They have made this possible by building smart distribution centers in various locations and implementing a highly intelligent delivery process. Without a sound and sophisticated delivery infrastructure, this worldwide success would not be possible.
+##############################################################
   
   
   Amazon and others are looking into the next step: overcoming the delivery infrastucture and service (like American Postal Service or UPS/DHL) with their own, efficient and fast system. The logical solution lays within air transport. Its direct, not depending on street infrastructure and unmanned, potentially saving and cutting costs on the number of employees.
