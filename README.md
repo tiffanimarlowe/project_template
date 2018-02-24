@@ -50,15 +50,6 @@ Delivery and logistics companies are currently testing drone capabilities to det
 
 2)	Drone delivery will improve delivery time at a leading rate during the times of the day with increased congestion and traffic compared to ground based delivery systems.
 
-In order to address these problems, we will develop and execute an Agent Based Simulation using Anylogic that represents specific areas of the city of Orlando. Throughout this simulation we hope to evaluate the overall effort needed to partly replace current ground based methods of delivery and meet consumer expectations.
-In addition, by applying Agent Based Simulation techniques to model and simulate a specific portion of the city of Orlando we hope to compare the pros and cons of ground based (trucks) delivery methods against air based (drones) delivery methods. Our main effort is to determine the differences among the two delivery methods in regard to speed of delivery, efficiency, and overall performance of the systems. By doing so, we could further determine the quantity of drones and locations it would take to provide an efficient air based delivery system for the city of Orlando.
-
-For the purpose of this experiment, we will focus our attention on simulating the specific input and output variables listed below: 
-+ ground transportation (truck) 
-+ drone delivery methods 
-+ location of drop off destinations (homes) 
-+ speed of delivery
-+ various number of delivery hubs
 
 #### Contributions 
 •	We have modeled and developed a simulation that further identifies a novel problem.
@@ -101,9 +92,20 @@ By focusing on these specific variables within the simulation, we aim to answer 
 We are expecting to see that air based methods will be more efficient compared to ground based delivery. 
 
 ## Research Methods
-(Cellular Automata, Agent-Based Model, Discrete Event Continuous Modeling...)(Python or Anylogic) (If you are not sure here: 1. Consult your colleagues, 2. ask the teachers, 3. remember that you can change it afterwards) (Steps in the process)
 
-The research methods we plan to use are Agent-Based modeling paired with the simulation software anylogic. We plan to have our air or ground based agents delivery x amount of packages with respect to time to determine which is more efficient. Additionally changing certain parameters on the drone(like battery, max speed, carrying capacity) predict completion estimates with newer technology. 
+In order to address these problems, we will develop and execute an Agent Based Simulation paired with the simulation software Anylogic that represents specific areas of the city of Orlando. Throughout this simulation we hope to evaluate the overall effort needed to partly replace current ground based methods of delivery and meet consumer expectations.
+
+In addition, by applying Agent Based Simulation techniques to model and simulate a specific portion of the city of Orlando we hope to compare the pros and cons of ground based (trucks) delivery methods against air based (drones) delivery methods. Our main effort is to determine the differences among the two delivery methods in regard to speed of delivery, efficiency, and overall performance of the systems. By doing so, we could further determine the quantity of drones and locations it would take to provide an efficient air based delivery system for the city of Orlando.
+
+We plan to have our air or ground based agents delivery x amount of packages with respect to time to determine which is more efficient. Additionally changing certain parameters on the drone(like battery, max speed, carrying capacity) predict completion estimates with newer technology.
+
+For the purpose of this experiment, we will focus our attention on simulating the specific input and output variables listed below: 
++ ground transportation (truck) 
++ drone delivery methods 
++ location of drop off destinations (homes) 
++ speed of delivery
++ various number of delivery hubs
+
 
 ## (Other)
 (change the title and amount of headers as needed) (mention datasets you are going to use) (mention base code or examples you)
