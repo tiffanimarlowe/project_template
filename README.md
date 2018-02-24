@@ -61,11 +61,20 @@ Delivery and logistics companies are currently testing drone capabilities to det
 
 ![Structural Diagram](images/obj_dia.jpg)
 
-(Provide structural and behavior diagrams of the system you wish to study.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?) (Use the model to tell us what is going on.)
+As you can see, for the purpose of this experiment we will focus our attention on simulating various input and output variables. For a greater understanding, they are also listed below:
++ transportation type (truck vs drone)
++ drone delivery methods
++ battery life
++ location of drop off destinations (homes)
++ speed of delivery
++ various number of delivery hubs
+
 
 ![Behavior Diagram](images/beh_dia.jpg)
 
-(explicitly list your requirements of what the model will have and simulate for the proposal)
+(Provide structural and behavior diagrams of the system you wish to study.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?) (Use the model to tell us what is going on.)
+
+
 
 ## Fundamental Questions
 By focusing on these specific variables within the simulation, we aim to answer the following questions below: 
@@ -80,16 +89,14 @@ By focusing on these specific variables within the simulation, we aim to answer 
 2) How does increased battery, max speed, and carrying capacity effect the number of drones needed?
 + How can "Hubs”-like package pick-up stations with a slightly increased delivery time influence the delivery service industry?
 
-3) Can the drones reduce average delivery time by 30%? If so, 
+3) Can the drones reduce average delivery time by 30%? If so,
 + Taking technical development into account, which overall measurable effects will have changes in delivery speed, battery efficiency and increased payload for air based solutions (e.g. increased possible flight time of 10% / 20%, shortened recharging time, etc.)?
-  
-
 
 
 ## Expected Results
 (What are the answers to the above questions that you expect to find before starting your research?) (This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) (sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
 
-We are expecting to see that air based methods will be more efficient compared to ground based delivery. 
+We are expecting to see that air based methods will be more efficient compared to ground based delivery.
 
 ## Research Methods
 
@@ -98,14 +105,6 @@ In order to address these problems, we will develop and execute an Agent Based S
 In addition, by applying Agent Based Simulation techniques to model and simulate a specific portion of the city of Orlando we hope to compare the pros and cons of ground based (trucks) delivery methods against air based (drones) delivery methods. Our main effort is to determine the differences among the two delivery methods in regard to speed of delivery, efficiency, and overall performance of the systems. By doing so, we could further determine the quantity of drones and locations it would take to provide an efficient air based delivery system for the city of Orlando.
 
 We plan to have our air or ground based agents delivery x amount of packages with respect to time to determine which is more efficient. Additionally changing certain parameters on the drone(like battery, max speed, carrying capacity) predict completion estimates with newer technology.
-
-For the purpose of this experiment, we will focus our attention on simulating the specific input and output variables listed below: 
-+ ground transportation (truck) 
-+ drone delivery methods 
-+ location of drop off destinations (homes) 
-+ speed of delivery
-+ various number of delivery hubs
-
 
 ## (Other)
 (change the title and amount of headers as needed) (mention datasets you are going to use) (mention base code or examples you)
