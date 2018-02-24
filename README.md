@@ -72,12 +72,13 @@ As you can see, for the purpose of this experiment we will focus our attention o
 
 ![Behavior Diagram](images/beh_dia.jpg)
 
-(Provide structural and behavior diagrams of the system you wish to study.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?) (Use the model to tell us what is going on.)
+The purpose of Figure 1 (Transportation Simulation Model – Object Diagram) and Figure 2 (Transportation Simulation Method – Behavioral Diagram) is to provide a depiction of the current problem we are trying to address.
 
+As shown above, Figure 1 describes the various objects in the simulation (delivery system, customer, etc.) and their attributes in which we will be focusing our attention (battery life, location, etc.). Within Figure 2, you can clearly understand the interactions between the variables and how the simulation will be executed. Gathered from the models, you can see that the initial state starts with the customer. They first place an order; the order is then sent to a distribution center where the package will be delivered based on two forms of delivery (drone and/or truck).
 
 
 ## Fundamental Questions
-By focusing on these specific variables within the simulation, we aim to answer the following questions below: 
+By focusing on these specific variables within the simulation, we aim to answer the following questions below:
 
 1) Is drone delivery more efficient than standard ground based delivery methods? If so,
 + How long does it take (on average) to deliver a package to a certain location by ground and by air?
@@ -116,5 +117,10 @@ We plan to have our air or ground based agents delivery x amount of packages wit
 (final only - remove whole section for proposal Readme) (if you had 6 more months what would be the next steps in this project.) (What are a few questions you have now)
 
 ## References
-(Add the bibliographic references you intend to use)  (Code / Projects / blogs / websites / papers...)
-=======
+
+Campbell, J. F., Sweeney, D. C., & II, Z. J. (2017). Strategic design for delivery with trucks and drones. In Technical Report.
+
+Gulden, T. R. (2017). The Energy Implications of Drones for Package Delivery: A Geographic Information System Comparison.
+
+Thiels, C. A., Aho, J. M., Zietlow, S. P., & Jenkins, D. H. (2015). Use of unmanned aerial vehicles for medical product transport. Air medical journal, 34(2), 104-108.
+
