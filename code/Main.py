@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 def main():
-
+    #defining distances for 10 packages
     def distance(n):
         x = [1,2,3,4,5,6,7,8,9,10]
         shuf = shuffle(x)
