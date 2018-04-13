@@ -131,9 +131,13 @@ def main():
 
 
 
-        plt.scatter(i, avg)
+        plt.scatter(i, avg, alpha = .8,c = "green")
+        plt.scatter(i, maxim, alpha = .5, c= "blue")
+        plt.scatter(i, minim, alpha=.5, c="red")
 
-        print(t, 'running')
+        #print(t, 'running')
+
+    plt.legend([" Average" ,"Max", "Min"], loc=1, bbox_to_anchor=(1.15, 0.40))
     plt.show()
 
 
