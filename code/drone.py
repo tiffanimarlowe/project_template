@@ -2,6 +2,7 @@ import numpy as np
 from random import shuffle
 import seaborn as sns
 import matplotlib.pyplot as plt
+import math
 
 
 def main():
@@ -51,15 +52,14 @@ def main():
     def flight(amount_of_orders, num_drones):
 
         drones = drone(num_drones)
-
+        #if the first drone is charged go!
         if drones[0] > 7200:
 
 
             velocity = speed(amount_of_orders)
             dist = distance(amount_of_orders)
-            bat_life = drone(num_drones)
 
-            time = dist / velocity
+            time = [int(dist) / int(velocity) for dist, velocity in zip(dist, velocity)]
 
             total_flight_time = sum(time)
 
@@ -67,23 +67,23 @@ def main():
                 drones[0] = drones[0] - total_flight_time
 
                 #adding more time for charging
-                if drone[1] < 7200 or drone[2] < 7200:
-                    drone[1] = drone[1] + 4000
-                    drone[2] = drone[2] +4000
+                if drones[1] < 7200:
+                    drones[1] = drone[1] + 4000
+                    # setting the battery time to 7500 if it is over 7500
+                    if drones[1] > 7500:
+                        drones[1] = 7500
 
-                    #setting the battery time to 7500 if it is over 7500
-                    if drone[1] > 7500:
-                        drone[1] = 7500:
-                    if drone[2] > 7500:
-                        drone[2] = 7500:
+                if drones[2] < 7200:
+                    drones[2] = drones[2] +4000
+                    if drones[2] > 7500:
+                        drones[2] = 7500
 
-        elif drone[1] > 7200:
+        elif drones[1] > 7200:
 
             velocity = speed(amount_of_orders)
             dist = distance(amount_of_orders)
-            bat_life = drone(num_drones)
 
-            time = dist / velocity
+            time = [int(dist) / int(velocity) for dist, velocity in zip(dist, velocity)]
 
             total_flight_time = sum(time)
 
@@ -91,16 +91,16 @@ def main():
                 drones[1] = drones[1] - total_flight_time
                 drones[0] = drones[0] + 4000
 
-                if drone[0] > 7500:
-                    drone[0] = 7500
+                if drones[0] > 7500:
+                    drones[0] = 7500
 
-        elif drone[2] > 7200:
+        elif drones[2] > 7200:
 
             velocity = speed(amount_of_orders)
             dist = distance(amount_of_orders)
-            bat_life = drone(num_drones)
 
-            time = dist / velocity
+
+            time =[int(dist)/ int(velocity) for dist, velocity in zip(dist, velocity)]
 
             total_flight_time = sum(time)
 
@@ -109,27 +109,38 @@ def main():
                 drones[0] = drones[0] + 4000
                 drones[1] = drones[1] + 4000
 
-                if drone[0] > 7500:
-                    drone[0] = 7500
-                if drone[1] > 7500:
-                    drone[1] = 7500
+                if drones[0] > 7500:
+                    drones[0] = 7500
+                if drones[1] > 7500:
+                    drones[1] = 7500
+        # setting time into hours
+        time = [x / 120 for x in time]
+
+        average = sum(time) / len(time)
+        maxtime = max(time)
+        mintime = min(time)
+
+
+        return time , dist, average, maxtime, mintime
+
+
+    #running Simulation
+    for i in range(0,100):
+
+        t, d, avg, maxim, minim  = flight(100,3)
 
 
 
-            if bat_life[0]
-            bat_life[0] = bat_life[0] - 7200
-            if bat_life[0] < 0:
-                bat_life[0] = 0
+        plt.scatter(i, avg)
 
-            #needs to charge after next delivery
+        print(t, 'running')
+    plt.show()
 
 
 
 
 
-    def distance(num_orders):
 
-        return dist
 
 if __name__ == "__main__":
     main()
