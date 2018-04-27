@@ -11,9 +11,13 @@
 
 Technology and online shopping continues to advance at an instantaneous rate. Consumers are now capable of ordering most anything via the web and therefore, have become reliant on quick and dependable home delivery services. With the online shopping market increasing at a steadfast rate, businesses are now investigating and improving new forms of delivery and their overall efficiency. One of the most recent forms of delivery are via aviation, in particular, by the use of drones.
 
-A drone refers to unmanned aerial vehicle (UAV) that is controlled remotely by an operator on the ground. Traditionally, drones have been utilized within the military for dangerous operations. However, they are beginning to apply to civil applications such as firefighting and even now, package delivery.  Through the operation of drone delivery, there could be potential for reduced delivery costs, improved customer service and more importantly, accelerated delivery times. Which leads us to believe drones will be a more efficient form of consumer goods package delivery in the targeted city of Orlando.
+A "drone" refers to unmanned aerial vehicle (UAV) or unmanned arial system (UAS) that is or can be controlled remotely by an operator on the ground. Currently technology is shifting from controlling to giving it an UAS a task and just monitor it, so no positive control is maintained at all times. This greatly reduces workload o the operators and enables them to operate multiple systems at any given time.  
 
-The problem we wish to investigate will no doubt be part of the worlds day-to-day living in the foreseeable future. The ability to keep up with developing technology and the adaption of regulations (airspace, legal, insurance, etc.) are already in the works. Many large online retailers such as Amazon and DHL are currently experimenting with unmanned aerial systems (Drones) in order to provide fast delivery of consumer goods. Based on current technology and consumer needs, we feel this form of delivery will quickly become the next level of packaged delivery.
+Traditionally, drones have been utilized within the military for dangerous operations or missions that can be done by soldiers due constrains like flight-time/endurance. However, they are beginning to apply to civil applications such as firefighting and even now, package delivery.  Through the operation of drone delivery, there could be potential for reduced delivery costs, improved customer service and more importantly, accelerated delivery times. 
+
+Which leads us to believe that drones will be a more efficient and especially speedier form of consumer goods package delivery in a exemplary city like Orlando.
+
+The problem we wish to investigate will no doubt be part of the worlds day-to-day living in the foreseeable future. The ability to keep up with developing technology and the adaption of regulations (airspace, legal, insurance, etc.) are already in the works. Many large online retailers such as Amazon and DHL are currently experimenting with unmanned aerial systems in order to provide faster delivery of consumer goods. Amazon plans to implement "Amazon Prime Air" with a targeted delivery time for certain goods in under 1 hour. Based on current technology and consumer needs, we feel this form of delivery will quickly become the next level of packaged delivery.
 
 #### Historical Background:
 
@@ -25,14 +29,22 @@ One of that largest online retailers, Amazon, has managed to change the worldwid
 
 Amazon and others major retailers are investigating the next step: overcoming the delivery infrastructure and service (like American Postal Service or UPS/DHL) with their own, more efficient and fast system. The newest logical solution lays within air transportation. Its direct and is not dependent upon on street infrastructure or the control of a human. Therefore, the number of employees and the time between package processing and delivery will be decreased. Potentially allowing for greater savings for both the retailer and the consumer.
 
-Drone technology has become more advanced over the past few years from better batteries to more efficient brushless motors. Thus, the capabilities of drones are influencing and expanding the delivery industry. Proving that drone delivery systems are scalable for different scenarios. For example, Amazon has recently launched a service called Amazon Prime Air which allows consumers to order items and have them delivered in under an hour. In addition, Uber is experimenting with drones in terms of a taxi service, which is very similar to a package delivery system. Services similar to these will introduce the market to drone delivery and will likely contribute to the out datedness of standard ground based delivery systems.
+Drone technology on the other hand has also become more advanced over the past few years, especially better batteries with higher density, improved charging times, more efficient brushless motors and a certain degree of independence to perform a variety of tasks. 
+
+Thus, the capabilities of drones are influencing and expanding the delivery industry. Drone delivery systems are already scalable for different scenarios. Uber is experimenting with drones in terms of a taxi service, which is, from a logistical stand point of view, very similar to a on-time package delivery system. 
+
 
 #### Problem Statement
-Delivery and logistics companies are currently testing drone capabilities to determine the efficiency and effectiveness of drone package delivery. Therefore, it is apparent that drone technology is something we can expect to see in the future. We propose that the city of Orlando Florida could benefit from a delivery system such as this and could provide relevant insight into this area of rising research. Between the combination of a large population, congested roadways, and a fast-past style of living, the city of Orlando is a perfect area to simulate the impact of drone delivery. Therefore, we hypothesize:
+Delivery and logistics companies are currently testing drone capabilities to determine the efficiency and effectiveness of drone package delivery. Therefore, it is apparent that delivery (among other areas) via drone technology is something we can expect to see in the future. We propose that a delivery system such as this for at least parts of the city of Orlando Florida could be realistic and the city overall could benefit from this. 
 
-1)	Drone delivery will be more cost efficient in Orlando compared to ground based delivery.
+Our research could provide relevant insight into how such a system would have to be designed and how many drones would be neccessary (scale of effort) to service a given area. Additionally, we want to have a look into the future by predicting lower charging times and higher flight speeds. We will simulate the effects this would have on the number of drones and therefore on costs.  want to 
 
-2)	Drone delivery will improve delivery time at a leading rate during the times of the day with increased congestion and traffic compared to ground based delivery systems.
+
+Therefore, we hypothesize:
+
+1.)	Drone delivery will be able to improve delivery time to under one hour (e.g. Amazon Prime Air), given the customer lives within a certain distance to a "delivery hub" and is able to receive a package from a drone. 
+
+2.) Progress in battery development and design for improved speed will significantly reduce the overall number of drones and therefore the logistical footprint and costs. 
 
 
 #### Contributions 
