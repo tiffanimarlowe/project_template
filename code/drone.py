@@ -118,7 +118,7 @@ def main():
             times = 2 * time[i] #accounting for time to and from
 
             #drone 1 active, checking if its battery capacity is greater than the distance too
-            if drones[1] > (times/1800)*5400:
+            if drones[1] > needtocharge:
                 whichdrone.insert(i, 1)
 
                 #total_flight_time = sum(time)
@@ -149,7 +149,7 @@ def main():
 
 
             #drone two is now flying
-            elif drones[2] > (times/1800)*5400:
+            elif drones[2] > needtocharge:
                 whichdrone.insert(i, 2)
 
                 print(total_flight_time, 'drone 2: flight time')
@@ -176,7 +176,7 @@ def main():
                             drones[3] = 5400
                         print("charging 3")
             #activate drone 3
-            elif drones[3] > (times/1800)*5400:
+            elif drones[3] > needtocharge:
                 whichdrone.insert(i, 3)
 
                 print(total_flight_time, 'drone 2: flight time')
@@ -236,17 +236,13 @@ def main():
         plt.ylabel("Time in hours")
         plt.xlabel("Iterations")
 
-        plt.subplot(3, 1, 2)
-        num_bins = 10
-        n, bins, patches = plt.hist(t, num_bins, normed=1, alpha=0.5)
-        y = mlab.normpdf(bins, avg, STD)
-        plt.plot(bins, y, 'r--')
-        plt.ylabel("Probability")
-        plt.xlabel("Delivery Completion Times")
-
-
-
-
+    plt.subplot(3, 1, 2)
+    num_bins = 10
+    n, bins, patches = plt.hist(t, num_bins, normed=1, alpha=0.5)
+    y = mlab.normpdf(bins, avg, STD)
+    plt.plot(bins, y, 'r--')
+    plt.ylabel("Probability")
+    plt.xlabel("Delivery Completion Times")
 
         #plt.plot(t, norm.pdf(t))
         #print(t, 'running')
