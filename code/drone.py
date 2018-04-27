@@ -35,8 +35,8 @@ def main():
             #dist_distr = np.random.uniform(5280, 10 * 5280)
             #dist.insert(i,dist_distr)
 
-            x = np.random.uniform(0,20*5280)
-            y = np.random.uniform(0,20*5280)
+            x = np.random.uniform(0,8.5*5280)
+            y = np.random.uniform(0,8.5*5280)
             xhomes.insert(i,x)
             yhomes.insert(i,y)
 
@@ -45,8 +45,10 @@ def main():
 
         return pythagorean , xhomes, yhomes
 
+
     def speed(amount_of_orders):
         veloctity = []
+
         for i in range(0, amount_of_orders):
 
             dist , x, y = distance(amount_of_orders)
@@ -64,111 +66,144 @@ def main():
             elif 14*5280 > dist[i]:
                 speeed = 50 #ft/s
                 veloctity.insert(i, speeed)
+            else:
+                speeed = 50
+                veloctity.insert(i,speeed)
         return veloctity
 
     def drone(num_drones):
+        quad = {}
+        for i in range(0, num_drones):
+
+            quad[i+1] = 5400
+
+
+        '''   
         quad = []
         for i in range(0,num_drones):
             battery_life = 3600
             quad.insert(i,battery_life)
+        '''
 
         return quad
+    d = drone(3)
+    print(d[3])
 
     def flight(amount_of_orders, num_drones):
 
         drones = drone(num_drones)
         #if the first drone is charged go!
-        avgflighttime = 3200 #little less than 1 hour
-        maxcapacity = 3600 #maxhour
-        charging = .2 * 3600 #20 percent charge in 1 hour
+        needtocharge = 5400 / 2 #half how
+        bat_capacity = 5400 #hour 50mins to charge fully
+        charging = .5 * 5400 #20 percent charge in 1 hour
         time = []
         total_flight_time = 0
         whichdrone = []
+        current_step = 0
 
         #####START HERE NEXT TIME need to figure out switching drones
-        if drones[0] > avgflighttime:
 
-            velocity = speed(amount_of_orders)
-            dist , xhomes, yhomes = distance(amount_of_orders)
 
-            time = [int(dist) / int(velocity) for dist, velocity in zip(dist, velocity)]
-            for i in range(0, len(time)):
+        velocity = speed(amount_of_orders)
+        print(len(velocity), "VELCOCITY")
+        dist , xhomes, yhomes = distance(amount_of_orders)
 
-                total_flight_time = time[i] + total_flight_time
+        time = [int(dist) / int(velocity) for dist, velocity in zip(dist, velocity)]
+
+        for i in range(0, len(time)):
+            total_flight_time = time[i] + total_flight_time
+            #drone 1 is flying
+            print("running 123.....", i)
+            print("time", time[i])
+            times = 2 * time[i] #accounting for time to and from
+
+            #drone 1 active, checking if its battery capacity is greater than the distance too
+            if drones[1] > (times/1800)*5400:
+                whichdrone.insert(i, 1)
 
                 #total_flight_time = sum(time)
-                print(total_flight_time, ' flight time')
+                #print(total_flight_time, 'drone 1: flight time')
 
-                drones[0] = drones[0] - total_flight_time
-                print("drone 0", drones[0])
+                drones[1] = drones[1] - (times/1800)*5400
+                print("drone 1", drones[1])
 
 
-                if drones[0] < avgflighttime:
+                #if the first drone needs to charge
+                if drones[1] < needtocharge:
                     #using first drone
-                    whichdrone.append(1)
-
-                elif drones[0] > avgflighttime:
-                    #switching drone
-                    whichdrone.append(2)
+                    current_step= total_flight_time
 
 
+                #Charging
+                if drones[2] < 5400:
+                    drones[2] =  (times/1800*5400) + drones[2]
+                    if drones[2] > 5400:
+                        drones[2] = 5400
+                    print("charging 2 ")
+
+                if drones[3] < 5400:
+                    drones[3] = (times/1800*5400)  + drones[3]
+                    if drones[3]  > 5400:
+                        drones[2] = 5400
+                    print("charging 3")
 
 
-                if total_flight_time < avgflighttime:
-                    drones[0] = drones[0] - total_flight_time
-                    print("drone 0", drones[0])
+            #drone two is now flying
+            elif drones[2] > (times/1800)*5400:
+                whichdrone.insert(i, 2)
 
-                    #adding more time for charging
-                    if drones[1] < avgflighttime:
-                        drones[1] = drone[1] + charging
-                        # setting the battery time to 7500 if it is over 7500
-                        if drones[1] > maxcapacity:
-                            drones[1] = maxcapacity
+                print(total_flight_time, 'drone 2: flight time')
 
-                    if drones[2] < avgflighttime:
-                        drones[2] = drones[2] +charging
-                        if drones[2] > maxcapacity:
-                            drones[2] = maxcapacity
+                drones[2] = drones[2] - (times/1800)*5400
+                print("drone 2", drones[2])
+                print("current step", current_step)
+
+                #if drone 2 needs to charge
+                if drones[2] < needtocharge:
+                    # using first drone
+                    current_step = total_flight_time
+
+                    # Charging everyone else
+                if drones[1] < 5400:
+                    drones[1] = (times/1800*5400)  + drones[1]
+                    if drones[1] > 5400:
+                        drones[1] = 5400
+                        print("charging 2 ")
+
+                    if drones[3] < 5400:
+                        drones[3] = (times/1800*5400)  + drones[3]
+                        if drones[3] > 5400:
+                            drones[3] = 5400
+                        print("charging 3")
+            #activate drone 3
+            elif drones[3] > (times/1800)*5400:
+                whichdrone.insert(i, 3)
+
+                print(total_flight_time, 'drone 2: flight time')
+
+                drones[3] = drones[3] - (times/1800)*5400
+                print("drone 3", drones[3])
+                print("current step", current_step)
+
+                # if drone 3 needs to charge
+                if drones[3] < needtocharge:
+                    # using first drone
+                    current_step = total_flight_time
+
+                    # Charging everyone else
+                if drones[1] < 5400:
+                    drones[1] = (times/1800*5400)+ drones[1]
+                    if drones[1] > 5400:
+                        drones[1] = 5400
+                        print("charging 2 ")
+
+                    if drones[2] < 5400:
+                        drones[2] = (times/1800*5400) + drones[3]
+                        if drones[2] > 5400:
+                            drones[2] = 5400
+                        print("charging 3")
 
 
-
-
-
-        elif drones[1] > avgflighttime:
-            whichdrone.append( 2)
-            velocity = speed(amount_of_orders)
-            dist, xhomes, yhomes = distance(amount_of_orders)
-
-            time = [int(dist) / int(velocity) for dist, velocity in zip(dist, velocity)]
-
-            total_flight_time = sum(time)
-
-            if total_flight_time > avgflighttime: #2hrs
-                drones[1] = drones[1] - total_flight_time
-                drones[0] = drones[0] + charging
-
-                if drones[0] > maxcapacity:
-                    drones[0] = maxcapacity
-
-        elif drones[2] > avgflighttime:
-            whichdrone.append(2)
-            velocity = speed(amount_of_orders)
-            dist, xhomes, yhomes = distance(amount_of_orders)
-
-
-            time =[int(dist) / int(velocity) for dist, velocity in zip(dist, velocity)]
-
-            total_flight_time = sum(time)
-
-            if total_flight_time > avgflighttime:  # 2hrs
-                drones[2] = drones[2] - total_flight_time
-                drones[0] = drones[0] + charging
-                drones[1] = drones[1] + charging
-
-                if drones[0] > maxcapacity:
-                    drones[0] = maxcapacity
-                if drones[1] > maxcapacity:
-                    drones[1] = maxcapacity
 
         # setting time into hours
 
@@ -180,8 +215,9 @@ def main():
         maxtime = max(time)
         mintime = min(time)
         STD = np.std(time)
-        beta = whichdrone[0]
-        print(beta)
+        beta = whichdrone
+        print(beta, 'beta')
+        print(len(beta), 'length of beta')
 
         return time , dist, average, maxtime, mintime, STD, xhomes, yhomes, beta
 
@@ -209,13 +245,13 @@ def main():
         plt.xlabel("Delivery Completion Times")
 
 
-        plt.subplot(3, 1, 3)
-        plt.plot(i, beta)
+
 
 
         #plt.plot(t, norm.pdf(t))
         #print(t, 'running')
-
+    plt.subplot(3, 1, 3)
+    plt.plot(beta)
     plt.show()
 
     xLocation = [a / 5280 for a in xhomes]
