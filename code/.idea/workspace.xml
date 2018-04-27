@@ -11,18 +11,27 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/code$Main.coverage" NAME="Main Coverage Results" MODIFIED="1522957115521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/code$drone.coverage" NAME="drone Coverage Results" MODIFIED="1524774071117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$drone.coverage" NAME="drone Coverage Results" MODIFIED="1524862431552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="drone.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/drone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="192" column="44" lean-forward="true" selection-start-line="192" selection-start-column="44" selection-end-line="192" selection-end-column="44" />
+            <state relative-caret-position="2257">
+              <caret line="274" column="19" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="frame.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/pandas/core/frame.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11940">
+              <caret line="890" selection-start-line="890" selection-end-line="890" />
             </state>
           </provider>
         </entry>
@@ -102,6 +111,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,7 +123,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,7 +208,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -208,10 +216,10 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28183118" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.35479257" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.43919885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3987879" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -231,6 +239,47 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/drone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4110">
+          <caret line="274" column="19" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13350">
+          <caret line="890" selection-start-line="890" selection-end-line="890" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../assignment-5-discreteevent-simulation-marctheshark3/partB/monte-carlo-simulation(approximate).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2880">
+          <caret line="192" column="44" lean-forward="true" selection-start-line="192" selection-start-column="44" selection-end-line="192" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../assignment-5-discreteevent-simulation-marctheshark3/partB/monte-carlo-simulation(approximate).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/drone.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1305">
@@ -303,10 +352,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11940">
+          <caret line="890" selection-start-line="890" selection-end-line="890" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/IPython/lib/clipboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/drone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="192" column="44" lean-forward="true" selection-start-line="192" selection-start-column="44" selection-end-line="192" selection-end-column="44" />
+        <state relative-caret-position="2257">
+          <caret line="274" column="19" selection-start-line="274" selection-start-column="19" selection-end-line="274" selection-end-column="19" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
