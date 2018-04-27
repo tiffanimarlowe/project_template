@@ -44,17 +44,20 @@ Therefore, we hypothesize:
 
 1.)	Drone delivery will be able to improve delivery time to under one hour (e.g. Amazon Prime Air), given the customer lives within a certain distance to a "delivery hub" and is able to receive a package from a drone. 
 
-2.) Progress in battery development and design for improved speed will significantly reduce the overall number of drones and therefore the logistical footprint and costs. 
+2.) Progress in battery development and design for improved speed will significantly reduce the overall number of drones and therefore reduce the logistical footprint and costs for the respective logistical company, making it easier, cheaper and more probable to implement. 
 
 
 #### Contributions 
-•	We have modeled and developed a simulation that further identifies a novel problem.
-•	We have provided a comparison of both air based delivery systems and ground based delivery systems to advance current understanding of more efficient delivery systems.  
-•	We have drawn on previous research to provide an empirical analysis to the research community and larger online retailers such as Amazon. Which additionally provides insight into the true potential of the future delivery system and a greater understanding on consumer needs and expectations. 
+•	We have modeled and developed 2 simulations. We use Python and AnyLogic to adress the abovementioned hypothesis.
+•	We will provide a comparison of statistics with deliveries with current technologies to those with improved (future) capabilities and their efects on delivery and scale of effort.  
+•	We will provide an empirical analysis to further highlight the potential of a future drone based delivery system.
+•	We will provide answers to the urgent questions and consumer expectationson on delivery time.
 
 
 ## The Model
 
+After working on both Python and AnyLogic and feedback given by Dr. Kider and the Teaching Assistant (TA), the intended model as depicted below will no longer be used. It seemed like a natural evolution, while working on the actual respective models that easier and better to implement solutions were found. So what is shown here was the intention, which has developed into the adapted models shown below. 
+ 
 ![Structural Diagram](images/obj_dia.jpg)
 
 As you can see, for the purpose of this experiment we will focus our attention on simulating various input and output variables. For a greater understanding, they are also listed below:
