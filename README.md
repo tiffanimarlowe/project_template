@@ -154,7 +154,7 @@ For the simulation, we have used only a quarter of the depicted area above as it
 
 Simulation:
 
-We started with 5 / 8 / 11 drones and 1 order per household per hour (13 orders/hour). Runtime is 600 minutes (10 hours). 
+We started with 5 / 8 / 11 drones and 1 order per household (HH) per hour (13 orders/hour). Runtime is 600 minutes (10 hours). 
 
 Results:
 
@@ -175,6 +175,30 @@ We have realized that the manual search for the optimal number of drones is time
 
 ![Optimization process for 85% threshold ](images/optimization.png)
 
+The process for 1 order/HH/hour with can be seen here: https://youtu.be/fzb6oUqDDWY
+
+
+The next simulation doubles the number of orders to 2/HH/hour. The optimization process calculates 18 drones as optimum, with a threshold of 85% utilization.
+
+As the video with 16 (not 18) shows (https://youtu.be/uKgUKagtmTc), the actual simulation reaches an utilization of 92%, which is above the given threshold for the optimization process. The optimization process showed an optimum number of 18 drones and a simulation runs has confirmed the data (https://youtu.be/in5Zay7Dtjw). All deliveries were completed within 30 minutes of the order, which shows the potential of drone based delivery systems. 
+
+
+The next simulation brings the number of orders to 3/HH/hour. The respective optimization process calculates 25 drones as optimum, again with a threshold of 85% utilization. Interestingly, the number of drones doesn't just equally to the magnitude of orders. 
+
+The result shows that the optimization is correct. Even simulations with significantly more drones (up to 45) dont show any significant differences between number of orders served or service time until delivery. The only difference is the utilization time, which drops significantly and is therefore counterproductive (as it is a cost-driver).
+
+Questions answered so far:
+
+1) Is drone delivery efficient as a air based delivery methods? If so,
++ How long does it take (on average) to deliver a package to a certain location by air?
+  - depending on the number of drones and the distance to be travelled usually about 30 minutes (with the prerequisites and assumptions formulated above). That is when the optimal number of drones is found for the actual demand with a utilization rate not higher 85%.
++ How will efficiency change with increasing number of orders and diversified locations?
+  - the number of orders have an immediate effect on the number of drones needed to keep the timelines under 1 hour. At a certain point, the orders can not be fulfilled in time and will lead to a cascade of unfulfilled orders (see example above with 1 order/HH/hour and 5 drones).
++ How long does it take to deliver 50 packages via air based system?
+  - that depends on the rate of incoming orders and on the available drones in the distribution center. With a rate of 3 orders/HH/hour, it takes about 140 minutes, given the number of drones is about 25.
+  
+3) Can drones reduce average delivery time to 1 hour (as intended by Amazon Prime Air), how much drones are neccessary? 
+  - Yes, they can and it is dependant on the number of orders the systems is prepared for. 
 
 
 
