@@ -109,6 +109,11 @@ We want to demonstrate how and which scale of effort is needed, the quality and 
 
 Changing certain parameters on the drone (like battery density/endurance, max speed, charging time) predict completion estimates with newer technology.
 
+Python:
+
+- 
+
+
 ## (Other)
 (change the title and amount of headers as needed) (mention datasets you are going to use) (mention base code or examples you)
 
@@ -126,6 +131,8 @@ For drone technical specs: https://www.dji.com/matrice600
 ![Matrice 600](images/drone.png)
 
 Here are our our prerequsites and assumptions for the AnyLogic simulation:
+
+We did a survey on the last 10 Amazon orders for 4 persons and came to the conclussion that the average package is about 10x5x8 inches in size (low was 5x5x5 and high was 17x10x11) on the orders with 4lbs or below. As our drone is set to a max of 4 lbs (see below), everything above will not be offered for "Air delivery". Average time was 2.0 days. 
 
 Prerequisites taken from the documentation and flight experience 
 
