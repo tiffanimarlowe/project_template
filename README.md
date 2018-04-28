@@ -86,14 +86,14 @@ The new diagrams focus solely on the drone aspect of the simulation. We have cre
 ## Fundamental Questions
 By focusing on these specific variables and prerequisites (see also below) within the simulation, we aim to answer the following questions below:
 
-1) Is drone delivery efficient as a air based delivery methods? If so,
+#### 1) Is drone delivery efficient as a air based delivery methods? If so,
 + How long does it take (on average) to deliver a package to a certain location by air?
 + How will efficiency change with increasing number of orders and diversified locations?
 + How long does it take to deliver 50 packages via air based system?
 
-2) How does increased battery and max speed effect utilization, arrival time and the number of drones needed?
+#### 2) How does increased battery and max speed effect utilization, arrival time and the number of drones needed?
 
-3) Can drones reduce average delivery time to 1 hour (as intended by Amazon Prime Air), how much drones are neccessary? 
+#### 3) Can drones reduce average delivery time to 1 hour (as intended by Amazon Prime Air), how much drones are neccessary? 
 
 
 ## Expected Results
@@ -101,7 +101,7 @@ After creating and analyzing the delivery system simulation, we expect to find a
 
 ## Research Methods
 
-AnyLogic:
+#### AnyLogic:
 
 - In order to address these problems, we developed and executed an Agent Based Simulation with the simulation software Anylogic, based on GIS data of a specific areas of the city of Orlando. Throughout this simulation we hope to evaluate the overall effort needed to partly replace or at least improve current ground based methods of delivery and meet future consumer expectations.
 
@@ -109,7 +109,7 @@ We want to demonstrate how and which scale of effort is needed, the quality and 
 
 Changing certain parameters on the drone (like battery density/endurance, max speed, charging time) predict completion estimates with newer technology.
 
-Python:
+#### Python:
 
 - 
 
@@ -134,7 +134,7 @@ Here are our our prerequsites and assumptions for the AnyLogic simulation:
 
 We did a survey on the last 10 Amazon orders for 4 persons and came to the conclussion that the average package is about 10x5x8 inches in size (low was 5x5x5 and high was 17x10x11) on the orders with 4lbs or below. As our drone is set to a max of 4 lbs (see below), everything above will not be offered for "Air delivery". Average time was 2.0 days. 
 
-Prerequisites taken from the documentation and flight experience 
+#### Prerequisites taken from the documentation and flight experience 
 
 - our drone flies with an average of 50 ft/second (15m/sec), which includes acceleration and decelleration.
 - we chose the TB48S battery configuration with a higher endurance of of 30 minutes with a 4.4 lbs payload/package.  
@@ -146,7 +146,7 @@ Prerequisites taken from the documentation and flight experience
 
 ![Matrice 600 specs ](images/drone_endurance.png)
 
-Assumptions:
+#### Assumptions:
 
 - the effective time from order to loading the drone is a triangular distribution with a minimum 3 minutes, an average 7 minutes and a maximum of 12 minutes. 
 - unloading the package at the destination is a uniform distribution between 20 and 45 seconds. 
@@ -159,13 +159,13 @@ Assumptions:
 
 For the simulation, we have used only a quarter of the depicted area above as it is of no difference for the drone in which direction it has to fly. An adrees has only one important parameter, which is the distance. This will translate into flight time, which is the limiting factor for the drone and results in the respective recharging time.  
 
-Simulation:
+#### Simulation:
 
 ![Model AnyLogic Sim ](images/Model_AnyLogic.png)
 
 Based on the depicted AnyLogic Model (aboce) as the core process, we started with 5 / 8 / 11 drones and 1 order per household (HH) per hour (13 orders/hour). Runtime is 600 minutes (10 hours). 
 
-Results:
+#### Results:
 
 Are as expected, as it even though there are only a few orders per hour, there are only a few drones. In aviation, a rule of thumb is if you need to employ one aircraft all the time, you need at least three. This is similar to our situation as the charging time is triple the flight time. 
 
@@ -196,7 +196,7 @@ The next simulation brings the number of orders to 3/HH/hour. The respective opt
 
 The result shows that the optimization is correct. Even simulations with significantly more drones (up to 45) dont show any significant differences between number of orders served or service time until delivery. The only difference is the utilization time, which drops significantly and is therefore counterproductive (as it is a cost-driver).
 
-Questions answered so far:
+#### Questions answered so far:
 
 1) Is drone delivery efficient as a air based delivery methods? If so,
 + How long does it take (on average) to deliver a package to a certain location by air?
@@ -215,6 +215,9 @@ In the next simulation runs, we will change the speed and shorten the charging t
 First, the speed will be adapted to 60 mph (88ft/sec, 29m/sec). Modern drones can achive that speed and are foreseen to be faster, depending on the type of drones. 
 
 Otherwise, all other values will remain as above to be able to compare the impact of the changes.
+
+
+
 
 Tiffani:
 
