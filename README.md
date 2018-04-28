@@ -137,7 +137,7 @@ Prerequisites taken from the documentation and flight experience
 - recharge time is roughly the flight time by a factor of 3, so for a flight time between 3-6 minutes, there is a recharging time of 9-18 minutes. 
 - no transmission range implemented as the drone will be programmed at the start with the adress coordinates and the flight profile (e.g. obstacles). In other words, it will fly "uncontrolled".
 
-
+![Matrice 600 specs ](images/drone_endurance.png)
 
 Assumptions:
 
@@ -154,7 +154,9 @@ For the simulation, we have used only a quarter of the depicted area above as it
 
 Simulation:
 
-We have started with 5 drones
+We started with 5 drones and 1 order per household per hour (13 orders/hour). Runtime is 600 minutes (10 hours). 
+
+
 
 
 
