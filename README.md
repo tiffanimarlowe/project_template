@@ -91,9 +91,9 @@ By focusing on these specific variables and prerequisites (see also below) withi
 + How will efficiency change with increasing number of orders and diversified locations?
 + How long does it take to deliver 50 packages via air based system?
 
-2) How does increased battery, max speed, and carrying capacity effect the number of drones needed?
+2) How does increased battery, max speed, and carrying capacity effect utilization, arrival time and the number of drones needed?
 
-3) Can drones reduce average delivery time 1 hour (as intended by Amazon Prime Air)? 
+3) Can drones reduce average delivery time to 1 hour (as intended by Amazon Prime Air), how much drones are neccessary? 
 
 
 ## Expected Results
@@ -112,12 +112,33 @@ Changing certain parameters on the drone (like battery density/endurance, max sp
 ## (Other)
 (change the title and amount of headers as needed) (mention datasets you are going to use) (mention base code or examples you)
 
-Tiffani: I put everything, (and as much of I write up I can give you) here: I dont really know where iit would fit best, so feel free to improve my writing and put it where it belongs. Images, links for movies and text....
+Tiffani: 
+
+I put everything, (and as much of I write up I can give you) here: I dont really know where iit would fit best, so feel free to improve my writing and put it where it belongs. Images, links for movies and text....
 
 
+On order to model a simulation, and therefore to answer the questions that we have formulated, we had to define certain prerequisites and assumptions to calculate from a valid and repeatable standpoint. Since this is a drone based simulation, we have done a market screening and decided for a product of the DJI company which offers the best compromise between (carrying) power, in other words how much weight it can transport and lift, and endurance. Endurance is important as it ensures the neccessary reach of the drone and therefore a higher radius. 
 
+The drone is the DJI Matrice 600 (matrice multiplication which is by pure coincidence the mathematics behind our Python simulation). It is build and used for professional users, offers a high amount of documentation, is highly exact in flying to coordinates (a prerequiste in unmanned/unmonitored flying) due to its sensor layout, could carry up to 5.5kg (12.1 lbs) and has a speed of up to 40 knots (which translates to 40 mph when there is no wind). Due to its retractable landing gear, it could also carry light, oversized packages. 
 
+For drone technical stats: https://www.dji.com/matrice600 from April 27, 2018
 
+![Matrice 600](images/drone.png)
+
+Here are our our prerequsites and assumptions for the AnyLogic simulation:
+
+Prerequisites taken from the documentation and flight experience 
+
+- our drone flies with an average of 50 ft/second (15m/sec), which includes acceleration and decelleration 
+- we chose the TB48S battery configuration with a higher endurance of of 30 minutes with a 4.4 lbs payload/package.  
+- this translates to a maximum range of 17 miles, with an efective radius of 8.5 miles (for a forth and back trip) 
+- the batteries have a recharging time for a complete charge (from 0% to 100%) of 90 minutes. 
+- no transmission range implemented as it will be programmed at the start with the adress coordinates and the flight profile (e.g. obstacles). In other words, it will fly "uncontrolled".
+
+Assumptions:
+
+- the effective time from order to loading the drone is a triangular distribution with a minimum 3 minutes, an average 7 minutes and a maximum of 12 minutes. 
+- unloading the package at the destination is a uniform distribution between 20 and 45 seconds. 
 
 
 
@@ -137,4 +158,5 @@ Campbell, J. F., Sweeney, D. C., & II, Z. J. (2017). Strategic design for delive
 Gulden, T. R. (2017). The Energy Implications of Drones for Package Delivery: A Geographic Information System Comparison.
 
 Thiels, C. A., Aho, J. M., Zietlow, S. P., & Jenkins, D. H. (2015). Use of unmanned aerial vehicles for medical product transport. Air medical journal, 34(2), 104-108.
+
 
