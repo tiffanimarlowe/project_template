@@ -242,6 +242,7 @@ def main():
 
         #running Monte-Carlo Simulation
         for i in range(0,num_runs):
+            print(i, "running")
 
             t, d, avg, maxim, minim, STD, xhomes, yhomes, beta,uno, dos, tres, all = flight(100,3)
             uno_list.insert(i,uno)
@@ -272,7 +273,7 @@ def main():
             std_3 = np.std(tres_list)
         return avg_1,avg_2,avg_3,std_1,std_2,std_3,t, d, avg, maxim, minim, STD, xhomes, yhomes, beta,uno, dos, tres, all, dist_avg,dist_std
 
-    num_runs = 1000
+    num_runs = 10000
     avg_1, avg_2, avg_3, std_1, std_2, std_3, t, d, avg, maxim, minim, STD, xhomes, yhomes, beta, uno, dos, tres, all,dist_avg,dist_std = monte(num_runs)
     #Monte-carlo plots AVG,MIN,MAX and PDF of Completetion times
     plt.subplot(3, 1, 2)
@@ -363,9 +364,9 @@ def main():
     plt.ylabel("Drones")
 
     plt.subplot(2,1,2)
-    plt.bar(1,uno)
-    plt.bar(2,dos)
-    plt.bar(3,tres)
+    plt.bar(1,avg_1)
+    plt.bar(2,avg_2)
+    plt.bar(3,avg_3)
     plt.legend([(' Drone 1 ', uno), (' Drone 2 ', dos), (' Drone 3 ',tres)])
     plt.title('Drone Delivery Utilization')
     plt.xlabel('DRONES')
