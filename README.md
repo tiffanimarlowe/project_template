@@ -78,9 +78,9 @@ As shown above, Figure 1 describes the various objects in the simulation (delive
 
 The new diagrams focus solely on the drone aspect of the simulation. We have created each a Python and an AnyLogic simulation, each with a different approach to the below stated fundamental questions. Here is the AnyLogic part:
 
-![NEW Object Diagram - AnyLogic](images/Diagrams2.png)
+![NEW Object Diagram - AnyLogic](images/Diagrams2.jpg)
 
-![NEW Behavior Diagram - AnyLogic](images/Diagrams.png)
+![NEW Behavior Diagram - AnyLogic](images/Diagrams.jpg)
 
 
 ## Fundamental Questions
