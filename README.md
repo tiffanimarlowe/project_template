@@ -154,11 +154,25 @@ For the simulation, we have used only a quarter of the depicted area above as it
 
 Simulation:
 
-We started with 5 drones and 1 order per household per hour (13 orders/hour). Runtime is 600 minutes (10 hours). 
+We started with 5 / 8 / 11 drones and 1 order per household per hour (13 orders/hour). Runtime is 600 minutes (10 hours). 
+
+Results:
+
+Are as expected, as it even though there are only a few orders per hour, there are only a few drones. In aviation, a rule of thumb is if you need to employ one aircraft all the time, you need at least three. This is similar to our situation as the charging time is triple the flight time. 
+
+- 1 order/household/hour  with  5 drones:  utilization 96%,  53 deliveries, of which 21 take longer than 1 hour, 6 even longer than 90 minutes
+  + https://youtu.be/HbHV2XxcoAI
+- 1 order/household/hour  with  8 drones:  utilization 95%,  81 deliveries, none took longer than 1 hour
+  + https://youtu.be/rOAO5Jfjz04
+- 1 order/household/hour  with 11 drones:  utilization 81%,  94 deliveries, none took longer than 40 minutes
+  + https://youtu.be/vtBSfUZnuog
+
+We have realized that the manual search for the optimal number of drones is time consuming and were able to implement an optimization simulation. We chose a threshold of an utilization of 85% (see above) and can now let AnyLogic do the optimization process.
 
 
 
 
+A utilization of over 85% is unrealistic, as there will always be neccessary planned and unplanned maintainace. It also leaves no reserves for a higher order on peak times. 
 
 ## Discussion
 (final only - remove whole section for proposal Readme) (What would you have done differently) (What are the contributions summerize)(what is the big take away)(what did you learn)
