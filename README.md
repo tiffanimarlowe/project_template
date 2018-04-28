@@ -167,12 +167,16 @@ Are as expected, as it even though there are only a few orders per hour, there a
 - 1 order/household/hour  with 11 drones:  utilization 81%,  94 deliveries, none took longer than 40 minutes
   + https://youtu.be/vtBSfUZnuog
 
-We have realized that the manual search for the optimal number of drones is time consuming and were able to implement an optimization simulation. We chose a threshold of an utilization of 85% (see above) and can now let AnyLogic do the optimization process.
+A utilization of over 85% is unrealistic, as there will always be neccessary planned and unplanned maintainace. It also leaves no reserves for a higher order on peak times. The formulated goal could not be met with 5 and 8 drones. 
+
+Clearly the results show that due to the high utilization rate there was no time to accept sufficient orders. Only 53 deliveries (with 5 drones) compared to 94 deliveries (with 11 drones) were completed. 
+
+We have realized that the manual search for the optimal number of drones is time consuming and were able to implement an optimization simulation. We chose a threshold of an utilization of 85% (see above) and can now let AnyLogic do the optimization process in regards to the optimal number of drones for a utilization of 85%. 
+
+![Optimization process for 85% threshold ](images/optimization.png)
 
 
 
-
-A utilization of over 85% is unrealistic, as there will always be neccessary planned and unplanned maintainace. It also leaves no reserves for a higher order on peak times. 
 
 ## Discussion
 (final only - remove whole section for proposal Readme) (What would you have done differently) (What are the contributions summerize)(what is the big take away)(what did you learn)
