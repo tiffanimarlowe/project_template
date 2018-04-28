@@ -198,7 +198,15 @@ Questions answered so far:
   - that depends on the rate of incoming orders and on the available drones in the distribution center. With a rate of 3 orders/HH/hour, it takes about 140 minutes, given the number of drones is about 25.
   
 3) Can drones reduce average delivery time to 1 hour (as intended by Amazon Prime Air), how much drones are neccessary? 
-  - Yes, they can and it is dependant on the number of orders the systems is prepared for. 
+   - Yes, they can and it is dependant on the number of orders the systems is prepared for. 
+
+
+In the next simulation runs, we will change the speed and shorten the charging times of the batteries, as this is currently the limiting factor on usage. 
+
+First, the speed will be adapted to 60 mph (88ft/sec, 29m/sec). Modern drones can achive that speed and are foreseen to be faster, depending on the type of drones. 
+
+Otherwise, all other values will remain as above to be able to compare the impact of the changes.
+
 
 
 
