@@ -76,21 +76,24 @@ The purpose of Figure 1 (Transportation Simulation Model – Object Diagram) and
 As shown above, Figure 1 describes the various objects in the simulation (delivery system, customer, etc.) and their attributes in which we will be focusing our attention (battery life, location, etc.). Within Figure 2, you can clearly understand the interactions between the variables and how the simulation will be executed. Gathered from the models, you can see that the initial state starts with the customer. They first place an order; the order is then sent to a distribution center where the package will be delivered based on two forms of delivery (drone and/or truck).
 
 
-## Fundamental Questions
-By focusing on these specific variables within the simulation, we aim to answer the following questions below:
+The new diagrams focus solely on the drone aspect of the simulation. We have created each a Python and an AnyLogic simulation, each with a different approach to the below stated fundamental questions. Here is the AnyLogic part:
 
-1) Is drone delivery more efficient than standard ground based delivery methods? If so,
-+ How long does it take (on average) to deliver a package to a certain location by ground and by air?
+![NEW Object Diagram - AnyLogic](images/Diagrams2.png)
+
+![NEW Behavior Diagram - AnyLogic](images/Diagrams.png)
+
+
+## Fundamental Questions
+By focusing on these specific variables and prerequisites (see also below) within the simulation, we aim to answer the following questions below:
+
+1) Is drone delivery efficient as a air based delivery methods? If so,
++ How long does it take (on average) to deliver a package to a certain location by air?
 + How will efficiency change with increasing number of orders and diversified locations?
-+ At what point will the ground based solution be better than the air based solution and vice versa?
-+ How long does it take to deliver 50 packages via ground based system?
 + How long does it take to deliver 50 packages via air based system?
 
 2) How does increased battery, max speed, and carrying capacity effect the number of drones needed?
-+ How can "Hubs”-like package pick-up stations with a slightly increased delivery time influence the delivery service industry?
 
-3) Can the drones reduce average delivery time by 30%? If so,
-+ Taking technical development into account, which overall measurable effects will have changes in delivery speed, battery efficiency and increased payload for air based solutions (e.g. increased possible flight time of 10% / 20%, shortened recharging time, etc.)?
+3) Can drones reduce average delivery time 1 hour (as intended by Amazon Prime Air)? 
 
 
 ## Expected Results
@@ -98,14 +101,28 @@ After creating and analyzing the delivery system simulation, we expect to find a
 
 ## Research Methods
 
-In order to address these problems, we will develop and execute an Agent Based Simulation paired with the simulation software Anylogic that represents specific areas of the city of Orlando. Throughout this simulation we hope to evaluate the overall effort needed to partly replace current ground based methods of delivery and meet consumer expectations.
+AnyLogic:
 
-In addition, by applying Agent Based Simulation techniques to model and simulate a specific portion of the city of Orlando we hope to compare the pros and cons of ground based (trucks) delivery methods against air based (drones) delivery methods. Our main effort is to determine the differences among the two delivery methods in regard to speed of delivery, efficiency, and overall performance of the systems. By doing so, we could further determine the quantity of drones and locations it would take to provide an efficient air based delivery system for the city of Orlando.
+- In order to address these problems, we developed and executed an Agent Based Simulation with the simulation software Anylogic, based on GIS data of a specific areas of the city of Orlando. Throughout this simulation we hope to evaluate the overall effort needed to partly replace or at least improve current ground based methods of delivery and meet future consumer expectations.
 
-We plan to have our air or ground based agents delivery x amount of packages with respect to time to determine which is more efficient. Additionally changing certain parameters on the drone(like battery, max speed, carrying capacity) predict completion estimates with newer technology.
+We want to demonstrate how and which scale of effort is needed, the quality and quantity of drones and to a certain degree the intended area it would take to provide an efficient air based delivery system.
+
+Changing certain parameters on the drone (like battery density/endurance, max speed, charging time) predict completion estimates with newer technology.
 
 ## (Other)
 (change the title and amount of headers as needed) (mention datasets you are going to use) (mention base code or examples you)
+
+Tiffani: I put everything, (and as much of I write up I can give you) here: I dont really know where iit would fit best, so feel free to improve my writing and put it where it belongs. Images, links for movies and text....
+
+
+
+
+
+
+
+
+
+
 
 ## Discussion
 (final only - remove whole section for proposal Readme) (What would you have done differently) (What are the contributions summerize)(what is the big take away)(what did you learn)
