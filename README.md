@@ -121,7 +121,7 @@ On order to model a simulation, and therefore to answer the questions that we ha
 
 The drone is the DJI Matrice 600 (matrice multiplication which is by pure coincidence the mathematics behind our Python simulation, no pun intended). It is build and used for professional users, offers a high amount of documentation, is highly exact in flying to coordinates (a prerequiste in unmanned/unmonitored flying) due to its sensor layout, could carry up to 5.5kg (12.1 lbs) and has a speed of up to 40 knots (which translates to 40 mph when there is no wind). Due to its retractable landing gear, it could also carry light, oversized packages. 
 
-For drone technical stats: https://www.dji.com/matrice600 from April 27, 2018
+For drone technical specs: https://www.dji.com/matrice600 
 
 ![Matrice 600](images/drone.png)
 
@@ -133,7 +133,11 @@ Prerequisites taken from the documentation and flight experience
 - we chose the TB48S battery configuration with a higher endurance of of 30 minutes with a 4.4 lbs payload/package.  
 - this translates to a maximum range of 17 miles, with an efective radius of 8.5 miles (for a forth and back trip).
 - the batteries have a recharging time for a complete charge (from 0% to 100%) of 90 minutes. 
-- no transmission range implemented as it will be programmed at the start with the adress coordinates and the flight profile (e.g. obstacles). In other words, it will fly "uncontrolled".
+- the drone will be recharged to full capacity after each flight, regardless of the travelled distance.
+- recharge time is roughly the flight time by a factor of 3, so for a flight time between 3-6 minutes, there is a recharging time of 9-18 minutes. 
+- no transmission range implemented as the drone will be programmed at the start with the adress coordinates and the flight profile (e.g. obstacles). In other words, it will fly "uncontrolled".
+
+
 
 Assumptions:
 
@@ -141,6 +145,8 @@ Assumptions:
 - unloading the package at the destination is a uniform distribution between 20 and 45 seconds. 
 - the distribution center is responsible for the depicted area, which has a diameter of 14.2 miles. We have chosen a smaller than possible (17 miles) diameter as we have to include some measures for wind (even minor wind speeds can have huge effects) and possible higher drag for the packages. 
 - no package is heavier than 4 lbs total.
+- there is one distribution center, which prepares the packages and houses the drones
+- we have 13 different adresses to deliver the packages to, for the different distances to cover. 
 
 ![Chosen Delivery Area ](images/Delivery_Area.png)
 
@@ -148,7 +154,7 @@ For the simulation, we have used only a quarter of the depicted area above as it
 
 Simulation:
 
-We have started with 
+We have started with 5 drones
 
 
 
