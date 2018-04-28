@@ -91,7 +91,7 @@ By focusing on these specific variables and prerequisites (see also below) withi
 + How will efficiency change with increasing number of orders and diversified locations?
 + How long does it take to deliver 50 packages via air based system?
 
-2) How does increased battery, max speed, and carrying capacity effect utilization, arrival time and the number of drones needed?
+2) How does increased battery and max speed effect utilization, arrival time and the number of drones needed?
 
 3) Can drones reduce average delivery time to 1 hour (as intended by Amazon Prime Air), how much drones are neccessary? 
 
@@ -207,7 +207,24 @@ First, the speed will be adapted to 60 mph (88ft/sec, 29m/sec). Modern drones ca
 
 Otherwise, all other values will remain as above to be able to compare the impact of the changes.
 
-3_25 both improvements on   https://youtu.be/Bg6cD1Y4d-0
+Tiffani:
+
+I have attached the screenshots of the simulations made for the three different settings (1, 2 and 3 orders per HH and hour) in the image section. They  are each called 1_11 (meaning: 1 order, 11 drones), 2_18 (2 orders, 18 drones) and 3_25 with the abbreviation of the included improvement ("fast" ist increased speed to 60mph, "charge" is the reduced charging time by 1/3, and "both" is the iplementation of both). This needs to be analyzed and summarized (with a couple of images on the ReadMe here) and compared to each other. After that we are able to answer the question below.
+
+2) How does increased battery and max speed effect utilization, arrival time and the number of drones needed?
+
+I have also included a video of all implemented improvements for the 3_25 for attachement (since he likes videos)
+
+--> 3_25 both improvements on   https://youtu.be/Bg6cD1Y4d-0
+
+I also ran the optimization for each state/improvement: (to see how many drones I need to get 85% utilization)
+1_11 (normal) is 11      1_11fast is 12     1_11charge is 9      1_11both is 9      --> thats a change of 19% from normal to both
+2_18 (normal) is 18      2_18fast is 16     2_18charge is 17     2_18both is 15     --> thats a change of 17% from normal to both
+3_25 (normal) is 25      3_25fast is 25     3_25charge is 19     3_25both is 18     --> thats a change of 28% from normal to both!!
+
+Also important in the images for analyzis: the number of delivered packages increased in every improvement. 
+
+For questions just write me...
 
 
 ## Discussion
