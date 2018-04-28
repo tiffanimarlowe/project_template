@@ -207,7 +207,7 @@ First, the speed will be adapted to 60 mph (88ft/sec, 29m/sec). Modern drones ca
 
 Otherwise, all other values will remain as above to be able to compare the impact of the changes.
 
-
+3_25 both improvements on   https://youtu.be/Bg6cD1Y4d-0
 
 
 ## Discussion
