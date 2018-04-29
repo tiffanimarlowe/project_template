@@ -36,7 +36,7 @@ By simulating the effects of varying number of drones, charging times, and fligh
 
 We hypothesize:
 
-1.)	Drone delivery will be able to improve delivery time to under one hour (e.g. Amazon Prime Air), given the customer lives within a certain distance to a "delivery hub" and is able to receive a package from a drone. 
+1.)	Drone delivery will be able to improve delivery time to under one hour (e.g. Amazon Prime Air), given the customer lives within a certain distance to a "distribution center" and is able to receive a package from a drone. 
 
 2.) Improved battery life and speed will significantly reduce the overall number of drones needed. Therefore, reducing the logistical footprint and costs for the respective logistical company - making it easier, cheaper and more probable to implement. 
 
@@ -50,8 +50,15 @@ In order to represent and depict all aspects of the simulated drone delivery sys
 
 Object Diagram (Figure 1) and Behavior Diagram (Figure 2) shown above represent the Anylogic simulation that focuses on answering questions related to drone optimization and utilization from an Agent Based perspective. Figure 1 describes the various objects in the simulation and their attributes in which we will be focusing our attention (battery life, propulsion, etc.). Within Figure 2, the interactions between the variables and how the simulation will be executed is depicted. Gathered from the models, you can see that the initial state starts with the customer. When customers place an order, the order is then sent to a distribution center where the package will be handled and later picked up by a drone to be delivered to the customer. Once the drone has delivered the package, it returns to the distribution center to recharge until the process starts again.
 
+<<<<<<< HEAD
 #### PYTHON OBJECT DIAGRAM HERE (Figure 3)
 #### PYTHON BEHAVIOR DIAGRAM HERE (Figure 4)
+=======
+•	drone delivery methods
+•	battery life
+•	speed of delivery
+•	number of drones
+>>>>>>> be7ec30401644d5645a99060aa6ef70afacba943
 
 While Object Diagram (Figure 3) and Behavior Diagram (Figure 4) shown above represent the Python simulation that focuses on individual drone utilization and efficiency from a Discrete system perspective.
 
@@ -203,7 +210,10 @@ Otherwise, all other values (houses, number of drones, ...) will remain as above
 
 The changes in the values of charging time, speed and both are described and summarized here. The first image shows the effects on 1 order/HH/hour for the given area and 11 drones. The optimization process shows slight variations in necessary drones:  
 
-- 1_11 (normal) is 11      1_11fast is 12     1_11charge is 9      1_11both is 9      --> thats a change of 19% from normal to both
+  - 1_11 (normal) is 11      
+  - 1_11fast is 12     
+  - 1_11charge is 9      
+  - 1_11both is 9      --> thats a change of 19% from normal to both
 
 Even though the optimization run suggests to change the number of drones, I left them deliberatly at the "normal" value to see the difference in the simulation. the numbers are as follows:
 
@@ -218,7 +228,10 @@ The first striking difference (on the right side), as to be expected, the flight
 
 The next image shows the effects on the 2 order/HH/hour for the given area and 18 drones. The optimization process shows again positive variations in necessary drones (decrease of up to 3, which equals a 17% reduction):  
 
-2_18 (normal) is 18      2_18fast is 16     2_18charge is 17     2_18both is 15     --> thats a change of 17% from normal to both
+  - 2_18 (normal) is 18      
+  - 2_18fast is 16     
+  - 2_18charge is 17     
+  - 2_18both is 15     --> thats a change of 17% from normal to both
 
 Again, I left the number of drones at the "normal" value to see the difference in the simulation. the numbers are as follows:
 
@@ -234,7 +247,10 @@ As above, the flight time is almost reduced to half. This will always be the cas
 
 Here are the effects on 3 order/HH/hour and 25 drones. The optimization process shows again positive variations in necessary drones (decrease of up to 7, which equals a 28% reduction) for a targeted utilization rate of 85%:  
 
-3_25 (normal) is 25      3_25fast is 25     3_25charge is 19     3_25both is 18     --> thats a change of 28% from normal to both!
+  - 3_25 (normal) is 25      
+  - 3_25fast is 25     
+  - 3_25charge is 19     
+  - 3_25both is 18     --> thats a change of 28% from normal to both!
 
 ![3 orders with 25 drones, improvements: overview ](images/3_25_summary.png)
 
