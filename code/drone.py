@@ -75,7 +75,7 @@ def main():
                 veloctity.insert(i,speeed)
         return veloctity
 
-    def drone(num_drones):
+    def battery_life(num_drones):
         quad = {}
         for i in range(0, num_drones):
 
@@ -95,7 +95,7 @@ def main():
 
     def flight(amount_of_orders, num_drones):
 
-        drones = drone(num_drones)
+        drones = battery_life(num_drones)
         #if the first drone is charged go!
         needtocharge = 5400 / 2 #half how
         bat_capacity = 5400 #hour 50mins to charge fully
