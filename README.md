@@ -81,9 +81,6 @@ By implementing both an Agent Based (Anylogic – Model 1) and Discrete Simulati
 
 ## Research Methods
 
-
-#### Model 1: AnyLogic
-
 To address and answer the fundamental questions above, we have developed and executed an Agent Based Simulation within the simulation software Anylogic. We were able to depict specific areas of the city of Orlando within the simulation by gathering GIS data. Throughout this simulation we hope to evaluate the overall effort needed to partly replace, or at least improve, current ground based methods of delivery and meet future consumer expectations.
 
 In order to do so, we focused our attention on demonstrating how a drone delivery system would be implemented. This approach enables us to determine which scale of effort is needed and also define the quality and quantity of drones it would take to provide an efficient air based delivery system for the intended area. Changing certain parameters on the drone such as battery density, endurance, max speed, charging time, etc. can all help to predict completion estimates for newer technology.
@@ -103,7 +100,7 @@ To further validate our simulation and provide more realistic data in terms of p
 						 Image 3: Matrice 600 Spec Data
 
 
-#### Prerequisites 
+#### Model 1: AnyLogic Prerequisites 
 
 Gathered from the Matrice 600 spec data (shown above: Image 3) and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic simulation. Within each of the two models,specific parameters and assumptions have been set to improve system validity and overall system design. Each of the prerequisite and assumption listed below have been met and applied before running the simulations. 
 
@@ -115,7 +112,7 @@ Gathered from the Matrice 600 spec data (shown above: Image 3) and package surve
 + Recharge time roughly represents the flight time by a factor of 3. Meaning, a flight time between 3-6 minutes will require a recharging time of 9-18 minutes. 
 + Drones will fly “uncontrolled”. Meaning, there will be no transmission range implemented. Instead, drones will be programmed with address coordinates and flight obstacles (flight profile) prior to the start of the simulation. 
 
-#### Assumptions
+#### Model 1: AnyLogic Assumptions
 
 + The effective time from order to loading the drone is a triangular distribution with an average of 7 minutes (minimum of 3 minutes; maximum of 12 minutes). 
 + Unloading a package at the destination is a uniform distribution between 20 and 45 seconds. 
@@ -124,10 +121,13 @@ Gathered from the Matrice 600 spec data (shown above: Image 3) and package surve
 + There is one distribution center that prepares the packages and houses the drones
 + The distribution center is responsible for the depicted area that has a diameter of 14.2 miles. We have chosen a smaller than possible (17 miles) diameter to allow room for additional measures such as wind (even minor wind speeds can have huge effects) and potential package drag. 
 
-
 ![Chosen Delivery Area ](images/Delivery_Area.png)
+							
+                          Image 4: Drone Delivery Area
 
-For the simulation, we have used only a quarter of the depicted area above as it is of no difference for the drone in which direction it has to fly. An adrees has only one important parameter, which is the distance. This will translate into flight time, which is the limiting factor for the drone and results in the respective recharging time.  
+For the purpose of the simulations, we have used a quarter of the depicted area shown in Image 4 since direction has no real effect on the drone's abilities. An address provides the drone with a very important parameter, distance. This then translates into flight time, which is the limiting factor for the drone, thus determining the respective recharging time necessary for delivery. 
+
+
 
 #### Simulation:
 
