@@ -136,12 +136,11 @@ Below is the simulated design process for the AnyLogic Model. For this purpose o
 ![Model AnyLogic Sim ](images/Model_AnyLogic.png)
 
 
+##### Research Simulation Design: Python
 
+Below is the simulated design process for the Python  Model. For this purpose of this model, the simulation starts with 
 
-#### Python:
-
-- 
-
+>>> ADD MORE HERE, INSERT SIMULATiON IMAGE >>> 
 
 ## Expected Results (THIS NOW NEEDS TO BE RESULTS SECTION)
 After creating and analyzing the delivery system simulation, we expect to find air based delivery methods will be more efficient compared to ground based delivery methods. In particular, we believe that drone delivery will be significantly faster and more efficient compared to ground based delivery; perhaps even 30% more efficient. With that being said, we are not sure at what point and what conditions it will take for ground based delivery systems to exceed drone delivery abilities.  Lastly, we expect that battery life and the weight of the packages will have an overall effect on the air delivery systems capabilities.
