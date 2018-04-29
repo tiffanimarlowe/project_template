@@ -81,68 +81,100 @@ By implementing both an Agent Based (Anylogic – Model 1) and Discrete Simulati
 
 ## Research Methods
 
-#### AnyLogic:
+To address and answer the fundamental questions above, we have developed and executed an Agent Based Simulation within the simulation software Anylogic and a Dicrete Event Simulation in Python. We were able to depict specific areas of the city of Orlando within the simulation by gathering GIS data. Throughout this simulation we hope to evaluate the overall effort needed to partly replace, or at least improve, current ground based methods of delivery and meet future consumer expectations.
 
-- In order to address these problems, we developed and executed an Agent Based Simulation with the simulation software Anylogic, based on GIS data of a specific areas of the city of Orlando. Throughout this simulation we hope to evaluate the overall effort needed to partly replace or at least improve current ground based methods of delivery and meet future consumer expectations.
+In order to do so, we focused our attention on demonstrating how a drone delivery system would be implemented. This approach enables us to determine which scale of effort is needed and also define the quality and quantity of drones it would take to provide an efficient air based delivery system for the intended area. Changing certain parameters on the drone such as battery density, endurance, max speed, charging time, etc. can all help to predict completion estimates for newer technology.
 
-We want to demonstrate how and which scale of effort is needed, the quality and quantity of drones and to a certain degree the intended area it would take to provide an efficient air based delivery system.
-
-Changing certain parameters on the drone (like battery density/endurance, max speed, charging time) predict completion estimates with newer technology.
-
-In order to model a simulation, and therefore to answer the questions that we have formulated, we had to define certain prerequisites and assumptions to calculate from a valid and repeatable standpoint. Since this is a drone based simulation, we have done a market screening and decided for a product of the DJI company which offers the best compromise between (carrying) power, in other words how much weight it can transport and lift, and endurance. Endurance is important as it ensures the neccessary reach of the drone and therefore a higher radius. 
-
-The drone is the DJI Matrice 600 (matrice multiplication which is by pure coincidence the mathematics behind our Python simulation, no pun intended). It is build and used for professional users, offers a high amount of documentation, is highly exact in flying to coordinates (a prerequiste in unmanned/unmonitored flying) due to its sensor layout, could carry up to 5.5kg (12.1 lbs) and has a speed of up to 40 knots (which translates to 40 mph when there is no wind). Due to its retractable landing gear, it could also carry light, oversized packages. 
-
-For drone technical specs: https://www.dji.com/matrice600 
+To successfully model a simulation that would answer the fundamental questions above, we had to define certain prerequisites and assumptions beforehand. We defined these prerequisites and assumptions based on the drone market screening we gathered. To meet our expectations and improve the overall validity of the system we chose to use a drone created by DJI company. This company offers the best compromise between carrying power, in other words how much weight it can transport and lift, and endurance. Endurance is an important element within our simulation as it helps define the reach of the drone and overall radius.
 
 ![Matrice 600](images/drone.png)
 
-Here are our our prerequsites and assumptions for the AnyLogic simulation:
+The drone model we chose to base our prerequisites and assumptions on is the DJI Matrice 600 (matrice multiplication which is by pure coincidence the mathematics behind our Python simulation, no pun intended). The Matrice 600 model is built and used for professional users because it offers a high amount of documentation, precise location of coordinates due to its sensor layout (a prerequisite in unmanned/unmonitored flying), its ability to carry up to 5.5kg (12.1 lbs) and ability to travel at speeds up to 40 knots. This capability translates to 40 mph when there is no wind. Due to its retractable landing gear, it could also carry light, oversized packages proving to be an excellent model for our simulations.
 
-We did a survey on the last 10 Amazon orders for 4 persons and came to the conclussion that the average package is about 10x5x8 inches in size (low was 5x5x5 and high was 17x10x11) on the orders with 4lbs or below. As our drone is set to a max of 4 lbs (see below), everything above will not be offered for "Air delivery". Average time was 2.0 days. 
+For more information on the Matrice 600 drone technical specs, see: https://www.dji.com/matrice600 
 
-#### Prerequisites taken from the documentation and flight experience 
-
-- our drone flies with an average of 50 ft/second (15m/sec), which includes acceleration and decelleration.
-- we chose the TB48S battery configuration with a higher endurance of of 30 minutes with a 4.4 lbs payload/package.  
-- this translates to a maximum range of 17 miles, with an efective radius of 8.5 miles (for a forth and back trip).
-- the batteries have a recharging time for a complete charge (from 0% to 100%) of 90 minutes. 
-- the drone will be recharged to full capacity after each flight, regardless of the travelled distance.
-- recharge time is roughly the flight time by a factor of 3, so for a flight time between 3-6 minutes, there is a recharging time of 9-18 minutes. 
-- no transmission range implemented as the drone will be programmed at the start with the adress coordinates and the flight profile (e.g. obstacles). In other words, it will fly "uncontrolled".
+To further validate our simulations and provide more realistic data in terms of package weight, size and delivery time, we completed a survey that compared 10 Amazon orders from 4 individuals. In doing so, we concluded that the average package size for delivery is about 10x5x8 inches in length (min size: 5x5x5, max size: 17x10x11) for packages that weighed 4lbs or less. Average delivery time was 2.0 days. We focused on packages of this weight to replicate the simulated drone max weight of 4lbs. For the purpose of the simulation, everything above this weight limited will not be offered for “Air Delivery”.
 
 ![Matrice 600 specs ](images/drone_endurance.png)
 
-#### Assumptions:
+						 Image 3: Matrice 600 Spec Data
 
-- the effective time from order to loading the drone is a triangular distribution with a minimum 3 minutes, an average 7 minutes and a maximum of 12 minutes. 
-- unloading the package at the destination is a uniform distribution between 20 and 45 seconds. 
-- the distribution center is responsible for the depicted area, which has a diameter of 14.2 miles. We have chosen a smaller than possible (17 miles) diameter as we have to include some measures for wind (even minor wind speeds can have huge effects) and possible higher drag for the packages. 
-- no package is heavier than 4 lbs total.
-- there is one distribution center, which prepares the packages and houses the drones
-- we have 13 different adresses to deliver the packages to, for the different distances to cover. 
+
+#### Prerequisites 
+
+Gathered from the Matrice 600 spec data (shown above: Image 3) and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic simulation. Within each of the two models,specific parameters and assumptions have been set to improve system validity and overall system design. Each of the prerequisite and assumption listed below have been met and applied before running the simulations. 
+
++ Drones fly with an average of 50 ft/second (15m/sec). This applies to drone acceleration and deceleration.
++ Drones are equipped with the TB48S battery configuration. This allows for 30 minutes of endurance for a 4.4 lbs payload/package.  
++ Due to the aforementioned prerequisites, maximum range is limited to 17 miles - allowing for an effective roundtrip radius of 8.5 miles.
++ Recharging battery time for a complete charge is set to 90 minutes (based on 0% to 100%).
++ Drones will be recharged to full capacity after each flight, regardless of the travelled distance and available battery life.
++ Recharge time roughly represents the flight time by a factor of 3. Meaning, a flight time between 3-6 minutes will require a recharging time of 9-18 minutes. 
++ Drones will fly “uncontrolled”. Meaning, there will be no transmission range implemented. Instead, drones will be programmed with address coordinates and flight obstacles (flight profile) prior to the start of the simulation. 
+
+#### Assumptions
+
++ The effective time from order to loading the drone is a triangular distribution with an average of 7 minutes (minimum of 3 minutes; maximum of 12 minutes). 
++ Unloading a package at the destination is a uniform distribution between 20 and 45 seconds. 
++ No package is heavier than 4 lbs.
++ To provide various distances for the drones to cover and deliver to, the data set is equipped with 13 different addresses that vary in distance.
++ There is one distribution center that prepares the packages and houses the drones
++ The distribution center is responsible for the depicted area that has a diameter of 14.2 miles. We have chosen a smaller than possible (17 miles) diameter to allow room for additional measures such as wind (even minor wind speeds can have huge effects) and potential package drag. 
 
 ![Chosen Delivery Area ](images/Delivery_Area.png)
+							
+                         			 Image 4: Drone Delivery Area
 
-For the simulation, we have used only a quarter of the depicted area above as it is of no difference for the drone in which direction it has to fly. An adrees has only one important parameter, which is the distance. This will translate into flight time, which is the limiting factor for the drone and results in the respective recharging time.  
+For the purpose of both simulations, we have used a quarter of the depicted area shown in Image 4 since direction has no real effect on the drone's abilities. An address provides the drone with a very important parameter, distance. This then translates into flight time, which is the limiting factor for the drone, thus determining the respective recharging time necessary for delivery. 
 
-#### Simulation:
+
+#### Research Simulation Design: Anylogic
+
+Below is the simulated design process for the AnyLogic Model. For this purpose of this model, the simulation starts with 5 / 8 / 11 drones for a runtime of 600 minutes (10 hours). Within this runtime, there is only 1 order per household (HH) per hour (13 orders/hour).
 
 ![Model AnyLogic Sim ](images/Model_AnyLogic.png)
 
-Based on the depicted AnyLogic Model (aboce) as the core process, we started with 5 / 8 / 11 drones and 1 order per household (HH) per hour (13 orders/hour). Runtime is 600 minutes (10 hours). 
+
+#### Research Simulation Design: Python
+
+Below is the simulated design process for the Python  Model. For this purpose of this model, the simulation starts with 
+
+>>> ADD MORE HERE, INSERT SIMULATiON IMAGE >>> 
 
 
-#### Python:
+## Results:
 
-- 
+##### Model 1 Results: Anylogic
 
-
-## Expected Results (THIS NOW NEEDS TO BE RESULTS SECTION)
-After creating and analyzing the delivery system simulation, we expect to find air based delivery methods will be more efficient compared to ground based delivery methods. In particular, we believe that drone delivery will be significantly faster and more efficient compared to ground based delivery; perhaps even 30% more efficient. With that being said, we are not sure at what point and what conditions it will take for ground based delivery systems to exceed drone delivery abilities.  Lastly, we expect that battery life and the weight of the packages will have an overall effect on the air delivery systems capabilities.
+The maintenance scores for drone delivery utilization, optimization, and time for 1-, 2-, and 3- order/HH/hour in the Anylogic Model 1 were analyzed with a within-subjects design. Where the number of drones varied from 5, 8, and 11 for each amount of delivery per hour. In aviation, a rule of thumb is that for every aircraft you need to employ at all time, you need at least three. Thus, for this simulation the number of drones (5, 8, 11) tripled each time the orders increased from 1, 2 to 3.  After running the simulation, statistics reveled a main effect for 1 order/household/hour, with 11 drones having the most efficient scores (utilization rate = 81%, deliveries = 94, time = < 40 minutes), followed by 18 drones for 2/HH/Hour (utilization rate = 85%, deliveries = ?, time = < 30 minutes), and then finally  25 drones for 3/HH/Hour (utilization rate = 85%, deliveries = ?, time = < ? minutes). An optimization process over 85% is unrealistic due to planned and unplanned maintenance, and room for higher package reserves during peak times. Therefore, the optimization process at which we used, 85% is shown in Figure 1.
 
 
-#### Results:
+There was also a main effect on drone delivery time based on both drone speed (normal, fast) and battery charge. These statistics revealed that a fast speed (60 mph) had a main effect for each reducing drone delivery time for 1 order/HH/Hour (delivery time reduction = 39%), followed by 2 order/HH/Hour (delivery time reduction = 30%), and then finally by 3 order/HH/Hour (delivery time reduction = 9%).  Further inspection of these results revealed that implementing “both” improvements (faster speed and less charge time) for each package amount reduced mean time and max delivery time, 1 order/HH/Hour (reduced mean time = 37%, reduced max delivery time = 54%), 2 order/HH/Hour (reduced mean time = 29%, reduced max delivery time = 43%), and 3 order/HH/Hour (reduced mean time =21%, reduced max delivery time = 32%). Results and descriptive statistics for each package order amount (1, 2, 3) are shown in Figure 2, 3, and 4.
+
+##### Model 2 Results: Python
+
+INSERT FINDINGS HERE
+
+
+![Optimization process for 85% threshold ](images/optimization.png)
+
+				Figure 1: Optimization  process for 85% threshold
+
+
+![1 order with 11 drones, improvements: overview ](images/1_11_summary.png)
+
+				Figure 2: 1 order/HH/Hour 11 drones
+
+![2 orders with 18 drones, improvements: overview ](images/2_18_summary.png)
+
+				Figure 3: 2 order/HH/Hour 18 drones
+
+![3 orders with 25 drones, improvements: overview ](images/3_25_summary.png)
+
+				Figure 4: 3 order/HH/Hour 25 drones
+
+
+________________________________________________________
 
 Are as expected, as it even though there are only a few orders per hour, there are only a few drones. In aviation, a rule of thumb is if you need to employ one aircraft all the time, you need at least three. This is similar to our situation as the charging time is triple the flight time. 
 
