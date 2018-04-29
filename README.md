@@ -162,6 +162,16 @@ Multiple videos of the simulation have been provided below for more insight into
 
 Below is the simulated design process for the Python  Model. For this purpose of this model, the simulation starts with 
 
+Object Diagram
+![Python_OBJ](images/python/obj1.png)
+
+Behavioral Diagram
+![Python Behave](images/python/behave.png)
+
+Map of Randomly place "homes"
+
+![Python Map Distr](images/python/100runs/Map.png)
+
 >>> ADD MORE HERE, INSERT SIMULATiON IMAGE >>> 
 
 
