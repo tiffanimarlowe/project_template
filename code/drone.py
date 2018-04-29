@@ -273,7 +273,7 @@ def main():
             std_3 = np.std(tres_list)
         return avg_1,avg_2,avg_3,std_1,std_2,std_3,t, d, avg, maxim, minim, STD, xhomes, yhomes, beta,uno, dos, tres, all, dist_avg,dist_std
 
-    num_runs = 10000
+    num_runs = 5000
     avg_1, avg_2, avg_3, std_1, std_2, std_3, t, d, avg, maxim, minim, STD, xhomes, yhomes, beta, uno, dos, tres, all,dist_avg,dist_std = monte(num_runs)
     #Monte-carlo plots AVG,MIN,MAX and PDF of Completetion times
     plt.subplot(3, 1, 2)
