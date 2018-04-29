@@ -81,25 +81,21 @@ By implementing both an Agent Based (Anylogic – Model 1) and Discrete Simulati
 
 ## Research Methods
 
+
 #### AnyLogic:
 
-- In order to address these problems, we developed and executed an Agent Based Simulation with the simulation software Anylogic, based on GIS data of a specific areas of the city of Orlando. Throughout this simulation we hope to evaluate the overall effort needed to partly replace or at least improve current ground based methods of delivery and meet future consumer expectations.
+To address and answer the fundamental questions above, we have developed and executed an Agent Based Simulation within the simulation software Anylogic. We were able to depict specific areas of the city of Orlando within the simulation by gathering GIS data. Throughout this simulation we hope to evaluate the overall effort needed to partly replace, or at least improve, current ground based methods of delivery and meet future consumer expectations.
 
-We want to demonstrate how and which scale of effort is needed, the quality and quantity of drones and to a certain degree the intended area it would take to provide an efficient air based delivery system.
+In order to do so, we focused our attention on demonstrating how a drone delivery system would be implemented. This approach enables us to determine which scale of effort is needed and also define the quality and quantity of drones it would take to provide an efficient air based delivery system for the intended area. Changing certain parameters on the drone such as battery density, endurance, max speed, charging time, etc. can all help to predict completion estimates for newer technology.
 
-Changing certain parameters on the drone (like battery density/endurance, max speed, charging time) predict completion estimates with newer technology.
-
-In order to model a simulation, and therefore to answer the questions that we have formulated, we had to define certain prerequisites and assumptions to calculate from a valid and repeatable standpoint. Since this is a drone based simulation, we have done a market screening and decided for a product of the DJI company which offers the best compromise between (carrying) power, in other words how much weight it can transport and lift, and endurance. Endurance is important as it ensures the neccessary reach of the drone and therefore a higher radius. 
-
-The drone is the DJI Matrice 600 (matrice multiplication which is by pure coincidence the mathematics behind our Python simulation, no pun intended). It is build and used for professional users, offers a high amount of documentation, is highly exact in flying to coordinates (a prerequiste in unmanned/unmonitored flying) due to its sensor layout, could carry up to 5.5kg (12.1 lbs) and has a speed of up to 40 knots (which translates to 40 mph when there is no wind). Due to its retractable landing gear, it could also carry light, oversized packages. 
-
-For drone technical specs: https://www.dji.com/matrice600 
+To successfully model a simulation that would answer the fundamental questions above, we had to define certain prerequisites and assumptions beforehand. We defined these prerequisites and assumptions based on the drone market screening we gathered. To meet our expectations and improve the overall validity of the system we chose to use a drone created by DJI company. This company offers the best compromise between carrying power, in other words how much weight it can transport and lift, and endurance. Endurance is an important element within our simulation as it helps define the reach of the drone and overall radius.
 
 ![Matrice 600](images/drone.png)
 
-Here are our our prerequsites and assumptions for the AnyLogic simulation:
+The drone model we chose to base our prerequisites and assumptions on is the DJI Matrice 600 (matrice multiplication which is by pure coincidence the mathematics behind our Python simulation, no pun intended). The Matrice 600 model is built and used for professional users because it offers a high amount of documentation, precise location of coordinates due to its sensor layout (a prerequisite in unmanned/unmonitored flying), its ability to carry up to 5.5kg (12.1 lbs) and travel at speeds up to 40 knots. This capability translates to 40 mph when there is no wind. Due to its retractable landing gear, it could also carry light, oversized packages proving to be an excellent model for our simulations.
 
-We did a survey on the last 10 Amazon orders for 4 persons and came to the conclussion that the average package is about 10x5x8 inches in size (low was 5x5x5 and high was 17x10x11) on the orders with 4lbs or below. As our drone is set to a max of 4 lbs (see below), everything above will not be offered for "Air delivery". Average time was 2.0 days. 
+For more information on the Matrice 600 drone technical specs, see: https://www.dji.com/matrice600 
+
 
 #### Prerequisites taken from the documentation and flight experience 
 
