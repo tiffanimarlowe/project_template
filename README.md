@@ -100,7 +100,7 @@ To further validate our simulation and provide more realistic data in terms of p
 						 Image 3: Matrice 600 Spec Data
 
 
-#### Model 1: AnyLogic Prerequisites 
+#### Prerequisites 
 
 Gathered from the Matrice 600 spec data (shown above: Image 3) and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic simulation. Within each of the two models,specific parameters and assumptions have been set to improve system validity and overall system design. Each of the prerequisite and assumption listed below have been met and applied before running the simulations. 
 
@@ -112,7 +112,7 @@ Gathered from the Matrice 600 spec data (shown above: Image 3) and package surve
 + Recharge time roughly represents the flight time by a factor of 3. Meaning, a flight time between 3-6 minutes will require a recharging time of 9-18 minutes. 
 + Drones will fly “uncontrolled”. Meaning, there will be no transmission range implemented. Instead, drones will be programmed with address coordinates and flight obstacles (flight profile) prior to the start of the simulation. 
 
-#### Model 1: AnyLogic Assumptions
+#### Assumptions
 
 + The effective time from order to loading the drone is a triangular distribution with an average of 7 minutes (minimum of 3 minutes; maximum of 12 minutes). 
 + Unloading a package at the destination is a uniform distribution between 20 and 45 seconds. 
@@ -125,18 +125,17 @@ Gathered from the Matrice 600 spec data (shown above: Image 3) and package surve
 							
                          			 Image 4: Drone Delivery Area
 
-For the purpose of the simulations, we have used a quarter of the depicted area shown in Image 4 since direction has no real effect on the drone's abilities. An address provides the drone with a very important parameter, distance. This then translates into flight time, which is the limiting factor for the drone, thus determining the respective recharging time necessary for delivery. 
+For the purpose of both simulations, we have used a quarter of the depicted area shown in Image 4 since direction has no real effect on the drone's abilities. An address provides the drone with a very important parameter, distance. This then translates into flight time, which is the limiting factor for the drone, thus determining the respective recharging time necessary for delivery. 
 
 
-
-##### Research Simulation Design: Anylogic
+#### Research Simulation Design: Anylogic
 
 Below is the simulated design process for the AnyLogic Model. For this purpose of this model, the simulation starts with 5 / 8 / 11 drones for a runtime of 600 minutes (10 hours). Within this runtime, there is only 1 order per household (HH) per hour (13 orders/hour).
 
 ![Model AnyLogic Sim ](images/Model_AnyLogic.png)
 
 
-##### Research Simulation Design: Python
+#### Research Simulation Design: Python
 
 Below is the simulated design process for the Python  Model. For this purpose of this model, the simulation starts with 
 
