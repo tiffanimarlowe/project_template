@@ -174,11 +174,6 @@ The maintenance scores for drone delivery utilization, optimization, and time fo
 
 There was also a main effect on drone delivery time based on both drone speed (normal, fast) and battery charge. These statistics revealed that a fast speed (60 mph) had a main effect for each reducing drone delivery time for 1 order/HH/Hour (delivery time reduction = 39%), followed by 2 order/HH/Hour (delivery time reduction = 30%), and then finally by 3 order/HH/Hour (delivery time reduction = 9%).  Further inspection of these results revealed that implementing “both” improvements (faster speed and less charge time) for each package amount reduced mean time and max delivery time, 1 order/HH/Hour (reduced mean time = 37%, reduced max delivery time = 54%), 2 order/HH/Hour (reduced mean time = 29%, reduced max delivery time = 43%), and 3 order/HH/Hour (reduced mean time =21%, reduced max delivery time = 32%). Results and descriptive statistics for each package order amount (1, 2, 3) are shown in Figure 2, 3, and 4.
 
-##### Model 2 Results: Python
-
-INSERT FINDINGS HERE
-
-
 ![Optimization process for 85% threshold ](images/optimization.png)
 
 				Figure 1: Optimization  process for 85% threshold
@@ -197,7 +192,12 @@ INSERT FINDINGS HERE
 				Figure 4: 3 order/HH/Hour 25 drones
 
 
-________________________________________________________
+##### Model 2 Results: Python
+
+INSERT FINDINGS HERE
+
+________________
+________________________________________
 
 
 #### Questions answered so far:
