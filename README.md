@@ -100,13 +100,13 @@ To further validate our simulation and provide more realistic data in terms of p
 
 ![Matrice 600 specs ](images/drone_endurance.png)
 
-				 Image 3: Matrice 600 Spec Data
+						 Image 3: Matrice 600 Spec Data
 
 Gathered from the Matrice 600 spec data (shown above: Image 3) and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic simulation. They are defined below.
 
 #### Prerequisites 
 
-Within each of the two models, we have set specific parameters to improve system validity and overall system design. Each of the prerequisite listed below has been met and applied before running the simulations.
+Within each of the two models, we have set specific parameters and assumptions to improve system validity and overall system design. Each of the prerequisite and assumption listed below has been met and applied before running the simulations. 
 
 + Drones fly with an average of 50 ft/second (15m/sec). This applies to drone acceleration and deceleration.
 + Drones are equipped with the TB48S battery configuration. This allows for 30 minutes of endurance for a 4.4 lbs payload/package.  
@@ -116,14 +116,15 @@ Within each of the two models, we have set specific parameters to improve system
 + Recharge time roughly represents the flight time by a factor of 3. Meaning, a flight time between 3-6 minutes will require a recharging time of 9-18 minutes. 
 + Drones will fly “uncontrolled”. Meaning, there will be no transmission range implemented. Instead, drones will be programmed with address coordinates and flight obstacles (flight profile) prior to the start of the simulation. 
 
-#### Assumptions:
+#### Assumptions
 
-- the effective time from order to loading the drone is a triangular distribution with a minimum 3 minutes, an average 7 minutes and a maximum of 12 minutes. 
-- unloading the package at the destination is a uniform distribution between 20 and 45 seconds. 
-- the distribution center is responsible for the depicted area, which has a diameter of 14.2 miles. We have chosen a smaller than possible (17 miles) diameter as we have to include some measures for wind (even minor wind speeds can have huge effects) and possible higher drag for the packages. 
-- no package is heavier than 4 lbs total.
-- there is one distribution center, which prepares the packages and houses the drones
-- we have 13 different adresses to deliver the packages to, for the different distances to cover. 
++ The effective time from order to loading the drone is a triangular distribution with an average of 7 minutes (minimum of 3 minutes; maximum of 12 minutes). 
++ Unloading a package at the destination is a uniform distribution between 20 and 45 seconds. 
++ No package is heavier than 4 lbs.
++ To provide various distances for the drones to cover and deliver to, the data set is equipped with 13 different addresses that vary in distance.
++ There is one distribution center that prepares the packages and houses the drones
++ The distribution center is responsible for the depicted area that has a diameter of 14.2 miles. We have chosen a smaller than possible (17 miles) diameter to allow room for additional measures such as wind (even minor wind speeds can have huge effects) and potential package drag. 
+
 
 ![Chosen Delivery Area ](images/Delivery_Area.png)
 
