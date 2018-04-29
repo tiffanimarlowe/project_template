@@ -102,11 +102,10 @@ To further validate our simulation and provide more realistic data in terms of p
 
 						 Image 3: Matrice 600 Spec Data
 
-Gathered from the Matrice 600 spec data (shown above: Image 3) and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic simulation. They are defined below.
 
 #### Prerequisites 
 
-Within each of the two models, we have set specific parameters and assumptions to improve system validity and overall system design. Each of the prerequisite and assumption listed below has been met and applied before running the simulations. 
+Gathered from the Matrice 600 spec data (shown above: Image 3) and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic simulation. Within each of the two models,specific parameters and assumptions have been set to improve system validity and overall system design. Each of the prerequisite and assumption listed below have been met and applied before running the simulations. 
 
 + Drones fly with an average of 50 ft/second (15m/sec). This applies to drone acceleration and deceleration.
 + Drones are equipped with the TB48S battery configuration. This allows for 30 minutes of endurance for a 4.4 lbs payload/package.  
