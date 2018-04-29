@@ -62,7 +62,6 @@ Both models have been created based on current delivery technology systems and t
 
 +	drone delivery methods
 +	battery life
-+	propulsion
 +	speed of delivery
 +	number of drones
 
@@ -85,7 +84,7 @@ To address and answer the fundamental questions above, we have developed and exe
 
 In order to do so, we focused our attention on demonstrating how a drone delivery system would be implemented. This approach enables us to determine which scale of effort is needed and also define the quality and quantity of drones it would take to provide an efficient air based delivery system for the intended area. Changing certain parameters on the drone such as battery density, endurance, max speed, charging time, etc. can all help to predict completion estimates for newer technology.
 
-To successfully model a simulation that would answer the fundamental questions above, we had to define certain prerequisites and assumptions beforehand. We defined these prerequisites and assumptions based on the drone market screening we gathered. To meet our expectations and improve the overall validity of the system we chose to use a drone created by DJI company. This company offers the best compromise between carrying power, in other words how much weight it can transport and lift, and endurance. Endurance is an important element within our simulation as it helps define the reach of the drone and overall radius.
+To successfully model a simulation that would answer the fundamental questions above, we had to define certain prerequisites and assumptions beforehand. We defined these prerequisites and assumptions based on the drone market screening we gathered. To meet our expectations and improve the overall validity of the system we chose to use a drone created by DJI company. This company is one of the wolrd leading civil drone manufacturers and, with the chosen drone, offers the best compromise between carrying power, in other words how much weight it can transport and lift, and endurance. Endurance is an important element within our simulation as it helps define the reach of the drone and overall radius.
 
 ![Matrice 600](images/drone.png)
 
@@ -93,7 +92,7 @@ The drone model we chose to base our prerequisites and assumptions on is the DJI
 
 For more information on the Matrice 600 drone technical specs, see: https://www.dji.com/matrice600 
 
-To further validate our simulations and provide more realistic data in terms of package weight, size and delivery time, we completed a survey that compared 10 Amazon orders from 4 individuals. In doing so, we concluded that the average package size for delivery is about 10x5x8 inches in length (min size: 5x5x5, max size: 17x10x11) for packages that weighed 4lbs or less. Average delivery time was 2.0 days. We focused on packages of this weight to replicate the simulated drone max weight of 4lbs. For the purpose of the simulation, everything above this weight limited will not be offered for “Air Delivery”.
+To further validate our simulations and provide more realistic data in terms of package weight, size and delivery time, we completed a survey that compared 10 Amazon orders from 4 individuals each. In doing so, we concluded that the average package size for delivery is about 10x5x8 inches in length (min size: 5x5x5, max size: 17x10x11) for packages that weighed 4lbs or less. Average delivery time was 2.0 days. We focused on packages of this weight to replicate the assumed simulated drone max carrying weight of 4lbs. For the purpose of the simulation, everything above this weight limited will not be offered for “Air Delivery”.
 
 ![Matrice 600 specs ](images/drone_endurance.png)
 
@@ -102,7 +101,7 @@ To further validate our simulations and provide more realistic data in terms of 
 
 #### Prerequisites 
 
-Gathered from the Matrice 600 spec data (shown above: Image 3) and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic simulation. Within each of the two models,specific parameters and assumptions have been set to improve system validity and overall system design. Each of the prerequisite and assumption listed below have been met and applied before running the simulations. 
+Gathered from the Matrice 600 spec data (shown above: Image 3) and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic simulation. Within each of the two models, specific parameters and assumptions have been set to improve system validity and overall system design. Each of the prerequisite and assumption listed below have been met and applied before running the simulations. 
 
 + Drones fly with an average of 50 ft/second (15m/sec). This applies to drone acceleration and deceleration.
 + Drones are equipped with the TB48S battery configuration. This allows for 30 minutes of endurance for a 4.4 lbs payload/package.  
