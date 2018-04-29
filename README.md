@@ -100,7 +100,7 @@ To further validate our simulation and provide more realistic data in terms of p
 
 ![Matrice 600 specs ](images/drone_endurance.png)
 
-###### Image 3: Matrice 600 Spec Data
+				 Image 3: Matrice 600 Spec Data
 
 Gathered from the Matrice 600 spec data (shown above: Image 3) and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic simulation. They are defined below.
 
