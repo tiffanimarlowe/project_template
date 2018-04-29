@@ -82,7 +82,7 @@ By implementing both an Agent Based (Anylogic – Model 1) and Discrete Simulati
 ## Research Methods
 
 
-#### AnyLogic:
+#### Model 1: AnyLogic
 
 To address and answer the fundamental questions above, we have developed and executed an Agent Based Simulation within the simulation software Anylogic. We were able to depict specific areas of the city of Orlando within the simulation by gathering GIS data. Throughout this simulation we hope to evaluate the overall effort needed to partly replace, or at least improve, current ground based methods of delivery and meet future consumer expectations.
 
