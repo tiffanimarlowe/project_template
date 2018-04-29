@@ -130,9 +130,17 @@ For the purpose of both simulations, we have used a quarter of the depicted area
 
 #### Research Simulation Design: Anylogic
 
-Below is the simulated design process for the AnyLogic Model. For this purpose of this model, the simulation starts with 5 / 8 / 11 drones for a runtime of 600 minutes (10 hours). Within this runtime, there is only 1 order per household (HH) per hour (13 orders/hour).
+Below is the simulated design process for the AnyLogic Model. For the purpose of Part 1 of this model, the simulation starts with 5 / 8 / 11 drones for a runtime of 600 minutes (10 hours). Within this runtime, there is only 1 order per household (HH) per hour (13 orders/hour). Here, we aim to determine how drone utalization and optimization varies based on package amount.
 
 ![Model AnyLogic Sim ](images/Model_AnyLogic.png)
+
+For the second half of thus simulation, we change the speed (in the images below as: "fast") and shorten the charging times of the batteries ("charge"), as this is currently the limiting factor on usage. Lastly, both changes/improvements will be implemented ("both") simultaneously and analyzed.
+
+- "fast": the speed will be adapted to 60 mph (88ft/sec, 29m/sec). Modern drones can achive that speed and are foreseen to be faster, depending on the type of drones. 
+- "charge": the charging time will be reduced by 1/3, so now a full charge can be done within 60 minutes (instead of 90 minutes).
+- "both": both above described improvements are being implemented into the drone simulation. 
+
+All other values (houses, number of drones, ...) will remain the sane as the first half of the simulation to be able to compare the impact of the attributes Speed and Charge.
 
 
 #### Research Simulation Design: Python
@@ -146,7 +154,20 @@ Below is the simulated design process for the Python  Model. For this purpose of
 
 ##### Model 1 Results: Anylogic
 
-The maintenance scores for drone delivery utilization, optimization, and time for 1-, 2-, and 3- order/HH/hour in the Anylogic Model 1 were analyzed with a within-subjects design. Where the number of drones varied from 5, 8, and 11 for each amount of delivery per hour. In aviation, a rule of thumb is that for every aircraft you need to employ at all time, you need at least three. Thus, for this simulation the number of drones (5, 8, 11) tripled each time the orders increased from 1, 2 to 3.  After running the simulation, statistics reveled a main effect for 1 order/household/hour, with 11 drones having the most efficient scores (utilization rate = 81%, deliveries = 94, time = < 40 minutes), followed by 18 drones for 2/HH/Hour (utilization rate = 85%, deliveries = ?, time = < 30 minutes), and then finally  25 drones for 3/HH/Hour (utilization rate = 85%, deliveries = ?, time = < ? minutes). An optimization process over 85% is unrealistic due to planned and unplanned maintenance, and room for higher package reserves during peak times. Therefore, the optimization process at which we used, 85% is shown in Figure 1.
+The maintenance scores for drone delivery utilization, optimization, and time for 1-, 2-, and 3- order/HH/hour in the Anylogic Model 1 were analyzed with a within-subjects design. Where the number of drones varied from 5, 8, and 11 for each amount of delivery per hour. In aviation, a rule of thumb is that for every aircraft you need to employ at all time, you need at least three. Thus, for this simulation the number of drones (5, 8, 11) tripled each time the orders increased from 1, 2 to 3.  After running the simulation, statistics reveled a main effect for 1 order/household/hour, with 11 drones having the most efficient scores (utilization rate = 81%, deliveries = 94, time = < 40 minutes), followed by 18 drones for 2/HH/Hour (utilization rate = 85%, deliveries = ?, time = < 30 minutes), and then finally  25 drones for 3/HH/Hour (utilization rate = 85%, deliveries = ?, time = < ? minutes). An optimization process over 85% is unrealistic due to planned and unplanned maintenance, and room for higher package reserves during peak times. Therefore, the optimization process at which we used, 85% is shown in Figure 1. Multiple videos of the simulation have been provided below for more insight.
+
+- The process for 1 order/HH/hour with can be seen here: 
+	+ https://youtu.be/fzb6oUqDDWY
+- 1 order/household/hour  with  5 drones:  utilization 96%,  53 deliveries, of which 21 take longer than 1 hour, 6 even longer than 90 minutes
+  + https://youtu.be/HbHV2XxcoAI
+- 1 order/household/hour  with  8 drones:  utilization 95%,  81 deliveries, none took longer than 1 hour
+  + https://youtu.be/rOAO5Jfjz04
+- 1 order/household/hour  with 11 drones:  utilization 81%,  94 deliveries, none took longer than 40 minutes
+  + https://youtu.be/vtBSfUZnuog
+
+- The next simulation doubles the number of orders to 2/HH/hour. With 16 and 18 drones the simulation reaches a utilization of 92%, which is above the given threshold for the optimization process assigned in Anylogic. 
+	+ https://youtu.be/uKgUKagtmTc
+	+ https://youtu.be/in5Zay7Dtjw 
 
 
 There was also a main effect on drone delivery time based on both drone speed (normal, fast) and battery charge. These statistics revealed that a fast speed (60 mph) had a main effect for each reducing drone delivery time for 1 order/HH/Hour (delivery time reduction = 39%), followed by 2 order/HH/Hour (delivery time reduction = 30%), and then finally by 3 order/HH/Hour (delivery time reduction = 9%).  Further inspection of these results revealed that implementing “both” improvements (faster speed and less charge time) for each package amount reduced mean time and max delivery time, 1 order/HH/Hour (reduced mean time = 37%, reduced max delivery time = 54%), 2 order/HH/Hour (reduced mean time = 29%, reduced max delivery time = 43%), and 3 order/HH/Hour (reduced mean time =21%, reduced max delivery time = 32%). Results and descriptive statistics for each package order amount (1, 2, 3) are shown in Figure 2, 3, and 4.
@@ -176,38 +197,6 @@ INSERT FINDINGS HERE
 
 ________________________________________________________
 
-Are as expected, as it even though there are only a few orders per hour, there are only a few drones. In aviation, a rule of thumb is if you need to employ one aircraft all the time, you need at least three. This is similar to our situation as the charging time is triple the flight time. 
-
-- 1 order/household/hour  with  5 drones:  utilization 96%,  53 deliveries, of which 21 take longer than 1 hour, 6 even longer than 90 minutes
-  + https://youtu.be/HbHV2XxcoAI
-- 1 order/household/hour  with  8 drones:  utilization 95%,  81 deliveries, none took longer than 1 hour
-  + https://youtu.be/rOAO5Jfjz04
-- 1 order/household/hour  with 11 drones:  utilization 81%,  94 deliveries, none took longer than 40 minutes
-  + https://youtu.be/vtBSfUZnuog
-
-A utilization of over 85% is unrealistic, as there will always be neccessary planned and unplanned maintainace. It also leaves no reserves for a higher order on peak times. The formulated goal could not be met with 5 and 8 drones. 
-
-Clearly the results show that due to the high utilization rate there was no time to accept sufficient orders. Only 53 deliveries (with 5 drones) compared to 94 deliveries (with 11 drones) were completed. 
-
-We have realized that the manual search for the optimal number of drones is time consuming and were able to implement an optimization simulation. We chose a threshold of an utilization of 85% (see above) and can now let AnyLogic do the optimization process in regards to the optimal number of drones for a utilization of 85%. 
-
-![Optimization process for 85% threshold ](images/optimization.png)
-
-The process for 1 order/HH/hour with can be seen here: https://youtu.be/fzb6oUqDDWY
-
-
-The next simulation doubles the number of orders to 2/HH/hour. The optimization process calculates 18 drones as optimum, with a threshold of 85% utilization.
-
-As the video with 16 (not 18) shows (https://youtu.be/uKgUKagtmTc), the actual simulation reaches an utilization of 92%, which is above the given threshold for the optimization process. 
-
-The optimization process showed an optimum number of 18 drones and a simulation runs has confirmed the data (https://youtu.be/in5Zay7Dtjw). 
-
-All deliveries were completed within 30 minutes of the order, which shows the potential of drone based delivery systems. 
-
-
-The next simulation brings the number of orders to 3/HH/hour. The respective optimization process calculates 25 drones as optimum, again with a threshold of 85% utilization. Interestingly, the number of drones doesn't just equally to the magnitude of orders. 
-
-The result shows that the optimization is correct. Even simulations with significantly more drones (up to 45) dont show any significant differences between number of orders served or service time until delivery. The only difference is the utilization time, which drops significantly and is therefore counterproductive (as it is a cost-driver).
 
 #### Questions answered so far:
 
@@ -305,7 +294,9 @@ For questions just write me...
 
 
 ## Discussion
-(final only - remove whole section for proposal Readme) (What would you have done differently) (What are the contributions summerize)(what is the big take away)(what did you learn)
+
+
+
 
 ## Future Work
 (final only - remove whole section for proposal Readme) (if you had 6 more months what would be the next steps in this project.) (What are a few questions you have now)
