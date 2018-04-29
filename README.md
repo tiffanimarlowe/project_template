@@ -123,7 +123,7 @@ Gathered from the Matrice 600 spec data (shown above: Image 3) and package surve
 
 ![Chosen Delivery Area ](images/Delivery_Area.png)
 							
-                          Image 4: Drone Delivery Area
+                         			 Image 4: Drone Delivery Area
 
 For the purpose of the simulations, we have used a quarter of the depicted area shown in Image 4 since direction has no real effect on the drone's abilities. An address provides the drone with a very important parameter, distance. This then translates into flight time, which is the limiting factor for the drone, thus determining the respective recharging time necessary for delivery. 
 
