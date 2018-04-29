@@ -50,15 +50,9 @@ In order to represent and depict all aspects of the simulated drone delivery sys
 
 Object Diagram (Figure 1) and Behavior Diagram (Figure 2) shown above represent the Anylogic simulation that focuses on answering questions related to drone optimization and utilization from an Agent Based perspective. Figure 1 describes the various objects in the simulation and their attributes in which we will be focusing our attention (battery life, propulsion, etc.). Within Figure 2, the interactions between the variables and how the simulation will be executed is depicted. Gathered from the models, you can see that the initial state starts with the customer. When customers place an order, the order is then sent to a distribution center where the package will be handled and later picked up by a drone to be delivered to the customer. Once the drone has delivered the package, it returns to the distribution center to recharge until the process starts again.
 
-<<<<<<< HEAD
+
 #### PYTHON OBJECT DIAGRAM HERE (Figure 3)
 #### PYTHON BEHAVIOR DIAGRAM HERE (Figure 4)
-=======
-•	drone delivery methods
-•	battery life
-•	speed of delivery
-•	number of drones
->>>>>>> be7ec30401644d5645a99060aa6ef70afacba943
 
 While Object Diagram (Figure 3) and Behavior Diagram (Figure 4) shown above represent the Python simulation that focuses on individual drone utilization and efficiency from a Discrete system perspective.
 
