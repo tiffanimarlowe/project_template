@@ -96,22 +96,25 @@ The drone model we chose to base our prerequisites and assumptions on is the DJI
 
 For more information on the Matrice 600 drone technical specs, see: https://www.dji.com/matrice600 
 
-To further validate our simulation and provide more realistic data in terms of package weight, size and delivery time, we completed a survey that compared 10 Amazon orders from 4 individuals. In doing so, we concluded that the average package size for delivery is about 10x5x8 inches in length (min size: 5x5x5, max size: 17x10x11) for packages that weighed 4lbs or less. Average delivery time was 2.0 days. We focused on packages of this weight to replicate the simulated drone max weight of 4lbs. For the purpose of the simulation, everything above this weight limited will not be offered for “Air Delivery”. 
-
-Gathered from the Matrice 600 spec data and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic simulation. They are defined below.
-
-
-#### Prerequisites taken from the documentation and flight experience 
-
-- our drone flies with an average of 50 ft/second (15m/sec), which includes acceleration and decelleration.
-- we chose the TB48S battery configuration with a higher endurance of of 30 minutes with a 4.4 lbs payload/package.  
-- this translates to a maximum range of 17 miles, with an efective radius of 8.5 miles (for a forth and back trip).
-- the batteries have a recharging time for a complete charge (from 0% to 100%) of 90 minutes. 
-- the drone will be recharged to full capacity after each flight, regardless of the travelled distance.
-- recharge time is roughly the flight time by a factor of 3, so for a flight time between 3-6 minutes, there is a recharging time of 9-18 minutes. 
-- no transmission range implemented as the drone will be programmed at the start with the adress coordinates and the flight profile (e.g. obstacles). In other words, it will fly "uncontrolled".
+To further validate our simulation and provide more realistic data in terms of package weight, size and delivery time, we completed a survey that compared 10 Amazon orders from 4 individuals. In doing so, we concluded that the average package size for delivery is about 10x5x8 inches in length (min size: 5x5x5, max size: 17x10x11) for packages that weighed 4lbs or less. Average delivery time was 2.0 days. We focused on packages of this weight to replicate the simulated drone max weight of 4lbs. For the purpose of the simulation, everything above this weight limited will not be offered for “Air Delivery”.
 
 ![Matrice 600 specs ](images/drone_endurance.png)
+
+###### Image 3: Matrice 600 Spec Data
+
+Gathered from the Matrice 600 spec data (shown above: Image 3) and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic simulation. They are defined below.
+
+#### Prerequisites 
+
+Within each of the two models, we have set specific parameters to improve system validity and overall system design. Each of the prerequisite listed below has been met and applied before running the simulations.
+
++ Drones fly with an average of 50 ft/second (15m/sec). This applies to drone acceleration and deceleration.
++ Drones are equipped with the TB48S battery configuration. This allows for 30 minutes of endurance for a 4.4 lbs payload/package.  
++ Due to the aforementioned prerequisites, maximum range is limited to 17 miles - allowing for an effective roundtrip radius of 8.5 miles.
++ Recharging battery time for a complete charge is set to 90 minutes (based on 0% to 100%).
++ Drones will be recharged to full capacity after each flight, regardless of the travelled distance and available battery life.
++ Recharge time roughly represents the flight time by a factor of 3. Meaning, a flight time between 3-6 minutes will require a recharging time of 9-18 minutes. 
++ Drones will fly “uncontrolled”. Meaning, there will be no transmission range implemented. Instead, drones will be programmed with address coordinates and flight obstacles (flight profile) prior to the start of the simulation. 
 
 #### Assumptions:
 
