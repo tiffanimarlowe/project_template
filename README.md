@@ -261,4 +261,6 @@ Gulden, T. R. (2017). The Energy Implications of Drones for Package Delivery: A 
 
 Thiels, C. A., Aho, J. M., Zietlow, S. P., & Jenkins, D. H. (2015). Use of unmanned aerial vehicles for medical product transport. Air medical journal, 34(2), 104-108.
 
+https://help.anylogic.com/index.jsp?topic=%2Fcom.anylogic.help%2Fhtml%2Fgis%2Ftutorial%2FSupply+Chain+GIS+-+Phase+1.html
 
+https://www.anylogic.com/resources/educational-videos/delivery-fleet-optimization-with-gis/
