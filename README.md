@@ -129,11 +129,13 @@ For the purpose of the simulations, we have used a quarter of the depicted area 
 
 
 
-#### Simulation:
+##### Research Simulation Design: Anylogic
+
+Below is the simulated design process for the AnyLogic Model. For this purpose of this model, the simulation starts with 5 / 8 / 11 drones for a runtime of 600 minutes (10 hours). Within this runtime, there is only 1 order per household (HH) per hour (13 orders/hour).
 
 ![Model AnyLogic Sim ](images/Model_AnyLogic.png)
 
-Based on the depicted AnyLogic Model (aboce) as the core process, we started with 5 / 8 / 11 drones and 1 order per household (HH) per hour (13 orders/hour). Runtime is 600 minutes (10 hours). 
+
 
 
 #### Python:
