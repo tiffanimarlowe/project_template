@@ -171,6 +171,7 @@ Below is the simulated design process for the Python  Model. For this purpose of
 
 The maintenance scores for drone delivery utilization, optimization, and time for 1-, 2-, and 3- order/HH/hour in the Anylogic Model 1 were analyzed with a within-subjects design. Where the number of drones varied from 5, 8, and 11 for each amount of delivery per hour. In aviation, a rule of thumb is that for every aircraft you need to employ at all time, you need at least three. Thus, for this simulation the number of drones (5, 8, 11) tripled each time the orders increased from 1, 2 to 3.  After running the simulation, statistics reveled a main effect for 1 order/household/hour, with 11 drones having the most efficient scores (utilization rate = 81%, deliveries = 94, time = < 40 minutes), followed by 18 drones for 2/HH/Hour (utilization rate = 85%, deliveries = ?, time = < 30 minutes), and then finally  25 drones for 3/HH/Hour (utilization rate = 85%, deliveries = ?, time = < ? minutes). An optimization process over 85% is unrealistic due to planned and unplanned maintenance, and room for higher package reserves during peak times. Therefore, the optimization process at which we used, 85% is shown in Figure 1. 
 
+Since the utilization of over 85% is unrealistic, the formulated goal could not be met with 5 and 8 drones. Results showed that due to the high utilization rate there was no time to accept sufficient orders. With 5 drones in use, only 53 packages were delivered compared to 94 deliveries with 11 drones. All 2 package deliveries were completed within 30 minutes of the order, which shows the potential of drone based delivery systems. Interestingly, for 3 packages the number of drones doesn't necessarily equally to the magnitude of orders. The result shows that the optimization is correct. Even simulations with significantly more drones (up to 45) don’t show any significant differences between number of orders served or service time until delivery. The only difference is the utilization time, which drops significantly and is therefore counterproductive (as it is a cost-driver).
 
 There was also a main effect on drone delivery time based on both drone speed (normal, fast) and battery charge. These statistics revealed that a fast speed (60 mph) had a main effect for each reducing drone delivery time for 1 order/HH/Hour (delivery time reduction = 39%), followed by 2 order/HH/Hour (delivery time reduction = 30%), and then finally by 3 order/HH/Hour (delivery time reduction = 9%).  Further inspection of these results revealed that implementing “both” improvements (faster speed and less charge time) for each package amount reduced mean time and max delivery time, 1 order/HH/Hour (reduced mean time = 37%, reduced max delivery time = 54%), 2 order/HH/Hour (reduced mean time = 29%, reduced max delivery time = 43%), and 3 order/HH/Hour (reduced mean time =21%, reduced max delivery time = 32%). Results and descriptive statistics for each package order amount (1, 2, 3) are shown in Figure 2, 3, and 4.
 
@@ -224,12 +225,11 @@ Video with statistics for 3_25_both on:   https://youtu.be/Bg6cD1Y4d-0
 
 INSERT FINDINGS HERE
 
-________________
-________________________________________
 
 
-#### Questions answered so far:
 
+
+## Discussion
 1) Is drone delivery efficient as a air based delivery methods? If so,
 + How long does it take (on average) to deliver a package to a certain location by air?
   - depending on the number of drones and the distance to be travelled usually about 30 minutes (with the prerequisites and assumptions formulated above). That is when the optimal number of drones is found for the actual demand with a utilization rate not higher 85%.
@@ -242,80 +242,10 @@ ________________________________________
    - Yes, they can and it is dependant on the number of orders the systems is prepared for. 
 
 
-In the next simulation runs, we will change the speed (in the images below as: "fast") and shorten the charging times of the batteries ("charge"), as this is currently the limiting factor on usage. Lastly, both changes/improvements will be implemented ("both") and analyzed 
-
-- "fast": the speed will be adapted to 60 mph (88ft/sec, 29m/sec). Modern drones can achive that speed and are foreseen to be faster, depending on the type of drones. 
-- "charge": the charging time will be reduced by 1/3, so now a full charge can be done within 60 minutes (instead of 90 minutes).
-- "both": both above described improvements are being implemented into the drone simulation. 
-
-Otherwise, all other values (houses, number of drones, ...) will remain as above to be able to compare the impact of the changes.
-
-
-#### Results:
-
-The changes in the values of charging time, speed and both are described and summarized here. The first image shows the effects on 1 order/HH/hour for the given area and 11 drones. The optimization process shows slight variations in necessary drones:  
-
-  - 1_11 (normal) is 11      
-  - 1_11fast is 12     
-  - 1_11charge is 9      
-  - 1_11both is 9      --> thats a change of 19% from normal to both
-
-Even though the optimization run suggests to change the number of drones, I left them deliberatly at the "normal" value to see the difference in the simulation. the numbers are as follows:
-
-![1 order with 11 drones, improvements: overview ](images/1_11_summary.png)
-
-The first striking difference (on the right side), as to be expected, the flight time is almost reduced to half. This is logical as the speed almost doubled (34mph --> 60mph). 
-- The effect of the increased speed on delivery time is also significant with a mean from 17.7 minutes to 12.5, which is a reduction of almost 30%. 
-- The reduced charging time shows its effect on the max delivery time value, as it is also significantly reduced from 37.6 to 22.9 minutes. This is a reduction of 39%! Obviously, implementing both improvements reduce the mean and the max delivery time again, as both can have cumulative or subsidiary effects. 
-
---> Implementing both improvements reduce mean time by 37% and the max delivery time by 54%. 
-
-
-The next image shows the effects on the 2 order/HH/hour for the given area and 18 drones. The optimization process shows again positive variations in necessary drones (decrease of up to 3, which equals a 17% reduction):  
-
-  - 2_18 (normal) is 18      
-  - 2_18fast is 16     
-  - 2_18charge is 17     
-  - 2_18both is 15     --> thats a change of 17% from normal to both
-
-Again, I left the number of drones at the "normal" value to see the difference in the simulation. the numbers are as follows:
-
-![2 orders with 18 drones, improvements: overview ](images/2_18_summary.png)
-
-As above, the flight time is almost reduced to half. This will always be the case because it is logical as the speed almost doubled (34mph --> 60mph). It will not be mentioned in further discussions. 
-
-- The effect of the increased speed on delivery time in a higher number environment, with more drones and more orders shows again improvements on the mean delivery time from 15.6 minutes to 13.2, which is a reduction of almost 16%. The reduction is smaller, but so is the mean time to begin with. This seems to be a normal effect, as smaller numbers are less tolerant to outlying behavior or problems. (In fleet management this is the so called "curse of small numbers".) 
-- The reduced charging time again shows its effect best on the max delivery time value, as it is reduced from 31 to 21.7 minutes. This is a reduction of 30%!  
-
---> Implementing both improvements reduce mean time by 29% and the max delivery time by 43%. 
-
-
-Here are the effects on 3 order/HH/hour and 25 drones. The optimization process shows again positive variations in necessary drones (decrease of up to 7, which equals a 28% reduction) for a targeted utilization rate of 85%:  
-
-  - 3_25 (normal) is 25      
-  - 3_25fast is 25     
-  - 3_25charge is 19     
-  - 3_25both is 18     --> thats a change of 28% from normal to both!
-
-![3 orders with 25 drones, improvements: overview ](images/3_25_summary.png)
-
-- The effect of speed increase on delivery time in an even higher number environment, with more drones and more orders shows again  improvements on the mean delivery time, here from 14.2 minutes to 11.4, which is about 20%. This reduction is somewhat higher than for the 2_18 simulation, but it seems to be a normal variation. This seems to be a normal effect, as smaller numbers are less tolerant to outlying behavior or problems. (In fleet management this is the so called "curse of small numbers".) 
-- The reduced charging time again shows its effect best on the max delivery time value, as it is reduced from 25.7 to 23.3 minutes. This is only a nimor reduction of 9%.  
-
---> Implementing both improvements reduce mean time from 14.2 to 11.2 minutes (21%) and the max delivery time from 25.8 to 17.6minutes  (32%). 
-
-Video with statistics for 3_25_both on:   https://youtu.be/Bg6cD1Y4d-0
-
 
 #### Questions answered for this part:
 
 2) How does increased battery and max speed effect utilization, arrival time and the number of drones needed?
-
-
-
-
-
-## Discussion
 
 
 
