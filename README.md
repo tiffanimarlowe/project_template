@@ -90,23 +90,6 @@ We want to demonstrate how and which scale of effort is needed, the quality and 
 
 Changing certain parameters on the drone (like battery density/endurance, max speed, charging time) predict completion estimates with newer technology.
 
-#### Python:
-
-- 
-
-
-## Expected Results (THIS NOW NEEDS TO BE RESULTS SECTION)
-After creating and analyzing the delivery system simulation, we expect to find air based delivery methods will be more efficient compared to ground based delivery methods. In particular, we believe that drone delivery will be significantly faster and more efficient compared to ground based delivery; perhaps even 30% more efficient. With that being said, we are not sure at what point and what conditions it will take for ground based delivery systems to exceed drone delivery abilities.  Lastly, we expect that battery life and the weight of the packages will have an overall effect on the air delivery systems capabilities.
-
-
-## (Other)
-
-
-Tiffani: 
-
-I put everything, (and as much of I write up I can give you) here: I dont really know where iit would fit best, so feel free to improve my writing and put it where it belongs. Images, links for movies and text....
-
-
 In order to model a simulation, and therefore to answer the questions that we have formulated, we had to define certain prerequisites and assumptions to calculate from a valid and repeatable standpoint. Since this is a drone based simulation, we have done a market screening and decided for a product of the DJI company which offers the best compromise between (carrying) power, in other words how much weight it can transport and lift, and endurance. Endurance is important as it ensures the neccessary reach of the drone and therefore a higher radius. 
 
 The drone is the DJI Matrice 600 (matrice multiplication which is by pure coincidence the mathematics behind our Python simulation, no pun intended). It is build and used for professional users, offers a high amount of documentation, is highly exact in flying to coordinates (a prerequiste in unmanned/unmonitored flying) due to its sensor layout, could carry up to 5.5kg (12.1 lbs) and has a speed of up to 40 knots (which translates to 40 mph when there is no wind). Due to its retractable landing gear, it could also carry light, oversized packages. 
@@ -149,6 +132,25 @@ For the simulation, we have used only a quarter of the depicted area above as it
 ![Model AnyLogic Sim ](images/Model_AnyLogic.png)
 
 Based on the depicted AnyLogic Model (aboce) as the core process, we started with 5 / 8 / 11 drones and 1 order per household (HH) per hour (13 orders/hour). Runtime is 600 minutes (10 hours). 
+
+
+#### Python:
+
+- 
+
+
+## Expected Results (THIS NOW NEEDS TO BE RESULTS SECTION)
+After creating and analyzing the delivery system simulation, we expect to find air based delivery methods will be more efficient compared to ground based delivery methods. In particular, we believe that drone delivery will be significantly faster and more efficient compared to ground based delivery; perhaps even 30% more efficient. With that being said, we are not sure at what point and what conditions it will take for ground based delivery systems to exceed drone delivery abilities.  Lastly, we expect that battery life and the weight of the packages will have an overall effect on the air delivery systems capabilities.
+
+
+## (Other)
+
+
+Tiffani: 
+
+I put everything, (and as much of I write up I can give you) here: I dont really know where iit would fit best, so feel free to improve my writing and put it where it belongs. Images, links for movies and text....
+
+
 
 #### Results:
 
