@@ -174,6 +174,34 @@ The maintenance scores for drone delivery utilization, optimization, and time fo
 
 There was also a main effect on drone delivery time based on both drone speed (normal, fast) and battery charge. These statistics revealed that a fast speed (60 mph) had a main effect for each reducing drone delivery time for 1 order/HH/Hour (delivery time reduction = 39%), followed by 2 order/HH/Hour (delivery time reduction = 30%), and then finally by 3 order/HH/Hour (delivery time reduction = 9%).  Further inspection of these results revealed that implementing “both” improvements (faster speed and less charge time) for each package amount reduced mean time and max delivery time, 1 order/HH/Hour (reduced mean time = 37%, reduced max delivery time = 54%), 2 order/HH/Hour (reduced mean time = 29%, reduced max delivery time = 43%), and 3 order/HH/Hour (reduced mean time =21%, reduced max delivery time = 32%). Results and descriptive statistics for each package order amount (1, 2, 3) are shown in Figure 2, 3, and 4.
 
+For a further breakdown of the statistics, the changes in the values of charging time, speed and both are described and summarized here. Figure 2 shows the effects on 1 order/HH/hour for the given area and 11 drones. The optimization process shows slight variations in necessary drones:  
+
+  - 1_11 (normal) is 11      
+  - 1_11fast is 12     
+  - 1_11charge is 9      
+  - 1_11both is 9      --> thats a change of 19% from normal to both
+
+Even though the optimization run suggests changing the number of drones, we left them deliberately at the "normal" value to see the difference in the simulation. In Figure 2, the first striking difference (on the right side), as to be expected - the flight time is almost reduced to half. This is logical as the speed almost doubled (34mph --> 60mph). The effect of the increased speed on delivery time is also significant with a mean from 17.7 minutes to 12.5, which is a reduction of almost 30%. The reduced charging time shows its effect on the max delivery time value, as it is also significantly reduced from 37.6 to 22.9 minutes. This is a reduction of 39%. Obviously, implementing both improvements reduce the mean and the max delivery time again, as both can have cumulative or subsidiary effects. Implementing both improvements reduce mean time by 37% and the max delivery time by 54%. 
+
+Figure 3 shows the effects on the 2 order/HH/hour for the given area and 18 drones. The optimization process shows again positive variations in necessary drones (decrease of up to 3, which equals a 17% reduction):  
+  - 2_18 (normal) is 18      
+  - 2_18fast is 16     
+  - 2_18charge is 17     
+  - 2_18both is 15     --> thats a change of 17% from normal to both
+
+Again, we left the number of drones at the "normal" value to see the difference in the simulation. As shown in Figure 3 below, the flight time is almost reduced to half. This will always be the case because it is logical as the speed almost doubled (34mph --> 60mph). It will not be mentioned in further discussions. The effect of the increased speed on delivery time in a higher number environment, with more drones and more orders shows again improvements on the mean delivery time from 15.6 minutes to 13.2, which is a reduction of almost 16%. The reduction is smaller, but so is the mean time to begin with. This seems to be a normal effect, as smaller numbers are less tolerant to outlying behavior or problems. In fleet management this is the so called "curse of small numbers".  The reduced charging time again shows its effect best on the max delivery time value, as it is reduced from 31 to 21.7 minutes. This is a reduction of 30%. Implementing both improvements reduce mean time by 29% and the max delivery time by 43%. 
+
+Lastly, Figure 4 shows the effects on 3 order/HH/hour and 25 drones. The optimization process shows again positive variations in necessary drones (decrease of up to 7, which equals a 28% reduction) for a targeted utilization rate of 85%:  
+  - 3_25 (normal) is 25      
+  - 3_25fast is 25     
+  - 3_25charge is 19     
+  - 3_25both is 18     --> thats a change of 28% from normal to both!
+  
+The effect of speed increase on delivery time in an even higher number environment, with more drones and more orders shows again improvements on the mean delivery time, here from 14.2 minutes to 11.4, which is about 20%. This reduction is somewhat higher than for the 2_18 simulation, but it seems to be a normal variation. This seems to be a normal effect, as smaller numbers are less tolerant to outlying behavior or problems. The reduced charging time again shows its effect best on the max delivery time value, as it is reduced from 25.7 to 23.3 minutes. This is only a minor reduction of 9%.  Implementing both improvements reduce mean time from 14.2 to 11.2 minutes (21%) and the max delivery time from 25.8 to 17.6 minutes (32%). 
+
+Video with statistics for 3_25_both on:   https://youtu.be/Bg6cD1Y4d-0
+
+
 ![Optimization process for 85% threshold ](images/optimization.png)
 
 				Figure 1: Optimization  process for 85% threshold
@@ -285,14 +313,6 @@ Video with statistics for 3_25_both on:   https://youtu.be/Bg6cD1Y4d-0
 
 
 
-
-Tiffani:
-
-I have attached the complete screenshots of the simulations made for the three different settings (1, 2 and 3 orders per HH and hour) in the image section. They  are each called 1_11 (meaning: 1 order, 11 drones), 2_18 (2 orders, 18 drones) and 3_25 with the abbreviation of the included improvement ("fast" ist increased speed to 60mph, "charge" is the reduced charging time by 1/3, and "both" is the implementation of both). This needs to be analyzed and summarized some more (with a couple of images on the ReadMe here) and compared to each other. Values to look at could be max times and deviation.
-
-Also important in the images for analyzis which I havent done so far: the number of delivered packages increased in every improvement, because it gives a good value on the capability and effects of the improvements (how much more can be handled...). 
-
-For questions just write me...
 
 
 ## Discussion
