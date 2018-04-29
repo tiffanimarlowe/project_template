@@ -71,18 +71,14 @@ For the purpose of this experiment we will focus our attention on simulating var
 ## Fundamental Questions
 By focusing on these specific variables and prerequisites (see also below) within the simulation, we aim to answer the following questions below:
 
-#### 1) Is drone delivery efficient as a air based delivery methods? If so,
+##### 1) Is drone delivery efficient as a air based delivery methods? If so,
 + How long does it take (on average) to deliver a package to a certain location by air?
 + How will efficiency change with increasing number of orders and diversified locations?
 + How long does it take to deliver 50 packages via air based system?
 
-#### 2) How does increased battery and max speed effect utilization, arrival time and the number of drones needed?
+##### 2) How does increased battery and max speed effect utilization, arrival time and the number of drones needed?
 
-#### 3) Can drones reduce average delivery time to 1 hour (as intended by Amazon Prime Air), how much drones are neccessary? 
-
-
-## Expected Results
-After creating and analyzing the delivery system simulation, we expect to find air based delivery methods will be more efficient compared to ground based delivery methods. In particular, we believe that drone delivery will be significantly faster and more efficient compared to ground based delivery; perhaps even 30% more efficient. With that being said, we are not sure at what point and what conditions it will take for ground based delivery systems to exceed drone delivery abilities.  Lastly, we expect that battery life and the weight of the packages will have an overall effect on the air delivery systems capabilities.
+##### 3) Can drones reduce average delivery time to 1 hour (as intended by Amazon Prime Air), how much drones are neccessary? 
 
 ## Research Methods
 
@@ -99,15 +95,19 @@ Changing certain parameters on the drone (like battery density/endurance, max sp
 - 
 
 
+## Expected Results (THIS NOW NEEDS TO BE RESULTS SECTION)
+After creating and analyzing the delivery system simulation, we expect to find air based delivery methods will be more efficient compared to ground based delivery methods. In particular, we believe that drone delivery will be significantly faster and more efficient compared to ground based delivery; perhaps even 30% more efficient. With that being said, we are not sure at what point and what conditions it will take for ground based delivery systems to exceed drone delivery abilities.  Lastly, we expect that battery life and the weight of the packages will have an overall effect on the air delivery systems capabilities.
+
+
 ## (Other)
-(change the title and amount of headers as needed) (mention datasets you are going to use) (mention base code or examples you)
+
 
 Tiffani: 
 
 I put everything, (and as much of I write up I can give you) here: I dont really know where iit would fit best, so feel free to improve my writing and put it where it belongs. Images, links for movies and text....
 
 
-On order to model a simulation, and therefore to answer the questions that we have formulated, we had to define certain prerequisites and assumptions to calculate from a valid and repeatable standpoint. Since this is a drone based simulation, we have done a market screening and decided for a product of the DJI company which offers the best compromise between (carrying) power, in other words how much weight it can transport and lift, and endurance. Endurance is important as it ensures the neccessary reach of the drone and therefore a higher radius. 
+In order to model a simulation, and therefore to answer the questions that we have formulated, we had to define certain prerequisites and assumptions to calculate from a valid and repeatable standpoint. Since this is a drone based simulation, we have done a market screening and decided for a product of the DJI company which offers the best compromise between (carrying) power, in other words how much weight it can transport and lift, and endurance. Endurance is important as it ensures the neccessary reach of the drone and therefore a higher radius. 
 
 The drone is the DJI Matrice 600 (matrice multiplication which is by pure coincidence the mathematics behind our Python simulation, no pun intended). It is build and used for professional users, offers a high amount of documentation, is highly exact in flying to coordinates (a prerequiste in unmanned/unmonitored flying) due to its sensor layout, could carry up to 5.5kg (12.1 lbs) and has a speed of up to 40 knots (which translates to 40 mph when there is no wind). Due to its retractable landing gear, it could also carry light, oversized packages. 
 
