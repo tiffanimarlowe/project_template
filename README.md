@@ -41,31 +41,29 @@ We hypothesize:
 2.) Improved battery life and speed will significantly reduce the overall number of drones needed. Therefore, reducing the logistical footprint and costs for the respective logistical company - making it easier, cheaper and more probable to implement. 
 
 
-
 ## The Model
-
-***DELETE PARAGRAPH*** After working on both Python and AnyLogic and feedback given by Dr. Kider and the Teaching Assistant (TA), the intended model as depicted below will no longer be used. It seemed like a natural evolution, while working on the actual respective models that easier and better to implement solutions were found. So what is shown here was the intention, which has developed into the adapted models shown below. 
- 
-In order to represent and depict the simulated drone delivery system, we have created (refined from our previous Transportation Simulation Model) both the Object Diagram (Figure 1) and Behavioral Diagram (Figure 2) shown below. 
+In order to represent and depict all aspects of the simulated drone delivery system, we have created (refined from our previous Transportation Simulation Model) multiple Object and Behavioral Diagrams. This enables us to describe both simulations (Anylogic and Python) from a model perspective. Each system offers a unique approach to answering the same fundamental questions stated below.
 
 ![NEW Object Diagram - AnyLogic](images/Diagrams2.jpg)
 
 ![NEW Behavior Diagram - AnyLogic](images/Diagrams.jpg)
 
-Figure 1 describes the various objects in the simulation and their attributes in which we will be focusing our attention (battery life, propulsion, etc.). Within Figure 2, the interactions between the variables and how the simulation will be executed is depicted. Both models have been created based on current delivery technology systems and then tweaked specifically for drone usage. Gathered from the models, you can see that the initial state starts with the customer. When customers place an order, the order is then sent to a distribution center where the package will be handled and later picked up by a drone to be delivered to the customer. Once the drone has delivered the package, it returns to the distribution center to recharge until the process starts again.
+Object Diagram (Figure 1) and Behavior Diagram (Figure 2) shown above represent the Anylogic simulation that focuses on answering questions related to drone optimization and utilization from an Agent Based perspective. Figure 1 describes the various objects in the simulation and their attributes in which we will be focusing our attention (battery life, propulsion, etc.). Within Figure 2, the interactions between the variables and how the simulation will be executed is depicted. Gathered from the models, you can see that the initial state starts with the customer. When customers place an order, the order is then sent to a distribution center where the package will be handled and later picked up by a drone to be delivered to the customer. Once the drone has delivered the package, it returns to the distribution center to recharge until the process starts again.
 
-For the purpose of this experiment we will focus our attention on simulating various input and output variables. For a greater understanding, they are listed below:
+PYTHON OBJECT DIAGRAM HERE (Figure 3)
+PYTHON BEHAVIOR DIAGRAM HERE (Figure 4)
 
-•	drone delivery methods
-•	battery life
-•	propulsion
-•	speed of delivery
-•	number of drones
+While Object Diagram (Figure 3) and Behavior Diagram (Figure 4) shown above represent the Python simulation that focuses on individual drone utilization and efficiency from a Discrete system perspective.
 
+(MORE DESCRIPTION NEEDED)
 
-***DELETE PARAGRAPH*** The new diagrams focus solely on the drone aspect of the simulation. We have created each a Python and an AnyLogic simulation, each with a different approach to the below stated fundamental questions. Here is the AnyLogic part:
+Both models have been created based on current delivery technology systems and then tweaked specifically for drone usage. For the purpose of this experiment we focus our attention on simulating various input and output variables within each system. For a greater understanding, they are listed below:
 
-
++	drone delivery methods
++	battery life
++	propulsion
++	speed of delivery
++	number of drones
 
 
 ## Fundamental Questions
