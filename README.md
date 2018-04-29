@@ -96,6 +96,10 @@ The drone model we chose to base our prerequisites and assumptions on is the DJI
 
 For more information on the Matrice 600 drone technical specs, see: https://www.dji.com/matrice600 
 
+To further validate our simulation and provide more realistic data in terms of package weight, size and delivery time, we completed a survey that compared 10 Amazon orders from 4 individuals. In doing so, we concluded that the average package size for delivery is about 10x5x8 inches in length (min size: 5x5x5, max size: 17x10x11) for packages that weighed 4lbs or less. Average delivery time was 2.0 days. We focused on packages of this weight to replicate the simulated drone max weight of 4lbs. For the purpose of the simulation, everything above this weight limited will not be offered for “Air Delivery”. 
+
+Gathered from the Matrice 600 spec data and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic simulation. They are defined below.
+
 
 #### Prerequisites taken from the documentation and flight experience 
 
