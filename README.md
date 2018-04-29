@@ -44,31 +44,28 @@ We hypothesize:
 
 ## The Model
 
-After working on both Python and AnyLogic and feedback given by Dr. Kider and the Teaching Assistant (TA), the intended model as depicted below will no longer be used. It seemed like a natural evolution, while working on the actual respective models that easier and better to implement solutions were found. So what is shown here was the intention, which has developed into the adapted models shown below. 
+***DELETE PARAGRAPH*** After working on both Python and AnyLogic and feedback given by Dr. Kider and the Teaching Assistant (TA), the intended model as depicted below will no longer be used. It seemed like a natural evolution, while working on the actual respective models that easier and better to implement solutions were found. So what is shown here was the intention, which has developed into the adapted models shown below. 
  
-![Structural Diagram](images/obj_dia.jpg)
-
-As you can see, for the purpose of this experiment we will focus our attention on simulating various input and output variables. For a greater understanding, they are also listed below:
-+ transportation type (truck vs drone)
-+ drone delivery methods
-+ battery life
-+ location of drop off destinations (homes)
-+ speed of delivery
-+ various number of delivery hubs
-
-
-![Behavior Diagram](images/beh_dia.jpg)
-
-The purpose of Figure 1 (Transportation Simulation Model – Object Diagram) and Figure 2 (Transportation Simulation Method – Behavioral Diagram) is to provide a depiction of the current problem we are trying to address.
-
-As shown above, Figure 1 describes the various objects in the simulation (delivery system, customer, etc.) and their attributes in which we will be focusing our attention (battery life, location, etc.). Within Figure 2, you can clearly understand the interactions between the variables and how the simulation will be executed. Gathered from the models, you can see that the initial state starts with the customer. They first place an order; the order is then sent to a distribution center where the package will be delivered based on two forms of delivery (drone and/or truck).
-
-
-The new diagrams focus solely on the drone aspect of the simulation. We have created each a Python and an AnyLogic simulation, each with a different approach to the below stated fundamental questions. Here is the AnyLogic part:
+In order to represent and depict the simulated drone delivery system, we have created (refined from our previous Transportation Simulation Model) both the Object Diagram (Figure 1) and Behavioral Diagram (Figure 2) shown below. 
 
 ![NEW Object Diagram - AnyLogic](images/Diagrams2.jpg)
 
 ![NEW Behavior Diagram - AnyLogic](images/Diagrams.jpg)
+
+Figure 1 describes the various objects in the simulation and their attributes in which we will be focusing our attention (battery life, propulsion, etc.). Within Figure 2, the interactions between the variables and how the simulation will be executed is depicted. Both models have been created based on current delivery technology systems and then tweaked specifically for drone usage. Gathered from the models, you can see that the initial state starts with the customer. When customers place an order, the order is then sent to a distribution center where the package will be handled and later picked up by a drone to be delivered to the customer. Once the drone has delivered the package, it returns to the distribution center to recharge until the process starts again.
+
+For the purpose of this experiment we will focus our attention on simulating various input and output variables. For a greater understanding, they are listed below:
+
+•	drone delivery methods
+•	battery life
+•	propulsion
+•	speed of delivery
+•	number of drones
+
+
+***DELETE PARAGRAPH*** The new diagrams focus solely on the drone aspect of the simulation. We have created each a Python and an AnyLogic simulation, each with a different approach to the below stated fundamental questions. Here is the AnyLogic part:
+
+
 
 
 ## Fundamental Questions
