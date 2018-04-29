@@ -68,16 +68,16 @@ Both models have been created based on current delivery technology systems and t
 
 
 ## Fundamental Questions
-By focusing on these specific variables and prerequisites (see also below) within the simulation, we aim to answer the following questions below:
-
-##### 1) Is drone delivery efficient as a air based delivery methods? If so,
+By implementing both an Agent Based (Anylogic – Model 1) and Discrete Simulation (Python – Model 2), we aim to answer each of the following questions below: 
+##### 1) Is drone delivery efficient as an air based delivery method? If so,
 + How long does it take (on average) to deliver a package to a certain location by air?
 + How will efficiency change with increasing number of orders and diversified locations?
 + How long does it take to deliver 50 packages via air based system?
 
 ##### 2) How does increased battery and max speed effect utilization, arrival time and the number of drones needed?
 
-##### 3) Can drones reduce average delivery time to 1 hour (as intended by Amazon Prime Air), how much drones are neccessary? 
+##### 3) Can drones reduce average delivery time to 1 hour (as intended by Amazon Prime Air). If so, 
++ How many drones are necessary to achieve this?
 
 ## Research Methods
 
