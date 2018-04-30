@@ -274,7 +274,7 @@ Unlike the Anylogic model, this model approaches the drone delivery system from 
 
 ![Python Results](images/100x100.PNG)
 
-After running the simulation for 100 times for 100 packages, we found that drone 1 usage was slightly higher than drone 2 usage, but significantly higher than drone 3 usage.
+After running the simulation for 100 times for 100 packages, we found that drone 1 usage (51 times) was slightly higher than drone 2 usage (43 times), but significantly higher than drone 3 usage (6 times). In order to deliver 100 packages, it took 3 drones on average less than an hour and half per delivery. Drone frequency spiked on average every 20 packages and the average distance traveled for each drone was 10 miles.
 
 ![Python Results](images/100x200.PNG)
 
