@@ -188,7 +188,8 @@ For additional insight into the python coding process, see the code and images f
 
 ##### Model 1 Results: Anylogic (Summary)
 
-The maintenance scores for drone delivery utilization, optimization, and time for 1-, 2-, and 3- orders/household(HH)/hour in the Anylogic Model were analyzed with a within-subjects design. Where the number of drones first varied from 5, 8, and 11 for 1 delivery per hour. After using the in-build optimization tools provided by AnyLogic, it was relatively easy to find the best order to droneratio, based on the utilization rate.  
+The maintenance scores for drone delivery utilization, optimization, and time for 1-, 2-, and 3- orders/household(HH)/hour in the Anylogic Model were analyzed with a within-subjects design. Where the number of drones first varied from 5, 8, and 11 for 1 delivery per hour. After using the in-build optimization tools provided by AnyLogic, it was relatively easy to find the best order to drone ratio, based on the utilization rate.  
+
 After running the simulation, statistics reveled different values and statistics for the different numbers of order/HH/hour, with 1 order/HH/hour with with an optimum 11 drones having a utilization rate = 81%, fulfilled deliveries = 94, and a max delivery time < 40 minutes. 2orders/HH/hour with an optimum of 18 drones have a utilization rate = 85%, fulfilled deliveries = 164 and a max delivery time < 30 minutes. 25 drones for 3/HH/Hour show a utilization rate = 85%, fulfilled deliveries = 217 and a max delivery time  < 28 minutes.
 
 An utilization of over 85% is unrealistic due to planned and unplanned maintenance, and room for higher package order rate reserves during peak times. Therefore, the optimization process we used aimed for 85% and is shown in Figure 1. This is the optimization functionality included in AnyLogic and was used for all our scenarios. 
@@ -271,7 +272,19 @@ Video with statistics for 3_25_both on:   https://youtu.be/Bg6cD1Y4d-0
 
 ##### Model 2 Results: Python
 
-INSERT FINDINGS HERE
+Unlike the Anylogic model, this model approaches the drone delivery system from an individual drone efficiency perspective based on battery charge, velocity, and the number of package deliveries.  Drones are sent out for delivery throughout the day and whenever their battery life was depleted, another drone would be sent out while the first drone recharged. Implementing a time array and battery charge equation, we were able to vary the time it took for a drone to deliver a package based on different customer locations and drone battery life. We created the simulation using a within-subject design based on 100, 1,000, and 10,000 runs and varied the number of packages being delivered (100, 200 or 500) to determine how often drone 1, 2, and 3 were used for delivery. To provide more insight for each run, we have created multiple graphs to represent basic statistics (min, max, average), CDF, PDF, frequency utilization rate, and distance traveled in miles. These images can be found here: [**Python Images**](images/python/README.md).
+
+After running the simulation for 100 times for 100 packages, we found that drone 1 usage was slightly higher than drone 2 usage, but significantly higher than drone 3 usage (shown in Figure 5 below). The next scenario simulated 100 runs for a total of 200 packages and showed similar results. Drone 1 and 2 were similar in usage (99 times, 91 times), while drone 3 was briefly used (10 times). Shown in Figure 6 below.
+
+![Python Results](images/python/100runs100.png)
+
+				Figure 5: 100 Runs with 100 Packages
+
+![Python Results](images/python/100runs200.png)
+
+				Figure 6: 100 Runs with 200 Packages
+
+
 
 
 
