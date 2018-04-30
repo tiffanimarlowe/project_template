@@ -89,7 +89,9 @@ By implementing both an Agent Based (Anylogic – Model 1) and Discrete Simulati
 
 ## Research Methods
 
-To address and answer the fundamental questions above, we have developed and executed an Agent Based Simulation within the simulation software Anylogic and a Dicrete Event Simulation in Python. We were able to depict specific areas of the city of Orlando within the simulation by gathering GIS data. Throughout this simulation we hope to evaluate the overall effort needed to partly replace, or at least improve, current ground based methods of delivery and meet future consumer expectations.
+To address and answer the fundamental questions above, we have developed and executed an Agent Based Simulation within the simulation software Anylogic and a Discrete Event Simulation in Python. We chose to tackle this topic from two different simulation approaches in order to apply our newly learned skills from class. This enables us to answer each fundamental question about drone delivery that we may have not been able to do otherwise if we only chose one simulation approach. We also wanted to determine whether an Agent Based simulation or Discrete Event simulation provided more realistic approach to our problem statement. 
+
+We were able to depict specific areas of the city of Orlando within both simulations by gathering GIS data. Throughout these simulations we hope to evaluate the overall effort needed to partly replace, or at least improve, current ground based methods of delivery and meet future consumer expectations.
 
 In order to do so, we focused our attention on demonstrating how a drone delivery system would be implemented. This approach enables us to determine which scale of effort is needed and also define the quality and quantity of drones it would take to provide an efficient air based delivery system for the intended area. Changing certain parameters on the drone such as battery density, endurance, max speed, charging time, etc. can all help to predict completion estimates for newer technology.
 
@@ -133,7 +135,7 @@ Gathered from the Matrice 600 spec data (shown above: Image 3) and package surve
 							
                          			 Image 4: Drone Delivery Area
 
-For the purpose of both simulations, we have used a quarter of the depicted area shown in Image 4 (see below: Image 5) since direction has no real effect on the drone's abilities. An address provides the drone with one important parameter for the simulation, distance. This then translates into flight time, which is the limiting factor for the drone, thus determining the respective recharging time necessary for delivery. 
+For the purpose of both simulations, we have used a quarter of the depicted area shown in Image 4 and Image 5 since direction has no real effect on the drone's abilities. An address provides the drone with one important parameter for the simulation, distance. This then translates into flight time, which is the limiting factor for the drone, thus determining the respective recharging time necessary for delivery. 
 
 ![Chosen Simulation Delivery Area ](images/AnyLogicSim.png)
 
@@ -180,7 +182,7 @@ This function starts off by creating the necessary constraints. Additionally, us
 
 			Image: Map of Randomly places "homes"
 
-For additional insight into the python coding process, see the code file.
+For additional insight into the python coding process, see the code and images file located here: [**Python Code**](code/README.md)
 
 ## Results:
 
