@@ -135,9 +135,16 @@ Gathered from the Matrice 600 spec data (shown above: Image 3) and package surve
 
 For the purpose of both simulations, we have used a quarter of the depicted area shown in Image 4 and Image 5 since direction has no real effect on the drone's abilities. An address provides the drone with one important parameter for the simulation, distance. This then translates into flight time, which is the limiting factor for the drone, thus determining the respective recharging time necessary for delivery. 
 
-![Chosen Simulation Delivery Area ](images/AnyLogicSim.png)
+![Chosen Simulation Delivery Area for AnyLogic ](images/AnyLogicSim.png)
 
-                         			 Image 5: Drone Delivery Simulation Area
+                         			 Image 5: Drone Delivery Simulation Area (AnyLogic(GIS))
+
+Since Python is not utilizing GIS map data, the distribution of delivery adresses translate into distance from the delivery center. Even though the AnyLogic image seems more comprehensible, both approaches fulfill the needed functionality. 
+
+![Chosen Simulation Delivery Area for Python ](images/python/100runs/Map.png)
+
+                         			 Image 6: Drone Delivery Simulation Area (Python)
+
 
 #### Research Simulation Design: Anylogic
 
