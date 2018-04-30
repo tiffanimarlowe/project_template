@@ -269,12 +269,6 @@ Video with statistics for 3_25_both on:   https://youtu.be/Bg6cD1Y4d-0
 
 
 
-
-
-
-
-
-
 ##### Model 2 Results: Python
 
 INSERT FINDINGS HERE
@@ -292,11 +286,13 @@ In addition to the number of drones available, the battery life and speed of the
 As we have shown, overall drone delivery efficiency is associated with the numbers of orders placed in a given timeframe and the locations of drop off. Therefore, there are limitations to this system if there are not an appropriate number of drones available. We found the number of packages and orders has an immediate effect of the number of drones needed to fulfill orders within a specific timeframe. For example, in example 1 order/HH/Hour with 5 drones, we found there is a certain point when orders can no longer be fulfilled under an hour due to an influx of package orders. However, this limitation can be easily accounted for through simulation. As long as there is an appropriate number of drones available for a specified location and distribution center, the ability to delivery packages via air is plausible. 
 
 
-
-
-
 ## Future Work
-(final only - remove whole section for proposal Readme) (if you had 6 more months what would be the next steps in this project.) (What are a few questions you have now)
+This experiment has explored the possibility of implementing a drone air-based delivery system in the city of Orlando. We observed the effects of system efficiency, optimization and utilization based on various drone and package attributes such as number of drones available, speed, battery charge, and weight. These mechanisms will more than likely become an option for package delivery in the future. Through the use of simulation, we were able to determine how useful a drone system would be. With that being said, had we been allocated more time we would have incorporated additional elements to further replicate a real-world scenario. For example, we would have look at the effects of time of day/week and weather on overall drone delivery time.  We feel these elements alone would affect the efficiency of the drone delivery system and would determine how many drones would be needed given certain times of day/week. Poor weather would limit the number of packages being delivered and the time it takes to deliver a package.
+
+We believe that drone delivery will be significantly faster and more efficient compared to ground based delivery; perhaps even 30% more efficient. Therefore, we would also look into comparing drone routes to ground based delivery routes to determine which approach is more efficient. With that being said, we are not sure at what point and what conditions it will take for ground based delivery systems to exceed drone delivery abilities.  We would have to also account for the time of day/week, traffic, etc. to provide a realistic comparison of the two delivery methods.
+
+Lastly, had we more time we would also look into various other drone models to compare capabilities and determine which model would be more suitable for a city similar to the size of Orlando. A drone life expectancy may vary based on its capabilities and technological advancements. After 6 months, we could determine which models offer longer life expectancies when used multiple times every day. Comparing various models would also enable us to determine which model and approach is more cost efficient for both the consumer and retailer. Therefore, this information could be used by many retailers and larger corporations when deciding whether or not to implement a drone air-based delivery system.  
+
 
 ## References
 
