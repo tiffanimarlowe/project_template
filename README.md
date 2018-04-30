@@ -63,9 +63,7 @@ Object Diagram (Figure 1) and Behavior Diagram (Figure 2) shown above represent 
 
 			Figure 4: Python Behavior Diagram
 
-While Object Diagram (Figure 3) and Behavior Diagram (Figure 4) shown above represent the Python simulation that focuses on individual drone utilization and efficiency from a Discrete Event system perspective.
-
-(MORE DESCRIPTION NEEDED)
+While the Object Diagram (Figure 3) and Behavior Diagram (Figure 4) shown above represent the Python simulation that focuses on individual drone utilization and efficiency from a Discrete Event system perspective. Within these diagrams, the effects of distance, velocity, and battery life are taken into account when determining drone utilization. As shown in Figure 4, the initial condition is determined by the number of orders, distance, velocity and battery life. Once these attributes are determined, the system decides which drone (1, 2, or 3) is capable to successfully deliver the package. Once the package has been delivered, drones are sent back to the distribution center to be charged for later use. 
 
 Both models have been created based on current delivery technology systems and then tweaked specifically for drone usage. For the purpose of this experiment we focus our attention on simulating various input and output variables within each system. For a greater understanding, they are listed below:
 
