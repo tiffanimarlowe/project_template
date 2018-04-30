@@ -46,15 +46,24 @@ In order to represent and depict all aspects of the simulated drone delivery sys
 
 ![NEW Object Diagram - AnyLogic](images/Diagrams2.jpg)
 
+				Figure 1: Anylogic Object Diagram
+
+
 ![NEW Behavior Diagram - AnyLogic](images/Diagrams.jpg)
+		
+        		Figure 2: Anylogic Behavior Diagram
 
 Object Diagram (Figure 1) and Behavior Diagram (Figure 2) shown above represent the Anylogic simulation that focuses on answering questions related to drone optimization and utilization from an Agent Based perspective. Figure 1 describes the various objects in the simulation and their attributes in which we will be focusing our attention (battery life, propulsion, etc.). Within Figure 2, the interactions between the variables and how the simulation will be executed is depicted. Gathered from the models, you can see that the initial state starts with the customer. When customers place an order, the order is then sent to a distribution center where the package will be handled and later picked up by a drone to be delivered. Once the drone has delivered the package to the customer, it returns to the distribution center to recharge until the process starts again.
 
+![Python_OBJ](images/python/obj1.png)
 
-#### PYTHON OBJECT DIAGRAM HERE (Figure 3)
-#### PYTHON BEHAVIOR DIAGRAM HERE (Figure 4)
+			Figure 3: Python Object Diagram
 
-While Object Diagram (Figure 3) and Behavior Diagram (Figure 4) shown above represent the Python simulation that focuses on individual drone utilization and efficiency from a Discrete system perspective.
+![Python Behave](images/python/behave.png)
+
+			Figure 4: Python Behavior Diagram
+
+While Object Diagram (Figure 3) and Behavior Diagram (Figure 4) shown above represent the Python simulation that focuses on individual drone utilization and efficiency from a Discrete Event system perspective.
 
 (MORE DESCRIPTION NEEDED)
 
@@ -162,40 +171,16 @@ Multiple videos of the simulation have been provided below for more insight into
 
 #### Research Simulation Design: Python
 
-Below is the simulated design process for the Python Model. For this purpose of this model, the simulation starts with 
+Below is the simulated design process for the Python Model. For this purpose of this model, we began our simulation by creating a distance function that generates distances in miles on a constrained Grip Map. The Euclidian Distances are then calculated and stored along with a list of x and y coordinates. Additionally, we created a Speed function that is able to adjust the velocity depending on distance. Lastly, we developed a battery initializing function that creates an array of battery charge for each drone used.
 
-Object Diagram
-![Python_OBJ](images/python/obj1.png)
+This function starts off by creating the necessary constraints. Additionally, using Time equal to distance over Velocity. Using this newly calculated array to then simulate each delivery by taking in consideration the flight time with respect to the battery life and capacity. This allows us to monitor the battery life - if the battery life was at half capacity, another drone would be sent out for use, and the rest of the drones at the distribution center will be charging. Various statistics are then accounted for and collected. A Monte-Carlo Simulation is then set-up and ran for a number amount of trials for a variety number of stats.
 
-Behavioral Diagram
-![Python Behave](images/python/behave.png)
-
-Map of Randomly place "homes"
 
 ![Python Map Distr](images/python/100runs/Map.png)
 
->>> ADD MORE HERE, INSERT SIMULATiON IMAGE >>> 
-+Below is an explanation of the Model and Code:
-+![Python Distance](images/python/howto/distance.png)
-+Starting off by creating a distance function that generates distances in miles on a constrained Grip Map. The Euclidian Distances are then calculated and stored along with a list of x and y coordinates. 
-+
-+Additionally creating a Speed function that is able to adjust the velocity depending on distance.
-+![Python Speed](images/python/howto/speed.png)
-+Latly creating a battery initializing function that creates an array of battery charge for each drone used
-+![Python battery](images/python/howto/bat_life.png)
-+This function starts off by creating the necessary constraints. Additionally using Time equal to distance over Velocity. Using this newly calculated array to then simulate each delivery by taking in consideration the flight time with respect to the battery life and capacity. 
-+![Python flight](images/python/howto/flight1.png)
-+The equation can be seen in the photo below for drones[1].
-+
-+This allowed us to monitor the battery life and if the battery life was at half capacity, another drone will be sent out for use, and the rest of the drones at home base will be charging.
-+![Python flight](images/python/howto/flight2.png)
-+Various Stats are then accounted for and collected
-+![Python flight](images/python/howto/flight3.png)
-+
-+A Monte-Carlo Simulation is then set-up and ran for a number amount of trials for a variety number of stats. 
-+![Python Monte-Carlo](images/python/howto/monte.png)
-+![Python Monte-Carlo](images/python/howto/monte1.png)
- 
+			Image: Map of Randomly places "homes"
+
+For additional insight into the python coding process, see the code file.
 
 ## Results:
 
@@ -297,22 +282,13 @@ INSERT FINDINGS HERE
 
 
 ## Discussion
-1) Is drone delivery efficient as a air based delivery methods? If so,
-+ How long does it take (on average) to deliver a package to a certain location by air?
-  - depending on the number of drones and the distance to be travelled usually about 30 minutes (with the prerequisites and assumptions formulated above). That is when the optimal number of drones is found for the actual demand with a utilization rate not higher 85%.
-+ How will efficiency change with increasing number of orders and diversified locations?
-  - the number of orders have an immediate effect on the number of drones needed to keep the timelines under 1 hour. At a certain point, the orders can not be fulfilled in time and will lead to a cascade of unfulfilled orders (see example above with 1 order/HH/hour and 5 drones).
-+ How long does it take to deliver 50 packages via air based system?
-  - that depends on the rate of incoming orders and on the available drones in the distribution center. With a rate of 3 orders/HH/hour, it takes about 140 minutes, given the number of drones is about 25.
-  
-3) Can drones reduce average delivery time to 1 hour (as intended by Amazon Prime Air), how much drones are neccessary? 
-   - Yes, they can and it is dependant on the number of orders the systems is prepared for. 
 
+Through the use of both simulations (Anylogic and Python), we were able to answer many of our fundamental questions stated above. Through the Anylogic simulation we found that drones can successfully offer an efficient alternative to current package delivery systems today.  In particular, based on the number of drones and the distance criteria previously stated, drones on average can deliver packages under 4lbs in 30 mins. This is when the optimal number of drones is found for the actual demand with a utilization rate less than 85%. Through the use of an agent-based simulation we were able to calculate various real-world scenarios, such as how long it would take to deliver 50 packages via the air based delivery system. Our results showed that the rate of incoming orders to the distribution center has a large effect on the capabilities of the system but that delivering large quantities of packages are still possible. To further test this theory, we found that an incoming rate of 3 orders/HH/Hour for 25 drones, would take approximately 140 minutes to deliver 50 packages. In addition, we were able to reduce average delivery time to 1 hour, as intended by Amazon Prime Air, but the ability to do so is strictly dependent on the number of orders the system is prepared for.  If there is a limited number of drones available than the ability to deliver multiple packages within a given timeframe is impacted.
 
+In addition to the number of drones available, the battery life and speed of the drone also impact the utilization and success of the system. With greater battery life there is less time needed for charging and thus less drones required at one distribution center. With increased battery life and higher speeds, drones are capable of delivering packages at a much more efficient rate. This was apparent in each of the runs where both speed and battery charge were improved, leading to mean delivery time being significantly reduce.
 
-#### Questions answered for this part:
+As we have shown, overall drone delivery efficiency is associated with the numbers of orders placed in a given timeframe and the locations of drop off. Therefore, there are limitations to this system if there are not an appropriate number of drones available. We found the number of packages and orders has an immediate effect of the number of drones needed to fulfill orders within a specific timeframe. For example, in example 1 order/HH/Hour with 5 drones, we found there is a certain point when orders can no longer be fulfilled under an hour due to an influx of package orders. However, this limitation can be easily accounted for through simulation. As long as there is an appropriate number of drones available for a specified location and distribution center, the ability to delivery packages via air is plausible. 
 
-2) How does increased battery and max speed effect utilization, arrival time and the number of drones needed?
 
 
 
