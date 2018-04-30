@@ -232,7 +232,7 @@ def main():
         #print(beta, 'beta')
         #print(len(beta), 'length of beta')
 
-        return time , dist, average, maxtime, mintime, STD, xhomes, yhomes, beta, uno, dos, tres, all
+        return time , dist, average, maxtime, mintime, STD, xhomes, yhomes, beta, uno, dos, tres, all, total_flight_time
 
     uno_list = []
     dos_list = []
@@ -244,7 +244,7 @@ def main():
         for i in range(0,num_runs):
             print(i, "running")
 
-            t, d, avg, maxim, minim, STD, xhomes, yhomes, beta,uno, dos, tres, all = flight(200,3)
+            t, d, avg, maxim, minim, STD, xhomes, yhomes, beta,uno, dos, tres, all, total_flight_time = flight(100,3)
             uno_list.insert(i,uno)
             dos_list.insert(i, dos)
             tres_list.insert(i, tres)
@@ -271,11 +271,12 @@ def main():
             std_1 = np.std(uno_list)
             std_2 = np.std(dos_list)
             std_3 = np.std(tres_list)
-        return avg_1,avg_2,avg_3,std_1,std_2,std_3,t, d, avg, maxim, minim, STD, xhomes, yhomes, beta,uno, dos, tres, all, dist_avg,dist_std
+        return avg_1,avg_2,avg_3,std_1,std_2,std_3,t, d, avg, maxim, minim, STD, xhomes, yhomes, beta,uno, dos, tres, all, dist_avg,dist_std, total_flight_time
 
-    num_runs = 1000
-    avg_1, avg_2, avg_3, std_1, std_2, std_3, t, d, avg, maxim, minim, STD, xhomes, yhomes, beta, uno, dos, tres, all,dist_avg,dist_std = monte(num_runs)
+    num_runs = 100
+    avg_1, avg_2, avg_3, std_1, std_2, std_3, t, d, avg, maxim, minim, STD, xhomes, yhomes, beta, uno, dos, tres, all,dist_avg,dist_std ,total_flight_time= monte(num_runs)
     #Monte-carlo plots AVG,MIN,MAX and PDF of Completetion times
+    print(total_flight_time)
     plt.subplot(3, 1, 2)
     num_bins = 10
     n, bins, patches = plt.hist(t, num_bins, normed=1, alpha=0.5)
