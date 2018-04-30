@@ -87,21 +87,21 @@ By implementing both an Agent Based (Anylogic – Model 1) and Discrete Simulati
 
 ## Research Methods
 
-To address and answer the fundamental questions above, we have developed and executed an Agent Based Simulation within the simulation software Anylogic and a Discrete Event Simulation in Python. We chose to tackle this topic from two different simulation approaches in order to apply our newly learned skills from class. This enables us to answer each fundamental question about drone delivery that we may have not been able to do otherwise if we only chose one simulation approach. We also wanted to determine whether an Agent Based simulation or Discrete Event simulation provided more realistic approach to our problem statement. 
+To address and answer the fundamental questions above, we have developed and executed an Agent Based Simulation within the simulation software Anylogic and a Discrete Event Simulation in Python. We chose to tackle this topic from two different simulation approaches in order to apply our newly learned skills from class. This enables us to answer each fundamental question about drone delivery that we may have not been able to do otherwise if we only chose one simulation approach. We also wanted to determine whether an Agent Based simulation or Discrete Event simulation provided more realistic and/or user friendly approach to our problem statement. 
 
-We were able to depict specific areas of the city of Orlando within both simulations by gathering GIS data. Throughout these simulations we hope to evaluate the overall effort needed to partly replace, or at least improve, current ground based methods of delivery and meet future consumer expectations.
+We chose a specific area of the city of Orlando for the AnyLogic simulations by using GIS data. Since for our simulation the only GIS value currently needed is distance, we still have more possibilities to built upon in future works with GIS. For Python we used distances. Throughout these simulations we hope to evaluate the overall effort needed to partly replace, or at least improve, current ground based methods of delivery and meet future consumer expectations.
 
 In order to do so, we focused our attention on demonstrating how a drone delivery system would be implemented. This approach enables us to determine which scale of effort is needed and also define the quality and quantity of drones it would take to provide an efficient air based delivery system for the intended area. Changing certain parameters on the drone such as battery density, endurance, max speed, charging time, etc. can all help to predict completion estimates for newer technology.
 
-To successfully model a simulation that would answer the fundamental questions above, we had to define certain prerequisites and assumptions beforehand. We defined these prerequisites and assumptions based on the drone market screening we gathered. To meet our expectations and improve the overall validity of the system we chose to use a drone created by DJI company. This company is one of the wolrd leading civil drone manufacturers and, with the chosen drone, offers the best compromise between carrying power, in other words how much weight it can transport and lift, and endurance. Endurance is an important element within our simulation as it helps define the reach of the drone and overall radius.
+To successfully model a simulation that would answer the fundamental questions above, we had to define certain prerequisites and assumptions beforehand. We defined these prerequisites and assumptions based on the drone market screening we gathered. To meet our expectations and improve the overall validity of the system we chose to use a drone created by DJI company. This company is one of the worlds leading civil drone manufacturers and, with the chosen drone, offers the best compromise between carrying power, in other words how much weight it can transport and lift combined with good endurance. Endurance is an important element within our simulation as it helps define the reach of the drone and overall radius.
 
 ![Matrice 600](images/drone.png)
 
-The drone model we chose to base our prerequisites and assumptions on is the DJI Matrice 600 (matrice multiplication which is by pure coincidence the mathematics behind our Python simulation, no pun intended). The Matrice 600 model is built and used for professional users because it offers a high amount of documentation, precise location of coordinates due to its sensor layout (a prerequisite in unmanned/unmonitored flying), its ability to carry up to 5.5kg (12.1 lbs) and ability to travel at speeds up to 40 knots. This capability translates to 40 mph when there is no wind. Due to its retractable landing gear, it could also carry light, oversized packages proving to be an excellent model for our simulations.
+The drone model we chose to base our prerequisites and assumptions on is the DJI Matrice 600 (matrice multiplication which is by pure coincidence the mathematics behind our Python simulation, no pun intended). The Matrice 600 model is built and used for professional users because it is highly reliable, offers a high amount of documentation, offers precise location of coordinates due to its sensor layout (a prerequisite in unmanned/unmonitored flying), its ability to carry up to 5.5kg (12.1 lbs, max.) and ability to travel at speeds up to 40 knots. This translates to 40 mph when there is no wind. Due to its retractable landing gear, it could also carry light, oversized packages proving to be an excellent model for our simulations.
 
 For more information on the Matrice 600 drone technical specs, see: https://www.dji.com/matrice600 
 
-To further validate our simulations and provide more realistic data in terms of package weight, size and delivery time, we completed a survey that compared 10 Amazon orders from 4 individuals each. In doing so, we concluded that the average package size for delivery is about 10x5x8 inches in length (min size: 5x5x5, max size: 17x10x11) for packages that weighed 4lbs or less. Average delivery time was 2.0 days. We focused on packages of this weight to replicate the assumed simulated drone max carrying weight of 4lbs. For the purpose of the simulation, everything above this weight limited will not be offered for “Air Delivery”.
+To further validate our simulations and provide more realistic data in terms of package weight, size and delivery time, we completed a survey that compared the last 10 Amazon orders from 4 individuals each. In doing so, we concluded that the average package size for delivery is about 10x5x8 inches in length (min size: 5x5x5, max size: 17x10x11) for packages that weighed 4 lbs or less. Average delivery time was 2.0 days (all are "Prime" users). We focused on packages of this weight to replicate the assumed simulated drone max carrying weight of 4 lbs. For the purpose of the simulation, everything above this weight limited will not be offered for “Air Delivery” and has to be delivered by ground means.
 
 ![Matrice 600 specs ](images/drone_endurance.png)
 
@@ -110,22 +110,22 @@ To further validate our simulations and provide more realistic data in terms of 
 
 #### Prerequisites 
 
-Gathered from the Matrice 600 spec data (shown above: Image 3) and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic simulation. Within each of the two models, specific parameters and assumptions have been set to improve system validity and overall system design. Each of the prerequisite and assumption listed below have been met and applied before running the simulations. 
+Gathered from the Matrice 600 spec data (shown above: Image 3) and package survey data, we have compiled a list of prerequisites and assumptions that apply to the AnyLogic and Python simulation. Within each of the two models, specific parameters and assumptions have been set to improve system validity and overall system design. Each of the prerequisite and assumption listed below have been met and applied before running the simulations. 
 
-+ Drones fly with an average of 50 ft/second (15m/sec). This applies to drone acceleration and deceleration.
++ Drones fly with an average of 50 ft/second (15m/sec). This counts in drone acceleration and deceleration.
 + Drones are equipped with the TB48S battery configuration. This allows for 30 minutes of endurance for a 4.4 lbs payload/package.  
-+ Due to the aforementioned prerequisites, maximum range is limited to 17 miles - allowing for an effective roundtrip radius of 8.5 miles.
++ Due to the aforementioned prerequisites, maximum "one-way" range is limited to 17 miles - allowing for an effective roundtrip radius of 8.5 miles.
 + Recharging battery time for a complete charge is set to 90 minutes (based on 0% to 100%).
 + Drones will be recharged to full capacity after each flight, regardless of the travelled distance and available battery life.
 + Recharge time roughly represents the flight time by a factor of 3. Meaning, a flight time between 3-6 minutes will require a recharging time of 9-18 minutes. 
-+ Drones will fly “uncontrolled”. Meaning, there will be no transmission range implemented. Instead, drones will be programmed with address coordinates and flight obstacles (flight profile) prior to the start of the simulation. 
++ Drones will fly “uncontrolled”. Meaning, there will be no transmission range implemented. Instead, drones will be programmed with address coordinates and flight obstacles (flight profile) prior to the start of the simulation. This capability is one of the advantages of this drone. We are deliberatly ignoring the legal aspects for this method.
 
 #### Assumptions
 
 + The effective time from order to loading the drone is a triangular distribution with an average of 7 minutes (minimum of 3 minutes; maximum of 12 minutes). 
 + Unloading a package at the destination is a uniform distribution between 20 and 45 seconds. 
 + No package is heavier than 4 lbs.
-+ To provide various distances for the drones to cover and deliver to, the data set is equipped with 13 different addresses that vary in distance.
++ To provide various distances for the drones to cover and deliver to, the data set in AnyLogic is equipped with 13 different addresses (via GIS data) that vary in distance.
 + There is one distribution center that prepares the packages and houses the drones
 + The distribution center is responsible for the depicted area that has a diameter of 14.2 miles. We have chosen a smaller than possible (17 miles) diameter to allow room for additional measures such as wind (even minor wind speeds can have huge effects) and potential package drag. 
 
