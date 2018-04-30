@@ -42,7 +42,7 @@ A Monte-Carlo Simulation is then set-up and ran for a number amount of trials fo
 
 
 
-## The used file/code for AnyLogic is the folder "Final Project".
+## The used file/code for AnyLogic is in the folder "Final Project".
 
 - the other 2 folders (AMADRONE_state and Project_AmaDrone) were attempts which were not leading in the right direction. They are left inside the folder structure simply for documentation purposes.
 
