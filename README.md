@@ -272,17 +272,30 @@ Video with statistics for 3_25_both on:   https://youtu.be/Bg6cD1Y4d-0
 
 Unlike the Anylogic model, this model approaches the drone delivery system from an individual drone efficiency perspective based on battery charge, velocity, and the number of package deliveries.  Drones are sent out for delivery throughout the day and whenever their battery life was depleted, another drone would be sent out while the first drone recharged. Implementing a time array and battery charge equation, we were able to vary the time it took for a drone to deliver a package based on different customer locations and drone battery life. We created the simulation using a within-subject design based on 100, 1,000, and 10,000 runs and varied the number of packages being delivered (100 or 200) to determine how often drone 1, 2, and 3 were used for delivery. To provide more insight for each run, we have created multiple graphs to represent basic statistics (min, max, average), CDF, PDF, frequency utilization rate, and distance traveled in miles. These images can be found here: [**Python Images**](images/python/README.md).
 
-After running the simulation for 100 times for 100 packages, we found that drone 1 usage was slightly higher than drone 2 usage, but significantly higher than drone 3 usage (shown in Figure 5 below). The next scenario simulated 100 runs for a total of 200 packages and showed similar results. Drone 1 and 2 were similar in usage (99 times, 91 times), while drone 3 was briefly used (10 times). Shown in Figure 6 below.
 
-![Python Results](images/python/100runs100.png)
+![Python Results](images/100x100.png)
 
-				Figure 5: 100 Runs with 100 Packages
+After running the simulation for 100 times for 100 packages, we found that drone 1 usage was slightly higher than drone 2 usage, but significantly higher than drone 3 usage (shown in Figure 5 below).
 
-![Python Results](images/python/100runs200.png)
+![Python Results](images/100x200.png)
 
-				Figure 6: 100 Runs with 200 Packages
+The next scenario simulated 100 runs for a total of 200 packages and showed similar results. Drone 1 and 2 were similar in usage (99 times, 91 times), while drone 3 was briefly used (10 times). Shown in Figure 6 below.
 
+![Python Results](images/1000x100.png)
 
+INSERT FINDINGS
+
+![Python Results](images/1000x200.png)
+
+INSERT FINDINGS
+
+![Python Results](images/5000x100.png)
+
+INSERT FINDINGS
+
+![Python Results](images/10000x100.png)
+
+INSERT FINDINGS
 
 
 
