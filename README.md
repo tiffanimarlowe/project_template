@@ -292,11 +292,7 @@ For this round, we simulated 5,000 runs for a total of 100 packages. Results var
 
 ![Python Results](images/10000x100.PNG)
 
-INSERT FINDINGS
-
-
-
-
+For the final simulation, we completed a total of 10,000 runs for a total of 100 packages. Once again, Drone 1 utilization (51 deliveries) was higher than Drone 2 utilization (44 deliveries) and significantly higher than Drone 3 utilization (5 deliveries). Unlike the previous simulations, average delivery time decreased by 15 mins. Therefore, the drones were able to deliver each package in less than an hour and fifteen minutes. For the first 40 package deliveries, Drone 3 was utilized. For every 15 packages after the remaining 60 packages, Drone 3 was needed. 
 
 ## Discussion
 
