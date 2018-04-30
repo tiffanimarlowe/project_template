@@ -248,7 +248,8 @@ The first striking difference (on the right side), as to be expected - the fligh
 
 ##### AnyLogic: Results for 2 Orders/HH/hour
 
-Figure 3 shows the effects on the 2 order/HH/hour for the given area and 18 drones. The optimization process shows again positive variations in necessary drones (decrease of up to 3, which equals a 17% reduction):  
+Figure 3 shows the effects on the 2 order/HH/hour for the given area and 18 drones. The optimization process shows again positive variations in necessary drones (decreases to 15, which equals a 17% reduction):  
+
   - 2_18 (normal) optimal number of drones: 18      
   - 2_18fast 	optimal number of drones: 16     
   - 2_18charge 	optimal number of drones: 17     
@@ -263,7 +264,8 @@ Again, we left the number of drones at the "normal" number of drone value to see
 
 ##### AnyLogic: Results for 3 Orders/HH/hour
 
-Lastly, Figure 4 shows the effects on 3 order/HH/hour and 25 drones. The optimization process shows again positive variations in necessary drones (decrease of up to 7, which equals a 28% reduction) for a targeted utilization rate of 85%:  
+Lastly, Figure 4 shows the effects on 3 order/HH/hour and 25 drones. The optimization process shows again positive variations in necessary drones (decreases to 18, which equals a 28% reduction) for a targeted utilization rate of 85%:  
+
   - 3_25 (normal) optimal number of drones: 25      
   - 3_25fast 	optimal number of drones: 25     
   - 3_25charge 	optimal number of drones: 19     
@@ -306,9 +308,11 @@ After running the simulation for 100 times for 100 packages, we found that drone
 
 ## Discussion
 
-Through the use of both simulations (Anylogic and Python), we were able to answer many of our fundamental questions stated above. Through the Anylogic simulation we found that drones can successfully offer an efficient alternative to current package delivery systems today.  In particular, based on the number of drones and the distance criteria previously stated, drones on average can deliver packages under 4lbs in 30 mins. This is when the optimal number of drones is found for the actual demand with a utilization rate less than 85%. Through the use of an agent-based simulation we were able to calculate various real-world scenarios, such as how long it would take to deliver 50 packages via the air based delivery system. Our results showed that the rate of incoming orders to the distribution center has a large effect on the capabilities of the system but that delivering large quantities of packages are still possible. To further test this theory, we found that an incoming rate of 3 orders/HH/Hour for 25 drones, would take approximately 140 minutes to deliver 50 packages. In addition, we were able to reduce average delivery time to 1 hour, as intended by Amazon Prime Air, but the ability to do so is strictly dependent on the number of orders the system is prepared for.  If there is a limited number of drones available than the ability to deliver multiple packages within a given timeframe is impacted.
+Through the use of both simulations (Anylogic and Python), we were able to answer many of our fundamental questions stated above. Through the Anylogic simulation we found that drones can successfully offer an efficient and conveniently fast alternative to current package delivery systems today.  In particular, based on the number of drones and the criterias previously stated, drones on average can deliver packages under 4lbs in 30 mins. This is when the optimal number of drones is found for the actual demand with a utilization rate less than 85%. As in every logistical process, this requires research and sound calculation basis to calculate the actual needs. 
 
-In addition to the number of drones available, the battery life and speed of the drone also impact the utilization and success of the system. With greater battery life there is less time needed for charging and thus less drones required at one distribution center. With increased battery life and higher speeds, drones are capable of delivering packages at a much more efficient rate. This was apparent in each of the runs where both speed and battery charge were improved, leading to mean delivery time being significantly reduce.
+Through the use of an agent-based simulation we were able to calculate various real-world scenarios, such as how long it would take to deliver 50 packages via the air based delivery system. Our results showed that the rate of incoming orders to the distribution center has a large effect on the capabilities of the system but that delivering large quantities of packages are still possible. As of now, only smaller packages can be delivered this way and the customer has to provide an environment that permits drones delivery (large enough landing space). To further test this theory, we found that an incoming rate of 3 orders/HH/Hour for 25 drones, would take approximately 140 minutes to deliver 50 packages. In addition, we were able to reduce average delivery time to 1 hour, as intended by Amazon Prime Air, but the ability to do so is strictly dependent on the number of orders the system is prepared for.  If there is a limited number of drones available than the ability to deliver multiple packages within a given timeframe is impacted.
+
+In addition to the number of drones available, the battery charging time and speed of the drone also impact the utilization and success of the system. With greater battery capability there is less time needed for charging and thus less drones required at one distribution center. With higher speeds, drones are capable of delivering packages at a much more efficient rate. This was apparent in each of the runs, especially where both speed and battery charge were improved, leading to mean delivery time and the number of drones needed being significantly reduced.
 
 In the military, drones are utilized in a specific way. While one drone is heading into the field, second drone is returning and a third is in the shop recharging. This allows for around the clock utilization and overall system efficiency. By running the python simulation in a similar fashion, we were able to replicate a common real-world application. Gathered from the results, we were able to determine that drone 1 is utilized more often than drone 2 and 3 in multiple scenarios. Providing more insight into the utilization and applications of drones. 
 
