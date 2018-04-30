@@ -286,13 +286,9 @@ The next two scenario simulated 100 runs for a total of 200 packages and then 1,
 
 For this run, we simulated 1,000 runs for a total of 100 packages to determine if the number of runs had an impact on drone efficiency and individual drone utilization. Suprisingly, results did not replicate the simulation with 100 runs for 100 packages. Instead, results showed that the number of runs did not affect which drone was used more often. Drone 1 delivered 49 packages, Drone 2 delivered 44 packages and Drone 3 delivered 7 packages. In order to deliver 100 packages for 1,000 runs, it still took 3 drones on average less than an hour and half per delivery. This has yet to change significantly per number of runs. However, drone usage frequency for 3 drones spiked on average every 10 packages for the first 30 packages and then decreased over time. Meaning, only 3 drones were sent out simultaneously for the majority of the first 30 packages. After that, only 2 drones were required on average. 
 
-
-
-
-
 ![Python Results](images/5000x100.PNG)
 
-INSERT FINDINGS
+For this round, we simulated 5,000 runs for a total of 100 packages. Results varied slightly compared to the other simulations that had a larger number of runs. Drone 1 and 2 utilizations were almost identical - Drone 1 delivered 48 packages while Drone 2 delivered 47 packages. Drone 3 delivered only 5 packages out of the total 100 orders.  Average delivery time did not change therefore, each package was delivered in less than an hour and half. Drone 3 was only utilized 5 time for 100 deliveries – meaning three drones were only required on average for every 20 packages.
 
 ![Python Results](images/10000x100.PNG)
 
