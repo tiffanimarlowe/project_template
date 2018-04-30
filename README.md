@@ -278,7 +278,7 @@ After running the simulation for 100 times for 100 packages, we found that drone
 
 ![Python Results](images/100x200.PNG)
 
-The next scenario simulated 100 runs for a total of 200 packages and showed similar results to the run above with 100 runs and 200 packages. Drone 1 and 2 were similar in usage (99 times, 91 times), while drone 3 was briefly used (10 times). In order to deliver 200 packages, it also took 3 drones on average less than an hour and half per delivery. Meaning, the drones were capable of keeping up with the demand and order income. Drone frequency spiked on average every 25 packages for the first 125 packages and then spiked every 50 packages. The average distance traveled for each drone was 9 miles.
+The next scenario simulated 100 runs for a total of 200 packages and showed similar results to the run above with 100 runs and 200 packages. Drone 1 and 2 were similar in usage (99 times, 91 times), while drone 3 was briefly used (10 times). In order to deliver 200 packages, it also took 3 drones on average less than an hour and half per delivery. Meaning, the drones were capable of keeping up with the demand and order income. Drone usage frequency spiked on average every 25 packages for the first 125 packages and then spiked every 50 packages for the remaining 75 packages. Thus, 3 drones were required for every 25 packages for a majority of the deliveries.  The average distance traveled for each drone was 9 miles.
 
 ![Python Results](images/1000x100.PNG)
 
